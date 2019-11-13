@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/elm/elm.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/elm/sandbox/elm.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/elm.runtime/elm.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/elm.stubs/elm.stubs.msd" folder="" />
     </projectModules>
   </component>
 </project>

@@ -1,0 +1,11 @@
+.idea
+workspace.xml
+
+_spreferences
+artifacts
+tmp
+**/source_gen
+**/source_gen.caches
+**/classes_gen
+build-languages.xml
+build

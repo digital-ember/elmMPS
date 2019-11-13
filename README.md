@@ -23,7 +23,13 @@ Since most people are not familiar with JetBrains MPS and it is not so straightf
 Before I want to explore higher levels of abstraction in the language and the editor, I want to try and build a projection that is very close to the concrete syntax of Elm (v0.19.1).
 There will be some slight changes sprinkled in here and there, either for teasing ideas, or because the projectional editor requires them.
 
-## General editing with projections
-For those not familiar with projectional editors, here is nice illustration by Markus Völter that compares it to "regular" textual editing.
+## Projectional editing - Basics
+For those not familiar with projectional editors, here is nice illustration by Markus Völter that compares textual editing (left) with projectional editing (right).
+
+![projectional editing](https://github.com/digital-ember/elmMPS/blob/master/images/projectionalEditing.jpg)
+
+_(from: https://www.slideshare.net/schogglad/architecting-domainspecific-languages)_
+
+When you write code as text, a parser is involved to translate your your text into a model, usually an Abstract Syntax Tree (AST). In a projectional world, there is no parser! You create programs by directly manipulating the AST. The "projection" is what exposes the AST to you in one way or the other. We'll see how this can look like for Elm in a second.
 
 

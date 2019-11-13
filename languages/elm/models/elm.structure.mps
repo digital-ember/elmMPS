@@ -184,6 +184,9 @@
     <node concept="PrWs8" id="1ZDI_invbra" role="PzmwI">
       <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
     </node>
+    <node concept="PrWs8" id="4pvN5UYw_hJ" role="PzmwI">
+      <ref role="PrY4T" node="4pvN5UYv0k3" resolve="ICanProjectVerbosely" />
+    </node>
     <node concept="1TJgyj" id="1ZDI_inbXNq" role="1TKVEi">
       <property role="IQ2ns" value="2299573957225864410" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -707,6 +710,15 @@
       <property role="20kJfa" value="typeArgRefs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1ZDI_in66vK" resolve="ITypeReference" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4pvN5UYv0k3">
+    <property role="EcuMT" value="5070996412737258755" />
+    <property role="TrG5h" value="ICanProjectVerbosely" />
+    <node concept="1TJgyi" id="4pvN5UYv0k4" role="1TKVEl">
+      <property role="IQ2nx" value="5070996412737258756" />
+      <property role="TrG5h" value="verbose" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

@@ -14,15 +14,6 @@
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
         <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
-      <concept id="2299573957224327124" name="elm.structure.TypeMemberDeclaration" flags="ng" index="28WtQ0">
-        <child id="2299573957224327155" name="type" index="28WtQB" />
-      </concept>
-      <concept id="2299573957224327149" name="elm.structure.CustomTypeReference" flags="ng" index="28WtQT">
-        <reference id="2299573957224327150" name="typeTarget" index="28WtQU" />
-      </concept>
-      <concept id="8864878458619166604" name="elm.structure.RecordDefinition" flags="ng" index="k1U1L">
-        <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
-      </concept>
       <concept id="6466375086925478013" name="elm.structure.TypeAliasReference" flags="ng" index="317tms">
         <reference id="6466375086925478016" name="typeAliasTarget" index="317tlx" />
       </concept>
@@ -30,11 +21,6 @@
       <concept id="6466375086915915935" name="elm.structure.InlineType" flags="ng" index="31GzPY">
         <child id="6466375086915915936" name="type" index="31GzP1" />
       </concept>
-      <concept id="6466375086909125606" name="elm.structure.IfExpression" flags="ng" index="3e6_S7">
-        <child id="6466375086909130531" name="condition" index="3e6EF2" />
-        <child id="5070996412741785017" name="then" index="3SBHBB" />
-      </concept>
-      <concept id="6466375086909161304" name="elm.structure.TrueLiteral" flags="ng" index="3e6HaT" />
       <concept id="6466375086914436125" name="elm.structure.StringType" flags="ng" index="3ehl7W" />
       <concept id="6466375086914434780" name="elm.structure.BooleanType" flags="ng" index="3ehlGX" />
       <concept id="6466375086914109502" name="elm.structure.PlusExpression" flags="ng" index="3ejERv" />
@@ -44,7 +30,6 @@
       </concept>
       <concept id="6466375086904545241" name="elm.structure.LetExpression" flags="ng" index="3eRa8S">
         <child id="6466375086905441737" name="values" index="3eOx0C" />
-        <child id="6466375086905441739" name="expression" index="3eOx0E" />
       </concept>
       <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
         <child id="8864878458619166607" name="type" index="k1U1M" />
@@ -64,9 +49,6 @@
       </concept>
       <concept id="8654661321438926713" name="elm.structure.IntLiteral" flags="ng" index="1FHpZB">
         <property id="8654661321438946584" name="value" index="1FHuQ6" />
-      </concept>
-      <concept id="8654661321438947839" name="elm.structure.StringLiteral" flags="ng" index="1FHu5x">
-        <property id="8654661321438946584" name="value" index="1FHuQ7" />
       </concept>
       <concept id="5070996412733939562" name="elm.structure.ICanHaveTypeRefArgs" flags="ng" index="3S5DcO">
         <child id="6466375086917715545" name="typeArgRefs" index="31_UIS" />
@@ -88,8 +70,8 @@
     </node>
     <node concept="1Fl4Nm" id="5AXbu6oCfxk" role="1FuEvC">
       <property role="TrG5h" value="Location" />
-      <node concept="31GzPY" id="5AXbu6oUhLK" role="k1U1M">
-        <node concept="3ehl7W" id="5AXbu6oUhLQ" role="31GzP1" />
+      <node concept="31GzPY" id="4pvN5UZA_wG" role="k1U1M">
+        <node concept="3ehl7W" id="4pvN5UZA_wS" role="31GzP1" />
       </node>
     </node>
     <node concept="1Fu4ED" id="5AXbu6oCfuD" role="1FuEvC">
@@ -129,22 +111,6 @@
       </node>
       <node concept="31_POd" id="5AXbu6oB1QV" role="3ehl24">
         <property role="TrG5h" value="ReceivedMessage" />
-        <node concept="31GzPY" id="5AXbu6oCftZ" role="31_UIS">
-          <node concept="k1U1L" id="5AXbu6oCfu7" role="31GzP1">
-            <node concept="28WtQ0" id="5AXbu6oCfuc" role="28WtdH">
-              <property role="TrG5h" value="user" />
-              <node concept="28WtQT" id="5AXbu6p2LEs" role="28WtQB">
-                <ref role="28WtQU" node="5AXbu6oCfuD" resolve="User" />
-              </node>
-            </node>
-            <node concept="28WtQ0" id="5AXbu6p2LEC" role="28WtdH">
-              <property role="TrG5h" value="message" />
-              <node concept="31GzPY" id="5AXbu6p2LF6" role="28WtQB">
-                <node concept="3ehl7W" id="5AXbu6p2LF_" role="31GzP1" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="31_POd" id="5AXbu6p2LG3" role="3ehl24">
         <property role="TrG5h" value="ClickedExit" />
@@ -162,12 +128,6 @@
             <node concept="1FHpZB" id="5AXbu6nY6RJ" role="3ejVlR">
               <property role="1FHuQ6" value="3" />
             </node>
-          </node>
-        </node>
-        <node concept="3e6_S7" id="4pvN5UYLG0O" role="3eOx0E">
-          <node concept="3e6HaT" id="4pvN5UYT3sI" role="3e6EF2" />
-          <node concept="1FHu5x" id="4pvN5UYT3t4" role="3SBHBB">
-            <property role="1FHuQ7" value="bla" />
           </node>
         </node>
       </node>

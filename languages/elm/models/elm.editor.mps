@@ -1344,8 +1344,8 @@
                         <ref role="3Tt5mk" to="1id:7wry9SjFxtP" resolve="body" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="5AXbu6nz0uQ" role="2OqNvi">
-                      <ref role="37wK5l" to="i4ut:5AXbu6nvNe1" resolve="renderOnNewLine" />
+                    <node concept="2qgKlT" id="4pvN5UYIwG8" role="2OqNvi">
+                      <ref role="37wK5l" to="i4ut:1ZDI_injzEM" resolve="needsNewline" />
                     </node>
                   </node>
                 </node>

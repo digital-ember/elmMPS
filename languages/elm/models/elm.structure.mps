@@ -397,6 +397,9 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4pvN5UYIwbM" role="PzmwI">
+      <ref role="PrY4T" node="5AXbu6onEan" resolve="IMightNeedNewlines" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7wry9SjFxtS">
     <property role="EcuMT" value="8654661321438926712" />
@@ -720,6 +723,20 @@
       <property role="TrG5h" value="verbose" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4pvN5UYHLtO">
+    <property role="EcuMT" value="5070996412741130100" />
+    <property role="3GE5qa" value="expression.binary" />
+    <property role="TrG5h" value="ExponentiationExpression" />
+    <property role="34LRSv" value="^" />
+    <ref role="1TJDcQ" node="5AXbu6nWS0X" resolve="BinaryArithmeticExpression" />
+  </node>
+  <node concept="1TIwiD" id="4pvN5UYIb_4">
+    <property role="EcuMT" value="5070996412741237060" />
+    <property role="3GE5qa" value="base.type.primitive" />
+    <property role="TrG5h" value="CharType" />
+    <property role="34LRSv" value="Char" />
+    <ref role="1TJDcQ" node="5AXbu6nY7B$" resolve="PrimitiveType" />
   </node>
 </model>
 

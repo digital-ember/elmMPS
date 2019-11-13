@@ -53,6 +53,9 @@
       <concept id="5070996412733939562" name="elm.structure.ICanHaveTypeRefArgs" flags="ng" index="3S5DcO">
         <child id="6466375086917715545" name="typeArgRefs" index="31_UIS" />
       </concept>
+      <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
+        <property id="5070996412737258756" name="verbose" index="3S8W_q" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -76,6 +79,7 @@
     </node>
     <node concept="1Fu4ED" id="5AXbu6oCfuD" role="1FuEvC">
       <property role="TrG5h" value="User" />
+      <property role="3S8W_q" value="true" />
       <node concept="31_POd" id="5AXbu6oCfuF" role="3ehl24">
         <property role="TrG5h" value="Regular" />
         <node concept="31GzPY" id="5AXbu6oJf7M" role="31_UIS">

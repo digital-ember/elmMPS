@@ -523,6 +523,25 @@
       <property role="20kJfa" value="condition" />
       <ref role="20lvS9" node="7wry9SjFxtR" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="4pvN5UYKhmT" role="1TKVEi">
+      <property role="IQ2ns" value="5070996412741785017" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="then" />
+      <ref role="20lvS9" node="7wry9SjFxtR" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4pvN5UYRu9j" role="1TKVEi">
+      <property role="IQ2ns" value="5070996412743672403" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="elseIfs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4pvN5UYRu8I" resolve="ElseIfPart" />
+    </node>
+    <node concept="1TJgyj" id="4pvN5UYKhmW" role="1TKVEi">
+      <property role="IQ2ns" value="5070996412741785020" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="else" />
+      <ref role="20lvS9" node="7wry9SjFxtR" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5AXbu6nDZXc">
     <property role="EcuMT" value="6466375086909161292" />
@@ -737,6 +756,24 @@
     <property role="TrG5h" value="CharType" />
     <property role="34LRSv" value="Char" />
     <ref role="1TJDcQ" node="5AXbu6nY7B$" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="4pvN5UYRu8I">
+    <property role="EcuMT" value="5070996412743672366" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="ElseIfPart" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4pvN5UYRu8Q" role="1TKVEi">
+      <property role="IQ2ns" value="5070996412743672374" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="condition" />
+      <ref role="20lvS9" node="7wry9SjFxtR" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4pvN5UYRu8J" role="1TKVEi">
+      <property role="IQ2ns" value="5070996412743672367" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="then" />
+      <ref role="20lvS9" node="7wry9SjFxtR" resolve="Expression" />
+    </node>
   </node>
 </model>
 

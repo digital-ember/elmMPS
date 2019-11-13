@@ -538,25 +538,23 @@
     <property role="TrG5h" value="typeof_IfExpression" />
     <property role="3GE5qa" value="expression" />
     <node concept="3clFbS" id="5AXbu6nDSsG" role="18ibNy">
-      <node concept="1ZobV4" id="5AXbu6nDUYz" role="3cqZAp">
-        <node concept="mw_s8" id="5AXbu6nDUYC" role="1ZfhK$">
-          <node concept="1Z2H0r" id="5AXbu6nDUYD" role="mwGJk">
-            <node concept="2OqwBi" id="5AXbu6nDUYE" role="1Z2MuG">
-              <node concept="1YBJjd" id="5AXbu6nDUYF" role="2Oq$k0">
+      <node concept="1Z5TYs" id="4pvN5UYN6ek" role="3cqZAp">
+        <node concept="mw_s8" id="4pvN5UYN6em" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4pvN5UYN6en" role="mwGJk">
+            <node concept="2OqwBi" id="4pvN5UYN6eo" role="1Z2MuG">
+              <node concept="1YBJjd" id="4pvN5UYN6ep" role="2Oq$k0">
                 <ref role="1YBMHb" node="5AXbu6nDSsI" resolve="ifExpression" />
               </node>
-              <node concept="3TrEf2" id="5AXbu6nDUYG" role="2OqNvi">
+              <node concept="3TrEf2" id="4pvN5UYN6eq" role="2OqNvi">
                 <ref role="3Tt5mk" to="1id:5AXbu6nDSsz" resolve="condition" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="mw_s8" id="5AXbu6nDUZr" role="1ZfhKB">
-          <node concept="2ShNRf" id="5AXbu6nDUZn" role="mwGJk">
-            <node concept="3zrR0B" id="5AXbu6nDV6c" role="2ShVmc">
-              <node concept="3Tqbb2" id="5AXbu6nDV6e" role="3zrR0E">
-                <ref role="ehGHo" to="tpee:f_0P_4Y" resolve="BooleanType" />
-              </node>
+        <node concept="mw_s8" id="4pvN5UYN6er" role="1ZfhKB">
+          <node concept="2pJPEk" id="4pvN5UYN6es" role="mwGJk">
+            <node concept="2pJPED" id="4pvN5UYN6et" role="2pJPEn">
+              <ref role="2pJxaS" to="1id:5AXbu6nY7rs" resolve="BooleanType" />
             </node>
           </node>
         </node>
@@ -1457,6 +1455,37 @@
     <node concept="1YaCAy" id="4pvN5UYIb_O" role="1YuTPh">
       <property role="TrG5h" value="charLiteral" />
       <ref role="1YaFvo" to="1id:htXhb8r" resolve="CharLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4pvN5UZ3RlC">
+    <property role="TrG5h" value="typeof_ElseIfPart" />
+    <property role="3GE5qa" value="expression" />
+    <node concept="3clFbS" id="4pvN5UZ3RlD" role="18ibNy">
+      <node concept="1Z5TYs" id="4pvN5UZ3RlE" role="3cqZAp">
+        <node concept="mw_s8" id="4pvN5UZ3RlF" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4pvN5UZ3RlG" role="mwGJk">
+            <node concept="2OqwBi" id="4pvN5UZ3RlH" role="1Z2MuG">
+              <node concept="1YBJjd" id="4pvN5UZ3RlI" role="2Oq$k0">
+                <ref role="1YBMHb" node="4pvN5UZ3RlN" resolve="elseIfPart" />
+              </node>
+              <node concept="3TrEf2" id="4pvN5UZ3Rxq" role="2OqNvi">
+                <ref role="3Tt5mk" to="1id:4pvN5UYRu8Q" resolve="condition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4pvN5UZ3RlK" role="1ZfhKB">
+          <node concept="2pJPEk" id="4pvN5UZ3RlL" role="mwGJk">
+            <node concept="2pJPED" id="4pvN5UZ3RlM" role="2pJPEn">
+              <ref role="2pJxaS" to="1id:5AXbu6nY7rs" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4pvN5UZ3RlN" role="1YuTPh">
+      <property role="TrG5h" value="elseIfPart" />
+      <ref role="1YaFvo" to="1id:4pvN5UYRu8I" resolve="ElseIfPart" />
     </node>
   </node>
 </model>

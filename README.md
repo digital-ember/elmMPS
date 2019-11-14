@@ -25,9 +25,7 @@ There will be some slight changes sprinkled in here and there, either for the pu
 ## Projectional editing - Basics
 For those not familiar with projectional editors, here is a nice illustration by Markus Völter that compares textual editing (left) with projectional editing (right).
 
-![projectional editing](images/projectionalEditing.jpg)
-
-_(from: https://www.slideshare.net/schogglad/architecting-domainspecific-languages)_
+![projectional editing](images/projectionalEditing.png)
 
 When you write code as text, a parser is involved to translate your text into a data structure, usually called an Abstract Syntax Tree (AST). Broadly speaking, this data structure is fed into other parts of a compiler to perform certain tasks like semantic analysis, code optimization, translation, and the like. In a projectional world, there is no parser! You create programs by directly manipulating the AST of your program. The "projection" is what exposes the AST to you in one way or the other on a screen. We'll see how this can look like for Elm next, so let's move on and look at specific examples.
 

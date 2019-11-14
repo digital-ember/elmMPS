@@ -66,7 +66,7 @@ ___
 ## Adding an import declaration
 Let me use the import statement to demonstrate the fluent, text-like input capabilities once more:
 
-![importDeclaration](images/importDeclaration.png)
+![importDeclaration](images/importDeclaration.gif)
 
 Similarly to the **Exposure** node in the **ModuleDeclaration**, adding a **Alias** node is triggered by a side transformation when the user types "\_a" after the name of the imported module (in this case "Html").
 Notice that the "Html" module is just a stub module, another root node I declared for demoing purposes.

@@ -11,10 +11,15 @@
         <child id="2299573957231908996" name="moduleDeclaration" index="28pqbg" />
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
       </concept>
+      <concept id="5941605205023692887" name="elm.structure.ExposableReference" flags="ng" index="1Fu4Cz">
+        <reference id="5941605205023692888" name="exposableTarget" index="1Fu4CG" />
+      </concept>
       <concept id="5941605205023692881" name="elm.structure.FunctionDeclaration" flags="ng" index="1Fu4C_">
         <child id="5070996412762122018" name="args" index="3TEaHW" />
       </concept>
-      <concept id="5941605205023692879" name="elm.structure.Exposure" flags="ng" index="1Fu4CV" />
+      <concept id="5941605205023692879" name="elm.structure.Exposure" flags="ng" index="1Fu4CV">
+        <child id="5941605205023692892" name="exposableRefs" index="1Fu4CC" />
+      </concept>
       <concept id="5941605205023692875" name="elm.structure.ModuleDeclaration" flags="ng" index="1Fu4CZ">
         <child id="5941605205023692894" name="exposure" index="1Fu4CE" />
       </concept>
@@ -29,12 +34,19 @@
   <node concept="28pqXY" id="4pvN5UZWgxW">
     <node concept="1Fu4CZ" id="4pvN5UZWgxX" role="28pqbg">
       <property role="TrG5h" value="Html" />
-      <node concept="1Fu4CV" id="4pvN5UZWgy2" role="1Fu4CE" />
+      <node concept="1Fu4CV" id="4pvN5UZWgy2" role="1Fu4CE">
+        <node concept="1Fu4Cz" id="3gyR2y0ybFP" role="1Fu4CC">
+          <ref role="1Fu4CG" node="3gyR2y0ybFq" resolve="text" />
+        </node>
+        <node concept="1Fu4Cz" id="3gyR2y0ybFK" role="1Fu4CC">
+          <ref role="1Fu4CG" node="4pvN5V0gjAf" resolve="div" />
+        </node>
+      </node>
     </node>
-    <node concept="1Fu4C_" id="4pvN5UZWgy4" role="1FuEvC">
+    <node concept="1Fu4C_" id="3gyR2y0ybFq" role="1FuEvC">
       <property role="TrG5h" value="text" />
-      <node concept="3TEaHQ" id="4pvN5V04VBT" role="3TEaHW">
-        <property role="TrG5h" value="a" />
+      <node concept="3TEaHQ" id="3gyR2y0ybFH" role="3TEaHW">
+        <property role="TrG5h" value="s" />
       </node>
     </node>
     <node concept="1Fu4C_" id="4pvN5V0gjAf" role="1FuEvC">

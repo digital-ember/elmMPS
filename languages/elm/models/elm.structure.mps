@@ -133,7 +133,7 @@
     <node concept="1TJgyj" id="59OOBgT39xs" role="1TKVEi">
       <property role="IQ2ns" value="5941605205023692892" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exposableReference" />
+      <property role="20kJfa" value="exposableRefs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="59OOBgT39xn" resolve="ExposableReference" />
     </node>
@@ -203,11 +203,11 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59OOBgT39xo" role="1TKVEi">
       <property role="IQ2ns" value="5941605205023692888" />
-      <property role="20kJfa" value="exposableRef" />
+      <property role="20kJfa" value="exposableTarget" />
       <ref role="20lvS9" node="59OOBgT39xi" resolve="IExposable" />
     </node>
     <node concept="RPilO" id="59OOBgT39xq" role="lGtFl">
-      <ref role="RPilL" node="59OOBgT39xo" resolve="exposableRef" />
+      <ref role="RPilL" node="59OOBgT39xo" resolve="exposableTarget" />
     </node>
   </node>
   <node concept="PlHQZ" id="59OOBgT39x_">

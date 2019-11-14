@@ -428,7 +428,12 @@
           </node>
         </node>
         <node concept="3F1sOY" id="59OOBgT5qe7" role="_tjki">
+          <property role="2ru_X1" value="true" />
           <ref role="1NtTu8" to="1id:59OOBgT39xu" resolve="exposure" />
+          <node concept="3F0ifn" id="3gyR2y0vplH" role="2ruayu">
+            <property role="ilYzB" value="&lt;no exposure&gt;" />
+            <ref role="1k5W1q" node="1ZDI_inoEin" resolve="styleHintEditable" />
+          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="59OOBgT3BmH" role="2iSdaV" />
@@ -449,7 +454,7 @@
       <node concept="2iRfu4" id="59OOBgT4rBo" role="2iSdaV" />
       <node concept="3F2HdR" id="59OOBgT3Bsd" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="1id:59OOBgT39xs" resolve="exposableReference" />
+        <ref role="1NtTu8" to="1id:59OOBgT39xs" resolve="exposableRefs" />
         <node concept="3F0ifn" id="59OOBgT6OM$" role="2czzBI">
           <property role="3F0ifm" value=".." />
           <ref role="1k5W1q" node="59OOBgT7BLH" resolve="styleBase" />
@@ -526,6 +531,10 @@
         <node concept="3F1sOY" id="59OOBgT3Sej" role="_tjki">
           <property role="2ru_X1" value="true" />
           <ref role="1NtTu8" to="1id:59OOBgT39xw" resolve="exposure" />
+          <node concept="3F0ifn" id="3gyR2y0vplJ" role="2ruayu">
+            <property role="ilYzB" value="&lt;no exposure&gt;" />
+            <ref role="1k5W1q" node="1ZDI_inoEin" resolve="styleHintEditable" />
+          </node>
         </node>
       </node>
     </node>
@@ -2693,7 +2702,7 @@
     <property role="3GE5qa" value="header" />
     <ref role="1XX52x" to="1id:59OOBgT39xn" resolve="ExposableReference" />
     <node concept="1iCGBv" id="4pvN5UZWgyi" role="2wV5jI">
-      <ref role="1NtTu8" to="1id:59OOBgT39xo" resolve="exposableRef" />
+      <ref role="1NtTu8" to="1id:59OOBgT39xo" resolve="exposableTarget" />
       <node concept="1sVBvm" id="4pvN5UZWgyk" role="1sWHZn">
         <node concept="3F0A7n" id="4pvN5UZWgyr" role="2wV5jI">
           <property role="1Intyy" value="true" />

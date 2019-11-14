@@ -265,7 +265,7 @@
     <property role="3GE5qa" value="header" />
     <ref role="1M2myG" to="1id:59OOBgT39xn" resolve="ExposableReference" />
     <node concept="1N5Pfh" id="59OOBgT3gdb" role="1Mr941">
-      <ref role="1N5Vy1" to="1id:59OOBgT39xo" resolve="exposableRef" />
+      <ref role="1N5Vy1" to="1id:59OOBgT39xo" resolve="exposableTarget" />
       <node concept="3dgokm" id="59OOBgT3gex" role="1N6uqs">
         <node concept="3clFbS" id="59OOBgT3gez" role="2VODD2">
           <node concept="3cpWs8" id="59OOBgT3gQl" role="3cqZAp">

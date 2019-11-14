@@ -41,27 +41,39 @@ Since MPS allows you to create an manipulate the AST (tree!) directly, the first
 It features three placeholders, which could also be hidden, but it is a good practice in projectional editing to work with "placeholder hints" to let users know where a cursor can be placed and the program can be manipulated. Remember, this is not a text file! Think of it as a form-like canvas with context-sensitive interactions.
 
 ## Adding a module declaration
-Though we are not using a textual editor, the current concrete syntax of Elm we try to mimic is textual, so it is only natural to start out with a projectional editor that behaves similarly to a textual editor in many contexts. Declaring a module signature, for example. 
+Though we are not using a textual editor, the concrete syntax of Elm we try to mimic is textual, so it is only natural to start out with a projectional editor that behaves similarly to a textual editor in many contexts. Declaring a module signature, for example. 
 
 ![moduleDeclaration](images/moduleDeclaration.gif)
 
-With the cursor at our placeholder, we can just type "module_Demo", where "\_" indicates a SPACE, to add a node of type **ModuleDeclaration** and the name property **Demo**.
+With the cursor at our placeholder, we can just type "module_Demo", where "\_" indicates a SPACE, to add a node of type **ModuleDeclaration** and the name property "Demo".
 
 Adding the **Exposing** node already contains a bit of projectional editing magic. With the cursor at the of our module name, we can continue typing "\_e". The space indicates we finished our module name (just like we do it in a textual editor), but subsequently pressing the "e" key triggers a so-called "side transformation" in MPS. This transformation automatically adds an **Exposure** node to the **ModuleDeclaration**, and since we are in a projectional editor, this node gets rendered on screen immediately.
 
-Now, one can ask why the module itself does not have the same behavior (pressing "m" at the very beginning magically adding the **ModuleDeclaration**). No specific reason other then being able to demo both capabilities in one 'line' of code.
+Now, one can ask why the module itself does not have the same behavior (pressing "m" at the very beginning magically adding the **ModuleDeclaration**). No specific reason other then being able to demonstrate both capabilities in one "line" of code.
 
 Another question that might come up: Why isn't the **Exposure** node immediatly added to the **ModuleDeclaration**, since it is mandatory. While this is true and it could be easily achieved, I erred on the side of a more fluent editing experience, since this is the focus of this project.
 
-Let's look at MPS' _Node Explorer_ for this simple example to verify that we are building a AST. A node in MPS can have **properties**, **children**, and **references**. The node explorer allows us to inspect the structure of a node. In this case, we look at the root node of type (a.k.a. concept) **Module**. Remember that the root node is the 'complete editor'.
+Let's look at MPS' _Node Explorer_ for this simple example to verify that we are building a AST. A node in MPS can have **properties**, **children**, and **references**. The node explorer allows us to inspect the structure of a node. In this case, we look at the root node of type (a.k.a. concept) **Module**. Remember that the root node is the "complete editor".
 
 ![moduleDeclarationExplorer](images/moduleDeclarationExplorer.png)
 
-The root node **Module** with the name **Demo** has one child. It's a **ModuleDeclaration** node, also with the a name property of value **Demo**. The **Exposue** node is a child of the **ModuleDeclaration** and contains no properties, references, or children.
+The root node **Module** with the name "Demo" has one child. It's a **ModuleDeclaration** node, also with the a name property of value "Demo". The **Exposue** node is a child of the **ModuleDeclaration** and contains no properties, references, or children.
 ___
 ### Aside about the two name properties
 The two name properties are not really redundant. Since a **Module** in Elm does not necessarily have a **ModuleDeclaraion**, the user can still provide a name to the **Module** if required, providing a 'filename' so to speak. However, if there does exist a **ModuleDeclaration**, its name overrides a potential **Module** name, so that the name of the **ModuleDeclaration**, if existent, also automatically determines the "file name".
 ___
+
+## Adding an import declaration
+Let me use the import statement to demonstrate the fluent, text-like input capabilities once more:
+
+![importDeclaration](images/importDeclaration.png)
+
+Similarly to the **Exposure** node in the **ModuleDeclaration**, adding a **Alias** node is triggered by a side transformation when the user types "\_a" after the name of the imported module (in this case "Html").
+Notice that the "Html" module is just a stub module, another root node I declared for demoing purposes.
+
+More interesting is that "Html" is not a name property, but an actual reference to another (**Module**) node, defined in a different MPS model. Again, this one is just a stub, but it demonstrates that **scoping** is also part of the language:
+
+![importScoping](images/importScoping.gif)
 
 
 # Exploring the project

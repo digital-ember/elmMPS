@@ -17,6 +17,9 @@
       <concept id="6466375086907530734" name="elm.structure.ListLiteral" flags="ng" index="3ecz0f">
         <child id="6466375086907530735" name="values" index="3ecz0e" />
       </concept>
+      <concept id="5941605205023692887" name="elm.structure.ExposableReference" flags="ng" index="1Fu4Cz">
+        <reference id="5941605205023692888" name="exposableTarget" index="1Fu4CG" />
+      </concept>
       <concept id="5941605205023692881" name="elm.structure.FunctionDeclaration" flags="ng" index="1Fu4C_">
         <child id="8654661321438926709" name="body" index="1FHpZF" />
       </concept>
@@ -25,7 +28,9 @@
         <child id="5941605205023692896" name="exposure" index="1Fu4Ck" />
         <child id="5941605205023884931" name="alias" index="1FuPjR" />
       </concept>
-      <concept id="5941605205023692879" name="elm.structure.Exposure" flags="ng" index="1Fu4CV" />
+      <concept id="5941605205023692879" name="elm.structure.Exposure" flags="ng" index="1Fu4CV">
+        <child id="5941605205023692892" name="exposableRefs" index="1Fu4CC" />
+      </concept>
       <concept id="5941605205023692875" name="elm.structure.ModuleDeclaration" flags="ng" index="1Fu4CZ">
         <child id="5941605205023692894" name="exposure" index="1Fu4CE" />
       </concept>
@@ -65,7 +70,7 @@
     <node concept="1Fu4C_" id="4pvN5V07fxb" role="1FuEvC">
       <property role="TrG5h" value="main" />
       <node concept="3TztXP" id="4pvN5V07fxe" role="1FHpZF">
-        <ref role="3TEaHB" to="5h96:4pvN5UZWgy4" resolve="text" />
+        <ref role="3TEaHB" to="5h96:3gyR2y0ybFq" resolve="text" />
         <node concept="1FHu5x" id="4pvN5V0923s" role="3TEaGo">
           <property role="1FHuQ6" value="Hello!" />
         </node>
@@ -217,7 +222,11 @@
       <node concept="1FuPgt" id="3gyR2y0ybEv" role="1FuPjR">
         <property role="TrG5h" value="H" />
       </node>
-      <node concept="1Fu4CV" id="3gyR2y0ybE$" role="1Fu4Ck" />
+      <node concept="1Fu4CV" id="3gyR2y0ybE$" role="1Fu4Ck">
+        <node concept="1Fu4Cz" id="24sAB20MH2N" role="1Fu4CC">
+          <ref role="1Fu4CG" to="5h96:4pvN5V0gjAf" resolve="div" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

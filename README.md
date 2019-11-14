@@ -1,6 +1,8 @@
 # elmMPS
 A prototypical implementation of the elm language (https://elm-lang.org/) in JetBrains MPS (https://www.jetbrains.com/mps/), sporting a projectional editor.
 
+[tl;dr: _jump to examples_](README.md#examples)
+
 # Disclaimer
 
 This project currently has three selfish purposes:
@@ -23,6 +25,8 @@ Before I want to explore higher levels of abstraction in the language and the ed
 There will be some slight changes sprinkled in here and there, either for the purpose of teasing ideas, or because the projectional editor requires them.
 
 ## Projectional editing - Basics
+[tl;dr: _show me the examples already_](README.md#empty-Elm-Module)
+
 For those not familiar with projectional editors, here is a nice illustration by Markus Völter that compares textual editing (left) with projectional editing (right).
 
 ![projectional editing](images/projectionalEditing.png)

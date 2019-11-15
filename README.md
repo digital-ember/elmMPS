@@ -110,6 +110,7 @@ Imagine we would like to enhance the "Regular" variant of the **User** type by a
 ![typeArgError](images/typeArgError.png)
 
 In our projectional editor, we cannot just type in "Location String", can we? Well, yes and no. We CANNOT make the mistake of forgetting the parentheses, since our editor knows the structure of the language. So, when we add a reference to a node with type arguments, like **Location**, the required fields are added automatically!
+The parentheses are also added automatically and just visual aid for the reader. The AST does not care about this kind punctuation, since it has structure.
 
 ![addLocation1](images/addLocation1.gif)
 

@@ -1,3 +1,6 @@
+# Table of Contents
+1. [elmMPS](#elmMPS)
+
 # elmMPS
 A prototypical implementation of the elm language (https://elm-lang.org/) in JetBrains MPS (https://www.jetbrains.com/mps/), sporting a projectional editor.
 

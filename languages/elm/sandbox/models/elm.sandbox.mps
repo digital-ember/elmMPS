@@ -14,6 +14,7 @@
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
         <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
+      <concept id="2299573957224327130" name="elm.structure.TypeArgument" flags="ng" index="28WtQe" />
       <concept id="6466375086925478013" name="elm.structure.TypeAliasReference" flags="ng" index="317tms">
         <reference id="6466375086925478016" name="typeAliasTarget" index="317tlx" />
       </concept>
@@ -32,6 +33,7 @@
         <child id="6466375086905441737" name="values" index="3eOx0C" />
       </concept>
       <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
+        <child id="2299573957224327127" name="typeArgs" index="28WtQ3" />
         <child id="8864878458619166607" name="type" index="k1U1M" />
       </concept>
       <concept id="5941605205023692881" name="elm.structure.FunctionDeclaration" flags="ng" index="1Fu4C_">
@@ -75,6 +77,9 @@
       <property role="TrG5h" value="Location" />
       <node concept="31GzPY" id="4pvN5UZA_wG" role="k1U1M">
         <node concept="3ehl7W" id="4pvN5UZA_wS" role="31GzP1" />
+      </node>
+      <node concept="28WtQe" id="5z9bCD$TBGL" role="28WtQ3">
+        <property role="TrG5h" value="a" />
       </node>
     </node>
     <node concept="1Fu4ED" id="5AXbu6oCfuD" role="1FuEvC">

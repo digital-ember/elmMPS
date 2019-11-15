@@ -14,8 +14,25 @@
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
         <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
+      <concept id="2299573957224327124" name="elm.structure.TypeMemberDeclaration" flags="ng" index="28WtQ0">
+        <child id="2299573957224327155" name="type" index="28WtQB" />
+      </concept>
+      <concept id="2299573957224327149" name="elm.structure.CustomTypeReference" flags="ng" index="28WtQT">
+        <reference id="2299573957224327150" name="typeTarget" index="28WtQU" />
+      </concept>
+      <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
+        <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
+      </concept>
+      <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd" />
+      <concept id="6466375086915915935" name="elm.structure.InlineType" flags="ng" index="31GzPY">
+        <child id="6466375086915915936" name="type" index="31GzP1" />
+      </concept>
       <concept id="6466375086907530734" name="elm.structure.ListLiteral" flags="ng" index="3ecz0f">
         <child id="6466375086907530735" name="values" index="3ecz0e" />
+      </concept>
+      <concept id="6466375086914436125" name="elm.structure.StringType" flags="ng" index="3ehl7W" />
+      <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
+        <child id="8864878458619166607" name="type" index="k1U1M" />
       </concept>
       <concept id="5941605205023692887" name="elm.structure.ExposableReference" flags="ng" index="1Fu4Cz">
         <reference id="5941605205023692888" name="exposableTarget" index="1Fu4CG" />
@@ -34,9 +51,15 @@
       <concept id="5941605205023692875" name="elm.structure.ModuleDeclaration" flags="ng" index="1Fu4CZ">
         <child id="5941605205023692894" name="exposure" index="1Fu4CE" />
       </concept>
+      <concept id="5941605205023693021" name="elm.structure.CustomTypeDeclaration" flags="ng" index="1Fu4ED">
+        <child id="6466375086914436453" name="constructors" index="3ehl24" />
+      </concept>
       <concept id="5941605205023884905" name="elm.structure.AliasDeclaration" flags="ng" index="1FuPgt" />
       <concept id="8654661321438947839" name="elm.structure.StringLiteral" flags="ng" index="1FHu5x">
         <property id="8654661321438946584" name="value" index="1FHuQ6" />
+      </concept>
+      <concept id="5070996412747068929" name="elm.structure.ComplexType" flags="ng" index="3TjBDv">
+        <reference id="5070996412749518014" name="declarationTarget" index="3Tqdzw" />
       </concept>
       <concept id="5070996412759675691" name="elm.structure.FunctionReference" flags="ng" index="3TztXP">
         <child id="5070996412762122054" name="args" index="3TEaGo" />
@@ -235,8 +258,34 @@
       </node>
       <node concept="1Fu4CV" id="5z9bCD$DwBy" role="1Fu4Ck" />
     </node>
-    <node concept="1Fu4C_" id="5z9bCD$DwB$" role="1FuEvC">
-      <property role="TrG5h" value="main" />
+    <node concept="1Fu4ED" id="5z9bCD_01aj" role="1FuEvC">
+      <property role="TrG5h" value="UserStatus" />
+      <node concept="31_POd" id="5z9bCD_01ak" role="3ehl24">
+        <property role="TrG5h" value="Regular" />
+      </node>
+      <node concept="31_POd" id="5z9bCD_01aA" role="3ehl24">
+        <property role="TrG5h" value="Visitor" />
+      </node>
+    </node>
+    <node concept="1Fl4Nm" id="5z9bCD_01aL" role="1FuEvC">
+      <property role="TrG5h" value="User" />
+      <node concept="31GzPY" id="5z9bCD_01b7" role="k1U1M">
+        <node concept="k1U1L" id="5z9bCD_01b0" role="31GzP1">
+          <ref role="3Tqdzw" node="5z9bCD_01aL" resolve="User" />
+          <node concept="28WtQ0" id="5z9bCD_01b1" role="28WtdH">
+            <property role="TrG5h" value="status" />
+            <node concept="28WtQT" id="5z9bCD_01bF" role="28WtQB">
+              <ref role="28WtQU" node="5z9bCD_01aj" resolve="UserStatus" />
+            </node>
+          </node>
+          <node concept="28WtQ0" id="5z9bCD_01bR" role="28WtdH">
+            <property role="TrG5h" value="name" />
+            <node concept="31GzPY" id="5z9bCD_01cs" role="28WtQB">
+              <node concept="3ehl7W" id="5z9bCD_01cq" role="31GzP1" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

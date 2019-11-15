@@ -10,18 +10,27 @@
       <concept id="2299573957231908138" name="elm.structure.Module" flags="ng" index="28pqXY">
         <child id="2299573957231908996" name="moduleDeclaration" index="28pqbg" />
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
+        <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
+      <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd" />
       <concept id="5941605205023692887" name="elm.structure.ExposableReference" flags="ng" index="1Fu4Cz">
         <reference id="5941605205023692888" name="exposableTarget" index="1Fu4CG" />
       </concept>
       <concept id="5941605205023692881" name="elm.structure.FunctionDeclaration" flags="ng" index="1Fu4C_">
         <child id="5070996412762122018" name="args" index="3TEaHW" />
       </concept>
+      <concept id="5941605205023692878" name="elm.structure.ImportStatement" flags="ng" index="1Fu4CU">
+        <reference id="5941605205023693022" name="moduleDeclarationTarget" index="1Fu4EE" />
+        <child id="5941605205023692896" name="exposure" index="1Fu4Ck" />
+      </concept>
       <concept id="5941605205023692879" name="elm.structure.Exposure" flags="ng" index="1Fu4CV">
         <child id="5941605205023692892" name="exposableRefs" index="1Fu4CC" />
       </concept>
       <concept id="5941605205023692875" name="elm.structure.ModuleDeclaration" flags="ng" index="1Fu4CZ">
         <child id="5941605205023692894" name="exposure" index="1Fu4CE" />
+      </concept>
+      <concept id="5941605205023693021" name="elm.structure.CustomTypeDeclaration" flags="ng" index="1Fu4ED">
+        <child id="6466375086914436453" name="constructors" index="3ehl24" />
       </concept>
       <concept id="5070996412762122024" name="elm.structure.SimpleArgument" flags="ng" index="3TEaHQ" />
     </language>
@@ -83,6 +92,46 @@
       </node>
       <node concept="3TEaHQ" id="4pvN5V0gjAX" role="3TEaHW">
         <property role="TrG5h" value="l2" />
+      </node>
+    </node>
+  </node>
+  <node concept="28pqXY" id="5z9bCD$5C3w">
+    <node concept="1Fu4C_" id="5z9bCD$5C3E" role="1FuEvC">
+      <property role="TrG5h" value="style" />
+      <node concept="3TEaHQ" id="5z9bCD$5C3L" role="3TEaHW">
+        <property role="TrG5h" value="s1" />
+      </node>
+      <node concept="3TEaHQ" id="5z9bCD$5C3R" role="3TEaHW">
+        <property role="TrG5h" value="s2" />
+      </node>
+    </node>
+    <node concept="1Fu4C_" id="5z9bCD$5C4g" role="1FuEvC">
+      <property role="TrG5h" value="property" />
+      <node concept="3TEaHQ" id="5z9bCD$5C4S" role="3TEaHW">
+        <property role="TrG5h" value="s1" />
+      </node>
+      <node concept="3TEaHQ" id="5z9bCD$5C54" role="3TEaHW">
+        <property role="TrG5h" value="v1" />
+      </node>
+    </node>
+    <node concept="1Fu4CZ" id="5z9bCD$5C3x" role="28pqbg">
+      <property role="TrG5h" value="Html.Attributes" />
+      <node concept="1Fu4CV" id="5z9bCD$5C3A" role="1Fu4CE" />
+    </node>
+    <node concept="1Fu4CU" id="5z9bCD$5C4H" role="1FuEvH">
+      <ref role="1Fu4EE" node="5z9bCD$5C4p" resolve="Json.Encode" />
+      <node concept="1Fu4CV" id="5z9bCD$5C4M" role="1Fu4Ck" />
+    </node>
+  </node>
+  <node concept="28pqXY" id="5z9bCD$5C4o">
+    <node concept="1Fu4CZ" id="5z9bCD$5C4p" role="28pqbg">
+      <property role="TrG5h" value="Json.Encode" />
+      <node concept="1Fu4CV" id="5z9bCD$5C4u" role="1Fu4CE" />
+    </node>
+    <node concept="1Fu4ED" id="5z9bCD$5C4w" role="1FuEvC">
+      <property role="TrG5h" value="Value" />
+      <node concept="31_POd" id="5z9bCD$5C4x" role="3ehl24">
+        <property role="TrG5h" value="String" />
       </node>
     </node>
   </node>

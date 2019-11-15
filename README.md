@@ -75,6 +75,13 @@ More interesting is that "Html" is not a name property, but an actual reference 
 
 ![importScoping](images/importScoping.gif)
 
+## The substitution menu (aka code completion)
+One of the powerful features of MPS is the built-in and customizable sustitution menu. Within a editable cell one can invoke a context-sensitive menu by pressing CTRL+SPACE. This will present you a list of elements that are available ("in scope") in the given context. This menu can be filtered by typing:
+
+![subMenu1](images/subMenu1.gif)
+
+This works for references (see import statement), properties (see import alias name), and of course for adding new children (see function declaration).
+
 
 # Exploring the project
 _todo :(_

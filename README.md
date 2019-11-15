@@ -111,11 +111,11 @@ Imagine we would like to enhance the "Regular" variant of the **User** type by a
 
 In our projectional editor, we cannot just type in "Location String", can we? Well, yes and no. We CANNOT make the mistake of forgetting the parentheses, since our editor knows the structure of the language. So, when we add a reference to a node with type arguments, like **Location**, the required fields are added automatically!
 
-![addLocation1](images/addLocation1.png)
+![addLocation1](images/addLocation1.gif)
 
 Still, what if the signature of a declaration changes? Let's imagine **Location** gets a second argument called "b". Let's see what happens: 
 
-![changeLocation1](images/changeLocation1.png)
+![changeLocation1](images/changeLocation1.gif)
 
 We see that, as soon as the declaration of **Location** changes, the reference is marked with an error. We could just add the missing argument manually, but I want to show the intention/quickfix feature. Pressing Alt+ENTER opens another context sensitive menu that offers actions that can be arbitrarily complex. In our case, we just use it to "fix" the **Location** reference by adding a second, initially "empty" type.
 

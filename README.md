@@ -59,7 +59,7 @@ Let's look at MPS' _Node Explorer_ for this simple example to verify that we are
 
 The root node **Module** with the name "Demo" has one child. It's a **ModuleDeclaration** node, also with the a name property of value "Demo". The **Exposue** node is a child of the **ModuleDeclaration** and contains no properties, references, or children.
 ___
-### Aside about the two name properties
+### _Aside:_ about the two name properties
 The two name properties are not really redundant. Since a **Module** in Elm does not necessarily have a **ModuleDeclaraion**, the user can still provide a name to the **Module** if required, providing a 'filename' so to speak. However, if there does exist a **ModuleDeclaration**, its name overrides a potential **Module** name, so that the name of the **ModuleDeclaration**, if existent, also automatically determines the "file name".
 ___
 
@@ -81,6 +81,25 @@ One of the powerful features of MPS is the built-in and customizable sustitution
 ![subMenu1](images/subMenu1.gif)
 
 This works for references (see import statement), properties (see import alias name), and of course for adding new children (see function declaration).
+
+___
+### _Aside:_ Substitution menu tipp
+One of many nice things about the substitution menu is that you can use the filtering ability even before you invoke the substitution menu. In the next section about types and type aliases, I start out by writing "ta", knowing that this narrows down the scope to one hit (**type alias**) and press CTRL+SPACE only then. This immediately inserts the corresponding node into our program, since it is unambiguous to MPS what my intention is.
+___
+
+## Types and Type Aliases
+While still certainly not 100% correct, one can already define basic types and type aliases.
+
+![types1](images/types1.gif)
+
+One thing we see is that the formatting is "fixed". Again, this is not a text editor. Instead, the position of the cells for each editor is predetemined. Luckily, this doesn't mean there is no flexibility how cells can be layed out. Rather, the layout of each element in the editor can be defined context sensitive as well, something we will see in a later example.
+
+This example is rather here to show 
+a) how fluently the editor can be used, and
+b) that there exists no need for rename refactorings
+
+I want to emphasize the second point: Since this is an AST we are interacting with, all references are _real references_. Names (technically) don't matter. Renaming a definition will **automagically update all reference projections**, since that's all they are: projections of the same piece of data, i.e. the name of a declaration. 
+
 
 
 # Exploring the project

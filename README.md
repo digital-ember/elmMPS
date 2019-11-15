@@ -100,6 +100,38 @@ b) that there exists no need for rename refactorings
 
 I want to emphasize the second point: Since this is an AST we are interacting with, all references are _real references_. Names (technically) don't matter. Renaming a definition will **automagically update all reference projections**, since that's all they are: projections of the same piece of data, i.e. the name of a declaration. 
 
+### Merits of explicitly editing structure
+Let's consider a slightly more complex example. 
+
+![typeArg1](images/typeArg1.png)
+
+Imagine we would like to enhance the "Regular" variant of the **User** type by a **Location** argument type. Due to Elm's concrete syntax, just writing something like "Location String" in a text editor would result in a compiler error:
+
+![typeArgError](images/typeArgError.png)
+
+In our projectional editor, we cannot just type in "Location String", can we? Well, yes and no. We CANNOT make the mistake of forgetting the parentheses, since our editor knows the structure of the language. So, when we add a reference to a node with type arguments, like **Location**, the required fields are added automatically!
+
+![addLocation1](images/addLocation1.png)
+
+Still, what if the signature of a declaration changes? Let's imagine **Location** gets a second argument called "b". Let's see what happens: 
+
+![changeLocation1](images/changeLocation1.png)
+
+We see that, as soon as the declaration of **Location** changes, the reference is marked with an error. We could just add the missing argument manually, but I want to show the intention/quickfix feature. Pressing Alt+ENTER opens another context sensitive menu that offers actions that can be arbitrarily complex. In our case, we just use it to "fix" the **Location** reference by adding a second, initially "empty" type.
+
+We will see more sophisticated examples of the intentions menu later.
+
+### Having multiple projections
+Using the **TypeDeclaration** once more, I want to demonstrate another powerful capability of projectional editors, namely multiple projections. Nothing is stopping us to project our AST in different ways. This is particularly powerful for languages of higher levels of abstraction, but it can also be used for educational purposes, by showing or hiding certain things, or just displaying them differently.
+For example, to make it more explicit that a constructor is actually defining a function with a signature, I implemented a more "verbose" version of the type editor:
+
+![verbose1](images/verbose1.gif)
+
+Notice the _Inspector_ window on the bottom. It's a context sensitive window where additional information can be put. It is not necessary to put the "switch" for toggling between available editors there, it's just one way of doing it.
+
+Anyway, this is just a slight change to the original editor, but I can already see how this might produce some value for Elm beginners, for example.
+
+
 
 
 # Exploring the project

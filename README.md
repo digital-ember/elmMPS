@@ -1,7 +1,26 @@
+# Table of Contents
+1. [elmMPS](#elmMPS)
+2. [Disclaimer](#disclaimer)
+2.1 [What (not) to expect](#what-not-to-expect)
+2.2 [Please don't ...](#please-dont-)
+3. [Examples](#examples)
+3.1 [Projectional editing - Basics](#projectional-editing---basics)
+3.2 [Empty Elm-Module](#empty-elm-module)
+3.3 [Adding a module declaration](#adding-a-module-declaration)
+3.3.1 [_Aside:_ about the two name properties](#aside-about-the-two-name-properties)
+3.4 [Adding an import declaration](#adding-an-import-declaration)
+3.5 [The substitution menu (aka code completion)](#the-substitution-menu-aka-code-completion)
+3.5.1 [_Aside:_ Substitution menu tipp](#aside-substitution-menu-tipp)
+3.6 [Types and Type Aliases](#types-and-type-aliases)
+3.6.1 [Merits of explicitly editing structure](#merits-of-explicitly-editing-structure)
+3.6.1.1 [1. Duplicating nodes by pressing CTRL+D](#1.-duplicating-nodes-by-pressing-ctrl+d)
+3.6.1.2 [2. Reordering sequences by pressing CTRL+ALT+UP/DOWN](#2.-reordering-sequences-by-pressing-CTRL+ALT+UP/DOWN)
+3.6.2 [Having multiple projections](#having-multiple-projections)
+
 # elmMPS
 A prototypical implementation of the elm language (https://elm-lang.org/) in JetBrains MPS (https://www.jetbrains.com/mps/), sporting a projectional editor.
 
-[tl;dr: _jump to examples_](README.md#examples)
+[tl;dr: _jump to examples_](#examples)
 
 # Disclaimer
 
@@ -99,6 +118,53 @@ a) how fluently the editor can be used, and
 b) that there exists no need for rename refactorings
 
 I want to emphasize the second point: Since this is an AST we are interacting with, all references are _real references_. Names (technically) don't matter. Renaming a definition will **automagically update all reference projections**, since that's all they are: projections of the same piece of data, i.e. the name of a declaration. 
+
+### Merits of explicitly editing structure
+Let's consider a slightly more complex example. 
+
+![typeArg1](images/typeArg1.png)
+
+Imagine we would like to enhance the "Regular" variant of the **User** type by a **Location** argument type. Due to Elm's concrete syntax, just writing something like "Location String" in a text editor would result in a compiler error:
+
+![typeArgError](images/typeArgError.png)
+
+In our projectional editor, we cannot just type in "Location String", can we? Well, yes and no. We CANNOT make the mistake of forgetting the parentheses, since our editor knows the structure of the language. So, when we add a reference to a node with type arguments, like **Location**, the required fields are added automatically!
+The parentheses are also added automatically and just visual aid for the reader. The AST does not care about this kind punctuation, since it has structure.
+
+![addLocation1](images/addLocation1.gif)
+
+Still, what if the signature of a declaration changes? Let's imagine **Location** gets a second argument called "b". Let's see what happens: 
+
+![changeLocation1](images/changeLocation1.gif)
+
+We see that, as soon as the declaration of **Location** changes, the reference is marked with an error. We could just add the missing argument manually, but I want to show the intention/quickfix feature. Pressing ALT+ENTER opens another context sensitive menu that offers actions that can be arbitrarily complex. In our case, we just use it to "fix" the **Location** reference by adding a second, initially "empty" type.
+
+We will see more sophisticated examples of the intentions menu later.
+
+Some other nice features that are generally baked in into MPS editors:
+
+#### 1. Duplicating nodes by pressing CTRL+D
+
+![duplicate1](images/duplicate1.gif)
+
+MPS is smart about which nodes it can duplicate, so it won't allow me to duplicate the module declaration, for example, since there can only be one.
+
+#### 2. Reordering sequences by pressing CTRL+ALT+UP/DOWN
+
+![reorder1](images/reorder1.gif)
+
+This can be very handy to reorganize your code!
+
+### Having multiple projections
+Using the **TypeDeclaration** once more, I want to demonstrate another powerful capability of projectional editors, namely multiple projections. Nothing is stopping us to project our AST in different ways. This is particularly powerful for languages of higher levels of abstraction, but it can also be used for educational purposes, by showing or hiding certain things, or just displaying them differently.
+For example, to make it more explicit that a constructor is actually defining a function with a signature, I implemented a more "verbose" version of the type editor:
+
+![verbose1](images/verbose1.gif)
+
+Notice the _Inspector_ window on the bottom. It's a context sensitive window where additional information can be put. It is not necessary to put the "switch" for toggling between available editors there, it's just one way of doing it.
+
+Anyway, this is just a slight change to the original editor, but I can already see how this might produce some value for Elm beginners, for example.
+
 
 
 

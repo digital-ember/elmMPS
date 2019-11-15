@@ -1,9 +1,9 @@
 # Table of Contents
 1. [elmMPS](#elmMPS)
-2. [Disclaimer](#disclaimer)
-  2.1 [What (not) to expect](#what-not-to-expect)
-  2.2 [Please don't ...](#please-dont-)
-3. [Examples](#examples)
+1. [Disclaimer](#disclaimer)
+  1. [What (not) to expect](#what-not-to-expect)
+  1. [Please don't ...](#please-dont-)
+1. [Examples](#examples)
   3.1 [Projectional editing - Basics](#projectional-editing---basics)
   3.2 [Empty Elm-Module](#empty-elm-module)
   3.3 [Adding a module declaration](#adding-a-module-declaration)
@@ -13,8 +13,8 @@
     3.5.1 [_Aside:_ Substitution menu tipp](#aside-substitution-menu-tipp)
   3.6 [Types and Type Aliases](#types-and-type-aliases)
     3.6.1 [Merits of explicitly editing structure](#merits-of-explicitly-editing-structure)
-      3.6.1.1 [1. Duplicating nodes by pressing CTRL+D](#1-duplicating-nodes-by-pressing-ctrld)
-      3.6.1.2 [2. Reordering sequences by pressing CTRL+ALT+UP/DOWN](#2-reordering-sequences-by-pressing-ctrlaltupdown)
+      3.6.1.1 [Duplicating nodes by pressing CTRL+D](#duplicating-nodes-by-pressing-ctrld)
+      3.6.1.2 [Reordering sequences by pressing CTRL+ALT+UP/DOWN](#reordering-sequences-by-pressing-ctrlaltupdown)
     3.6.2 [Having multiple projections](#having-multiple-projections)
 
 # elmMPS
@@ -143,13 +143,13 @@ We will see more sophisticated examples of the intentions menu later.
 
 Some other nice features that are generally baked in into MPS editors:
 
-#### 1. Duplicating nodes by pressing CTRL+D
+#### Duplicating nodes by pressing CTRL+D
 
 ![duplicate1](images/duplicate1.gif)
 
 MPS is smart about which nodes it can duplicate, so it won't allow me to duplicate the module declaration, for example, since there can only be one.
 
-#### 2. Reordering sequences by pressing CTRL+ALT+UP/DOWN
+#### Reordering sequences by pressing CTRL+ALT+UP/DOWN
 
 ![reorder1](images/reorder1.gif)
 

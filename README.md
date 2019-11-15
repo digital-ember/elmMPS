@@ -13,9 +13,9 @@
    1. [The substitution menu (aka code completion)](#the-substitution-menu-aka-code-completion)
       1. [_Aside:_ Substitution menu tipp](#aside-substitution-menu-tipp)
    1. [Types and Type Aliases](#types-and-type-aliases)
-      1. [Merits of explicitly editing structure](#merits-of-explicitly-editing-structure)
-         1. [Duplicating nodes by pressing CTRL+D](#duplicating-nodes-by-pressing-ctrld)
-         1. [Reordering sequences by pressing CTRL+ALT+UP/DOWN](#reordering-sequences-by-pressing-ctrlaltupdown)
+   1. [Merits of explicitly editing structure](#merits-of-explicitly-editing-structure)
+      1. [Duplicating nodes by pressing CTRL+D](#duplicating-nodes-by-pressing-ctrld)
+      1. [Reordering sequences by pressing CTRL+ALT+UP/DOWN](#reordering-sequences-by-pressing-ctrlaltupdown)
       1. [Having multiple projections](#having-multiple-projections)
 
 # elmMPS
@@ -120,7 +120,7 @@ b) that there exists no need for rename refactorings
 
 I want to emphasize the second point: Since this is an AST we are interacting with, all references are _real references_. Names (technically) don't matter. Renaming a definition will **automagically update all reference projections**, since that's all they are: projections of the same piece of data, i.e. the name of a declaration. 
 
-### Merits of explicitly editing structure
+## Merits of explicitly editing structure
 Let's consider a slightly more complex example. 
 
 ![typeArg1](images/typeArg1.png)
@@ -144,13 +144,13 @@ We will see more sophisticated examples of the intentions menu later.
 
 Some other nice features that are generally baked in into MPS editors:
 
-#### Duplicating nodes by pressing CTRL+D
+### Duplicating nodes by pressing CTRL+D
 
 ![duplicate1](images/duplicate1.gif)
 
 MPS is smart about which nodes it can duplicate, so it won't allow me to duplicate the module declaration, for example, since there can only be one.
 
-#### Reordering sequences by pressing CTRL+ALT+UP/DOWN
+### Reordering sequences by pressing CTRL+ALT+UP/DOWN
 
 ![reorder1](images/reorder1.gif)
 

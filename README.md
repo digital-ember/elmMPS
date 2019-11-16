@@ -17,6 +17,7 @@
       1. [Duplicating nodes by pressing CTRL+D](#duplicating-nodes-by-pressing-ctrld)
       1. [Reordering sequences by pressing CTRL+ALT+UP/DOWN](#reordering-sequences-by-pressing-ctrlaltupdown)
       1. [Having multiple projections](#having-multiple-projections)
+1. [Exploring the project yourself](#exploring-the-project-yourself)
 
 # elmMPS
 A prototypical implementation of the elm language (https://elm-lang.org/) in JetBrains MPS (https://www.jetbrains.com/mps/), sporting a projectional editor.
@@ -167,7 +168,7 @@ Notice the _Inspector_ window on the bottom. It's a context sensitive window whe
 Anyway, this is just a slight change to the original editor, but I can already see how this might produce some value for Elm beginners, for example.
 
 
-# Exploring the project
+# Exploring the project yourself
 - download MPS 2019.2.3 and install/unpack it: https://www.jetbrains.com/mps/download/
   - notice that, depending on when you read this, version 2019.2.3 mit be available for download only at this section: https://www.jetbrains.com/mps/download/previous.html 
 - clone/download this repository

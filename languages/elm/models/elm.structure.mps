@@ -5,7 +5,6 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
   </languages>
   <imports>
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -224,22 +223,6 @@
     <property role="3GE5qa" value="type" />
     <property role="34LRSv" value="type" />
     <ref role="1TJDcQ" node="4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
-    <node concept="PrWs8" id="59OOBgT3$kx" role="PzmwI">
-      <ref role="PrY4T" node="59OOBgT39xi" resolve="IExposable" />
-    </node>
-    <node concept="PrWs8" id="1ZDI_invbra" role="PzmwI">
-      <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
-    </node>
-    <node concept="PrWs8" id="4pvN5UYw_hJ" role="PzmwI">
-      <ref role="PrY4T" node="4pvN5UYv0k3" resolve="ICanProjectVerbosely" />
-    </node>
-    <node concept="1TJgyj" id="1ZDI_inbXNq" role="1TKVEi">
-      <property role="IQ2ns" value="2299573957225864410" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="typeArgs" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArgument" />
-    </node>
     <node concept="1TJgyj" id="5AXbu6nY7P_" role="1TKVEi">
       <property role="IQ2ns" value="6466375086914436453" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -286,24 +269,11 @@
     <property role="34LRSv" value="type alias" />
     <property role="3GE5qa" value="type" />
     <ref role="1TJDcQ" node="4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
-    <node concept="PrWs8" id="59OOBgT89Uz" role="PzmwI">
-      <ref role="PrY4T" node="59OOBgT39xi" resolve="IExposable" />
-    </node>
-    <node concept="PrWs8" id="1ZDI_invbrh" role="PzmwI">
-      <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
-    </node>
     <node concept="1TJgyj" id="7G6nZPJ0vYf" role="1TKVEi">
       <property role="IQ2ns" value="8864878458619166607" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
       <ref role="20lvS9" node="1ZDI_in66vK" resolve="ITypeReference" />
-    </node>
-    <node concept="1TJgyj" id="1ZDI_in66vn" role="1TKVEi">
-      <property role="IQ2ns" value="2299573957224327127" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="typeArgs" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArgument" />
     </node>
     <node concept="1irR5M" id="4pvN5UZl34f" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -378,6 +348,20 @@
     </node>
     <node concept="PrWs8" id="5AXbu6o$XL4" role="PzmwI">
       <ref role="PrY4T" node="5AXbu6o$eF8" resolve="IRenderReadable" />
+    </node>
+    <node concept="1irR5M" id="5z9bCD_b3se" role="rwd14">
+      <property role="2$rrk2" value="7" />
+      <node concept="1irR9n" id="5z9bCD_b3sm" role="1irR9h">
+        <node concept="3PKj8D" id="5z9bCD_b3sn" role="3PKjn_">
+          <property role="3PKj8l" value="7e9dcc" />
+        </node>
+      </node>
+      <node concept="1irPie" id="5z9bCD_b3so" role="1irR9h">
+        <property role="1irPi9" value="a" />
+        <node concept="3PKj8D" id="5z9bCD_b3sp" role="3PKjny">
+          <property role="3PKj8l" value="ffffff" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1ZDI_in66vH">
@@ -968,6 +952,22 @@
     <property role="TrG5h" value="AbstractTypeDeclaration" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="59OOBgT39xg" resolve="Declaration" />
+    <node concept="1TJgyj" id="1ZDI_in66vn" role="1TKVEi">
+      <property role="IQ2ns" value="2299573957224327127" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="typeArgs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArgument" />
+    </node>
+    <node concept="PrWs8" id="59OOBgT3$kx" role="PzmwI">
+      <ref role="PrY4T" node="59OOBgT39xi" resolve="IExposable" />
+    </node>
+    <node concept="PrWs8" id="1ZDI_invbra" role="PzmwI">
+      <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
+    </node>
+    <node concept="PrWs8" id="4pvN5UYw_hJ" role="PzmwI">
+      <ref role="PrY4T" node="4pvN5UYv0k3" resolve="ICanProjectVerbosely" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4pvN5UZhuDl">
     <property role="EcuMT" value="5070996412750490197" />

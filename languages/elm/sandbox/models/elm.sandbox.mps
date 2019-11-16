@@ -4,9 +4,7 @@
   <languages>
     <use id="c1f84ca7-1d95-4edc-a710-47d158ac5985" name="elm" version="0" />
   </languages>
-  <imports>
-    <import index="1id" ref="r:c2211b50-0720-46c9-9f97-3e569d1f306a(elm.structure)" />
-  </imports>
+  <imports />
   <registry>
     <language id="c1f84ca7-1d95-4edc-a710-47d158ac5985" name="elm">
       <concept id="2299573957231908138" name="elm.structure.Module" flags="ng" index="28pqXY">
@@ -33,7 +31,6 @@
         <child id="6466375086905441737" name="values" index="3eOx0C" />
       </concept>
       <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
-        <child id="2299573957224327127" name="typeArgs" index="28WtQ3" />
         <child id="8864878458619166607" name="type" index="k1U1M" />
       </concept>
       <concept id="5941605205023692881" name="elm.structure.FunctionDeclaration" flags="ng" index="1Fu4C_">
@@ -55,8 +52,8 @@
       <concept id="5070996412733939562" name="elm.structure.ICanHaveTypeRefArgs" flags="ng" index="3S5DcO">
         <child id="6466375086917715545" name="typeArgRefs" index="31_UIS" />
       </concept>
-      <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
-        <property id="5070996412737258756" name="verbose" index="3S8W_q" />
+      <concept id="5070996412747702719" name="elm.structure.AbstractTypeDeclaration" flags="ng" index="3ThaRx">
+        <child id="2299573957224327127" name="typeArgs" index="28WtQ3" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -75,16 +72,15 @@
     </node>
     <node concept="1Fl4Nm" id="5AXbu6oCfxk" role="1FuEvC">
       <property role="TrG5h" value="Location" />
-      <node concept="31GzPY" id="4pvN5UZA_wG" role="k1U1M">
-        <node concept="3ehl7W" id="4pvN5UZA_wS" role="31GzP1" />
-      </node>
       <node concept="28WtQe" id="5z9bCD$TBGL" role="28WtQ3">
         <property role="TrG5h" value="a" />
+      </node>
+      <node concept="31GzPY" id="4pvN5UZA_wG" role="k1U1M">
+        <node concept="3ehl7W" id="4pvN5UZA_wS" role="31GzP1" />
       </node>
     </node>
     <node concept="1Fu4ED" id="5AXbu6oCfuD" role="1FuEvC">
       <property role="TrG5h" value="User" />
-      <property role="3S8W_q" value="true" />
       <node concept="31_POd" id="5AXbu6oCfuF" role="3ehl24">
         <property role="TrG5h" value="Regular" />
         <node concept="31GzPY" id="5AXbu6oJf7M" role="31_UIS">

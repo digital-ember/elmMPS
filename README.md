@@ -167,7 +167,10 @@ Notice the _Inspector_ window on the bottom. It's a context sensitive window whe
 Anyway, this is just a slight change to the original editor, but I can already see how this might produce some value for Elm beginners, for example.
 
 
-
-
 # Exploring the project
-_todo :(_
+- download MPS 2019.2.3 and install/unpack it: https://www.jetbrains.com/mps/download/
+  - notice that, depending on when you read this, version 2019.2.3 mit be available for download only at this section: https://www.jetbrains.com/mps/download/previous.html 
+- clone/download this repository
+- start MPS and use "Open Project" to navigate to your local copy of this project to open it
+
+_More information on the the project itself yet to come :(_

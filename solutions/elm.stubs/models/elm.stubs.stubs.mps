@@ -13,12 +13,13 @@
         <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
       <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd" />
+      <concept id="251273837307136627" name="elm.structure.FunctionDeclaration" flags="ng" index="15tzTa">
+        <child id="5070996412762122018" name="args" index="3TEaHW" />
+      </concept>
       <concept id="5941605205023692887" name="elm.structure.ExposableReference" flags="ng" index="1Fu4Cz">
         <reference id="5941605205023692888" name="exposableTarget" index="1Fu4CG" />
       </concept>
-      <concept id="5941605205023692881" name="elm.structure.FunctionDeclaration" flags="ng" index="1Fu4C_">
-        <child id="5070996412762122018" name="args" index="3TEaHW" />
-      </concept>
+      <concept id="5941605205023692881" name="elm.structure.ExposableFunctionDeclaration" flags="ng" index="1Fu4C_" />
       <concept id="5941605205023692878" name="elm.structure.ImportStatement" flags="ng" index="1Fu4CU">
         <reference id="5941605205023693022" name="moduleDeclarationTarget" index="1Fu4EE" />
         <child id="5941605205023692896" name="exposure" index="1Fu4Ck" />
@@ -66,16 +67,16 @@
       <node concept="3TEaHQ" id="4pvN5V0gjAz" role="3TEaHW">
         <property role="TrG5h" value="l1" />
       </node>
-      <node concept="3TEaHQ" id="4pvN5V0gjA$" role="3TEaHW">
+      <node concept="3TEaHQ" id="dWH3_67JL8" role="3TEaHW">
         <property role="TrG5h" value="l2" />
       </node>
     </node>
     <node concept="1Fu4C_" id="4pvN5V0gjAH" role="1FuEvC">
       <property role="TrG5h" value="ul" />
-      <node concept="3TEaHQ" id="4pvN5V0gjAI" role="3TEaHW">
+      <node concept="3TEaHQ" id="dWH3_67JLs" role="3TEaHW">
         <property role="TrG5h" value="l1" />
       </node>
-      <node concept="3TEaHQ" id="4pvN5V0gjAJ" role="3TEaHW">
+      <node concept="3TEaHQ" id="dWH3_67JLi" role="3TEaHW">
         <property role="TrG5h" value="l2" />
       </node>
     </node>
@@ -101,13 +102,13 @@
       <node concept="3TEaHQ" id="5z9bCD$5C3L" role="3TEaHW">
         <property role="TrG5h" value="s1" />
       </node>
-      <node concept="3TEaHQ" id="5z9bCD$5C3R" role="3TEaHW">
+      <node concept="3TEaHQ" id="dWH3_67JLy" role="3TEaHW">
         <property role="TrG5h" value="s2" />
       </node>
     </node>
     <node concept="1Fu4C_" id="5z9bCD$5C4g" role="1FuEvC">
       <property role="TrG5h" value="property" />
-      <node concept="3TEaHQ" id="5z9bCD$5C4S" role="3TEaHW">
+      <node concept="3TEaHQ" id="dWH3_67JLB" role="3TEaHW">
         <property role="TrG5h" value="s1" />
       </node>
       <node concept="3TEaHQ" id="5z9bCD$5C54" role="3TEaHW">

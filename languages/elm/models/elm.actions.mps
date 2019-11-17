@@ -67,6 +67,9 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -157,6 +160,30 @@
                 </node>
               </node>
               <node concept="1v1jN8" id="5z9bCD$TMzX" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="dWH3_6eKSp">
+    <property role="3GE5qa" value="function" />
+    <property role="TrG5h" value="factory_FunctionDeclaration" />
+    <node concept="37WvkG" id="dWH3_6eKSq" role="37WGs$">
+      <ref role="37XkoT" to="1id:dWH3_62CDN" resolve="FunctionDeclaration" />
+      <node concept="37Y9Zx" id="dWH3_6eKSr" role="37ZfLb">
+        <node concept="3clFbS" id="dWH3_6eKSs" role="2VODD2">
+          <node concept="3clFbF" id="dWH3_6eKSC" role="3cqZAp">
+            <node concept="2OqwBi" id="dWH3_6eO76" role="3clFbG">
+              <node concept="2OqwBi" id="dWH3_6eL8r" role="2Oq$k0">
+                <node concept="1r4Lsj" id="dWH3_6eKSB" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="dWH3_6eLsQ" role="2OqNvi">
+                  <ref role="3TtcxE" to="1id:4pvN5UZXQsy" resolve="args" />
+                </node>
+              </node>
+              <node concept="2DeJg1" id="dWH3_6eQ3j" role="2OqNvi">
+                <ref role="1A0vxQ" to="1id:4pvN5UZXQsC" resolve="SimpleArgument" />
+              </node>
             </node>
           </node>
         </node>

@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -12,6 +13,7 @@
     <import index="i4ut" ref="r:238ab60e-ad71-4764-8769-0eb453d271cb(elm.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
@@ -2674,6 +2676,65 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="dWH3_71g13">
+    <property role="TrG5h" value="checkExposureIsNotNull_ImportStatement" />
+    <property role="3GE5qa" value="header" />
+    <node concept="3clFbS" id="dWH3_71g14" role="18ibNy">
+      <node concept="3clFbJ" id="dWH3_71g1a" role="3cqZAp">
+        <node concept="2OqwBi" id="dWH3_71gSJ" role="3clFbw">
+          <node concept="2OqwBi" id="dWH3_71gbT" role="2Oq$k0">
+            <node concept="1YBJjd" id="dWH3_71g1m" role="2Oq$k0">
+              <ref role="1YBMHb" node="dWH3_71g16" resolve="importStatement" />
+            </node>
+            <node concept="3TrEf2" id="dWH3_71gxQ" role="2OqNvi">
+              <ref role="3Tt5mk" to="1id:59OOBgT39xw" resolve="exposure" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="dWH3_71hdf" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="dWH3_71g1c" role="3clFbx">
+          <node concept="3cpWs8" id="dWH3_71rHi" role="3cqZAp">
+            <node concept="3cpWsn" id="dWH3_71rHj" role="3cpWs9">
+              <property role="TrG5h" value="message" />
+              <node concept="17QB3L" id="dWH3_71rKd" role="1tU5fm" />
+              <node concept="2YIFZM" id="dWH3_71rHk" role="33vP2m">
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <node concept="Xl_RD" id="dWH3_71rHl" role="37wK5m">
+                  <property role="Xl_RC" value="An import statement needs an `exposing` part so I know what declarations of `%s` are usable here.\nUse CTRL+ALT to let me help you add one." />
+                </node>
+                <node concept="2OqwBi" id="dWH3_71rHm" role="37wK5m">
+                  <node concept="2OqwBi" id="dWH3_71rHn" role="2Oq$k0">
+                    <node concept="1YBJjd" id="dWH3_71rHo" role="2Oq$k0">
+                      <ref role="1YBMHb" node="dWH3_71g16" resolve="importStatement" />
+                    </node>
+                    <node concept="3TrEf2" id="dWH3_71rHp" role="2OqNvi">
+                      <ref role="3Tt5mk" to="1id:59OOBgT39zu" resolve="moduleDeclarationTarget" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="dWH3_71rHq" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2MkqsV" id="dWH3_71hh8" role="3cqZAp">
+            <node concept="1YBJjd" id="dWH3_71hl6" role="2OEOjV">
+              <ref role="1YBMHb" node="dWH3_71g16" resolve="importStatement" />
+            </node>
+            <node concept="37vLTw" id="dWH3_71rHr" role="2MkJ7o">
+              <ref role="3cqZAo" node="dWH3_71rHj" resolve="message" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="dWH3_71g16" role="1YuTPh">
+      <property role="TrG5h" value="importStatement" />
+      <ref role="1YaFvo" to="1id:59OOBgT39xe" resolve="ImportStatement" />
     </node>
   </node>
 </model>

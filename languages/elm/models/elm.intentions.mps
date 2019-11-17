@@ -43,18 +43,26 @@
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
+        <property id="2522969319638091385" name="isErrorIntention" index="2ZfUl3" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -93,6 +101,50 @@
             <node concept="2qgKlT" id="dWH3_6Bpr3" role="2OqNvi">
               <ref role="37wK5l" to="i4ut:dWH3_6B16X" resolve="toFunctionDeclaration" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="dWH3_75GHB">
+    <property role="TrG5h" value="fixMissingExposure" />
+    <property role="2ZfUl3" value="true" />
+    <ref role="2ZfgGC" to="1id:59OOBgT39xe" resolve="ImportStatement" />
+    <node concept="2S6ZIM" id="dWH3_75GHC" role="2ZfVej">
+      <node concept="3clFbS" id="dWH3_75GHD" role="2VODD2">
+        <node concept="3cpWs6" id="dWH3_71sjw" role="3cqZAp">
+          <node concept="Xl_RD" id="dWH3_71sjY" role="3cqZAk">
+            <property role="Xl_RC" value="Add `exposing` part." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="dWH3_75GHE" role="2ZfgGD">
+      <node concept="3clFbS" id="dWH3_75GHF" role="2VODD2">
+        <node concept="3clFbF" id="dWH3_71sun" role="3cqZAp">
+          <node concept="2OqwBi" id="dWH3_731d5" role="3clFbG">
+            <node concept="2OqwBi" id="dWH3_71sC9" role="2Oq$k0">
+              <node concept="3TrEf2" id="dWH3_75I5o" role="2OqNvi">
+                <ref role="3Tt5mk" to="1id:59OOBgT39xw" resolve="exposure" />
+              </node>
+              <node concept="2Sf5sV" id="dWH3_75HMA" role="2Oq$k0" />
+            </node>
+            <node concept="zfrQC" id="dWH3_75ZyM" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="dWH3_75GRA" role="2ZfVeh">
+      <node concept="3clFbS" id="dWH3_75GRB" role="2VODD2">
+        <node concept="3clFbF" id="dWH3_75GVF" role="3cqZAp">
+          <node concept="2OqwBi" id="dWH3_71gSJ" role="3clFbG">
+            <node concept="2OqwBi" id="dWH3_71gbT" role="2Oq$k0">
+              <node concept="3TrEf2" id="dWH3_75Hz_" role="2OqNvi">
+                <ref role="3Tt5mk" to="1id:59OOBgT39xw" resolve="exposure" />
+              </node>
+              <node concept="2Sf5sV" id="dWH3_75Hf6" role="2Oq$k0" />
+            </node>
+            <node concept="3w_OXm" id="dWH3_71hdf" role="2OqNvi" />
           </node>
         </node>
       </node>

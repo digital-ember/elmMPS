@@ -31,9 +31,6 @@
       <concept id="6466375086915915935" name="elm.structure.InlineType" flags="ng" index="31GzPY">
         <child id="6466375086915915936" name="type" index="31GzP1" />
       </concept>
-      <concept id="251273837307136627" name="elm.structure.FunctionDeclaration" flags="ng" index="15tzTa">
-        <child id="5070996412762122018" name="args" index="3TEaHW" />
-      </concept>
       <concept id="251273837295109393" name="elm.structure.InvocableDeclaration" flags="ng" index="16bV4C">
         <child id="8654661321438926709" name="body" index="1FHpZF" />
       </concept>
@@ -47,7 +44,6 @@
       <concept id="5941605205023692887" name="elm.structure.ExposableReference" flags="ng" index="1Fu4Cz">
         <reference id="5941605205023692888" name="exposableTarget" index="1Fu4CG" />
       </concept>
-      <concept id="5941605205023692881" name="elm.structure.ExposableFunctionDeclaration" flags="ng" index="1Fu4C_" />
       <concept id="5941605205023692878" name="elm.structure.ImportStatement" flags="ng" index="1Fu4CU">
         <reference id="5941605205023693022" name="moduleDeclarationTarget" index="1Fu4EE" />
         <child id="5941605205023692896" name="exposure" index="1Fu4Ck" />
@@ -75,7 +71,6 @@
       <concept id="5070996412747068929" name="elm.structure.ComplexType" flags="ng" index="3TjBDv">
         <reference id="5070996412749518014" name="declarationTarget" index="3Tqdzw" />
       </concept>
-      <concept id="5070996412762122024" name="elm.structure.SimpleArgument" flags="ng" index="3TEaHQ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -95,11 +90,8 @@
         <property role="1FHuQ6" value="12" />
       </node>
     </node>
-    <node concept="1Fu4C_" id="dWH3_6BQ7H" role="1FuEvC">
+    <node concept="16YvhB" id="dWH3_75G8P" role="1FuEvC">
       <property role="TrG5h" value="main" />
-      <node concept="3TEaHQ" id="dWH3_6BQ7I" role="3TEaHW">
-        <property role="TrG5h" value="arg1" />
-      </node>
     </node>
   </node>
   <node concept="28pqXY" id="4pvN5V0jdcI">

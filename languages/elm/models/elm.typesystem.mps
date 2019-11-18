@@ -150,6 +150,7 @@
         <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -320,6 +321,9 @@
       </concept>
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
+      </concept>
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
@@ -2679,17 +2683,17 @@
     </node>
   </node>
   <node concept="18kY7G" id="dWH3_71g13">
-    <property role="TrG5h" value="checkExposureIsNotNull_ImportStatement" />
+    <property role="TrG5h" value="checkExposureIsNotNull_ModuleDeclaration" />
     <property role="3GE5qa" value="header" />
     <node concept="3clFbS" id="dWH3_71g14" role="18ibNy">
       <node concept="3clFbJ" id="dWH3_71g1a" role="3cqZAp">
         <node concept="2OqwBi" id="dWH3_71gSJ" role="3clFbw">
           <node concept="2OqwBi" id="dWH3_71gbT" role="2Oq$k0">
             <node concept="1YBJjd" id="dWH3_71g1m" role="2Oq$k0">
-              <ref role="1YBMHb" node="dWH3_71g16" resolve="importStatement" />
+              <ref role="1YBMHb" node="dWH3_71g16" resolve="moduleDeclaration" />
             </node>
             <node concept="3TrEf2" id="dWH3_71gxQ" role="2OqNvi">
-              <ref role="3Tt5mk" to="1id:59OOBgT39xw" resolve="exposure" />
+              <ref role="3Tt5mk" to="1id:59OOBgT39xu" resolve="exposure" />
             </node>
           </node>
           <node concept="3w_OXm" id="dWH3_71hdf" role="2OqNvi" />
@@ -2703,16 +2707,11 @@
                 <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="Xl_RD" id="dWH3_71rHl" role="37wK5m">
-                  <property role="Xl_RC" value="An import statement needs an `exposing` part so I know what declarations of `%s` are usable here.\nUse CTRL+ALT to let me help you add one." />
+                  <property role="Xl_RC" value="A module declaration needs an `exposing` part so I know what declarations of `%s` are usable here.\nUse CTRL+ALT to let me help you add one." />
                 </node>
                 <node concept="2OqwBi" id="dWH3_71rHm" role="37wK5m">
-                  <node concept="2OqwBi" id="dWH3_71rHn" role="2Oq$k0">
-                    <node concept="1YBJjd" id="dWH3_71rHo" role="2Oq$k0">
-                      <ref role="1YBMHb" node="dWH3_71g16" resolve="importStatement" />
-                    </node>
-                    <node concept="3TrEf2" id="dWH3_71rHp" role="2OqNvi">
-                      <ref role="3Tt5mk" to="1id:59OOBgT39zu" resolve="moduleDeclarationTarget" />
-                    </node>
+                  <node concept="1YBJjd" id="dWH3_71rHo" role="2Oq$k0">
+                    <ref role="1YBMHb" node="dWH3_71g16" resolve="moduleDeclaration" />
                   </node>
                   <node concept="3TrcHB" id="dWH3_71rHq" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -2723,7 +2722,7 @@
           </node>
           <node concept="2MkqsV" id="dWH3_71hh8" role="3cqZAp">
             <node concept="1YBJjd" id="dWH3_71hl6" role="2OEOjV">
-              <ref role="1YBMHb" node="dWH3_71g16" resolve="importStatement" />
+              <ref role="1YBMHb" node="dWH3_71g16" resolve="moduleDeclaration" />
             </node>
             <node concept="37vLTw" id="dWH3_71rHr" role="2MkJ7o">
               <ref role="3cqZAo" node="dWH3_71rHj" resolve="message" />
@@ -2733,8 +2732,98 @@
       </node>
     </node>
     <node concept="1YaCAy" id="dWH3_71g16" role="1YuTPh">
-      <property role="TrG5h" value="importStatement" />
-      <ref role="1YaFvo" to="1id:59OOBgT39xe" resolve="ImportStatement" />
+      <property role="TrG5h" value="moduleDeclaration" />
+      <ref role="1YaFvo" to="1id:59OOBgT39xb" resolve="ModuleDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="dWH3_7NCBc">
+    <property role="TrG5h" value="checkExposesConstructorsOnlyForCustomTypes_ExposableReference" />
+    <property role="3GE5qa" value="header" />
+    <node concept="3clFbS" id="dWH3_7NCBd" role="18ibNy">
+      <node concept="3cpWs8" id="dWH3_7NGNP" role="3cqZAp">
+        <node concept="3cpWsn" id="dWH3_7NGNQ" role="3cpWs9">
+          <property role="TrG5h" value="exposableTarget" />
+          <node concept="3Tqbb2" id="dWH3_7NGNr" role="1tU5fm">
+            <ref role="ehGHo" to="1id:59OOBgT39xi" resolve="IExposable" />
+          </node>
+          <node concept="2OqwBi" id="dWH3_7NGNR" role="33vP2m">
+            <node concept="3TrEf2" id="dWH3_7NGNS" role="2OqNvi">
+              <ref role="3Tt5mk" to="1id:59OOBgT39xo" resolve="exposableTarget" />
+            </node>
+            <node concept="1YBJjd" id="dWH3_7NGNT" role="2Oq$k0">
+              <ref role="1YBMHb" node="dWH3_7NCBf" resolve="exposableReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="dWH3_7NCBj" role="3cqZAp">
+        <node concept="3clFbS" id="dWH3_7NCBl" role="3clFbx">
+          <node concept="3cpWs8" id="dWH3_7NDEO" role="3cqZAp">
+            <node concept="3cpWsn" id="dWH3_7NDER" role="3cpWs9">
+              <property role="TrG5h" value="errorMsg" />
+              <node concept="17QB3L" id="dWH3_7NDEM" role="1tU5fm" />
+              <node concept="2YIFZM" id="dWH3_7NDFJ" role="33vP2m">
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <node concept="Xl_RD" id="dWH3_7NDKd" role="37wK5m">
+                  <property role="Xl_RC" value="The (..) syntax is for exposing custom type constructors. It cannot be used with a %s like `%s` though.\nRemove the (..) and you should be fine!" />
+                </node>
+                <node concept="2OqwBi" id="dWH3_7NFHn" role="37wK5m">
+                  <node concept="2OqwBi" id="dWH3_7NEB6" role="2Oq$k0">
+                    <node concept="37vLTw" id="dWH3_7NGNV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="dWH3_7NGNQ" resolve="exposableTarget" />
+                    </node>
+                    <node concept="2yIwOk" id="dWH3_7NF9Y" role="2OqNvi" />
+                  </node>
+                  <node concept="3n3YKJ" id="dWH3_7NGtH" role="2OqNvi" />
+                </node>
+                <node concept="2OqwBi" id="dWH3_7NH1Z" role="37wK5m">
+                  <node concept="37vLTw" id="dWH3_7NGNU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="dWH3_7NGNQ" resolve="exposableTarget" />
+                  </node>
+                  <node concept="3TrcHB" id="dWH3_7NHrz" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2MkqsV" id="dWH3_7NDEx" role="3cqZAp">
+            <node concept="37vLTw" id="dWH3_7NH$r" role="2MkJ7o">
+              <ref role="3cqZAo" node="dWH3_7NDER" resolve="errorMsg" />
+            </node>
+            <node concept="1YBJjd" id="dWH3_7NH$A" role="2OEOjV">
+              <ref role="1YBMHb" node="dWH3_7NCBf" resolve="exposableReference" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="dWH3_7NDeK" role="3clFbw">
+          <node concept="2OqwBi" id="dWH3_7NDp8" role="3uHU7w">
+            <node concept="1YBJjd" id="dWH3_7NDfU" role="2Oq$k0">
+              <ref role="1YBMHb" node="dWH3_7NCBf" resolve="exposableReference" />
+            </node>
+            <node concept="3TrcHB" id="dWH3_7NDDE" role="2OqNvi">
+              <ref role="3TsBF5" to="1id:dWH3_7NyA$" resolve="exposesConstructors" />
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="dWH3_7NCJD" role="3uHU7B">
+            <node concept="2OqwBi" id="dWH3_7NCJF" role="3fr31v">
+              <node concept="37vLTw" id="dWH3_7NGNW" role="2Oq$k0">
+                <ref role="3cqZAo" node="dWH3_7NGNQ" resolve="exposableTarget" />
+              </node>
+              <node concept="1mIQ4w" id="dWH3_7NCJJ" role="2OqNvi">
+                <node concept="chp4Y" id="dWH3_7NCJK" role="cj9EA">
+                  <ref role="cht4Q" to="1id:59OOBgT39zt" resolve="CustomTypeDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="dWH3_7NCBf" role="1YuTPh">
+      <property role="TrG5h" value="exposableReference" />
+      <ref role="1YaFvo" to="1id:59OOBgT39xn" resolve="ExposableReference" />
     </node>
   </node>
 </model>

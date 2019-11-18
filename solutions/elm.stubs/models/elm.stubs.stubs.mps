@@ -136,5 +136,32 @@
       </node>
     </node>
   </node>
+  <node concept="28pqXY" id="dWH3_77jSV">
+    <node concept="1Fu4CZ" id="dWH3_77jSW" role="28pqbg">
+      <property role="TrG5h" value="Html.Events" />
+      <node concept="1Fu4CV" id="dWH3_79_OE" role="1Fu4CE" />
+    </node>
+    <node concept="1Fu4C_" id="dWH3_77jT3" role="1FuEvC">
+      <property role="TrG5h" value="onInput" />
+      <node concept="3TEaHQ" id="dWH3_77jT4" role="3TEaHW">
+        <property role="TrG5h" value="s" />
+      </node>
+      <node concept="3TEaHQ" id="dWH3_77jTa" role="3TEaHW">
+        <property role="TrG5h" value="msg" />
+      </node>
+    </node>
+  </node>
+  <node concept="28pqXY" id="dWH3_79_OG">
+    <node concept="1Fu4CZ" id="dWH3_79_OH" role="28pqbg">
+      <property role="TrG5h" value="Browser" />
+      <node concept="1Fu4CV" id="dWH3_79_OJ" role="1Fu4CE" />
+    </node>
+    <node concept="1Fu4C_" id="dWH3_79_OL" role="1FuEvC">
+      <property role="TrG5h" value="sandbox" />
+      <node concept="3TEaHQ" id="dWH3_79_OM" role="3TEaHW">
+        <property role="TrG5h" value="arg1" />
+      </node>
+    </node>
+  </node>
 </model>
 

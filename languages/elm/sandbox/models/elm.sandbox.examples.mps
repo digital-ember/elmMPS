@@ -59,9 +59,6 @@
         <child id="6466375086914436453" name="constructors" index="3ehl24" />
       </concept>
       <concept id="5941605205023884905" name="elm.structure.AliasDeclaration" flags="ng" index="1FuPgt" />
-      <concept id="8654661321438926713" name="elm.structure.IntLiteral" flags="ng" index="1FHpZB">
-        <property id="8654661321438946584" name="value" index="1FHuQ6" />
-      </concept>
       <concept id="5070996412733939562" name="elm.structure.ICanHaveTypeRefArgs" flags="ng" index="3S5DcO">
         <child id="6466375086917715545" name="typeArgRefs" index="31_UIS" />
       </concept>
@@ -79,19 +76,57 @@
     </language>
   </registry>
   <node concept="28pqXY" id="4pvN5UZWgxR">
-    <property role="TrG5h" value="hello" />
+    <property role="TrG5h" value="Counter" />
+    <node concept="1Fu4CU" id="dWH3_77jTr" role="1FuEvH">
+      <ref role="1Fu4EE" to="5h96:dWH3_79_OH" resolve="Browser" />
+    </node>
     <node concept="1Fu4CU" id="4pvN5UZWgxU" role="1FuEvH">
       <ref role="1Fu4EE" to="5h96:4pvN5UZWgxX" resolve="Html" />
       <node concept="1Fu4CV" id="4pvN5V06Gzw" role="1Fu4Ck" />
     </node>
-    <node concept="16YvhB" id="dWH3_6XJSi" role="1FuEvC">
-      <property role="TrG5h" value="val" />
-      <node concept="1FHpZB" id="dWH3_6XJSn" role="1FHpZF">
-        <property role="1FHuQ6" value="12" />
+    <node concept="1Fu4CU" id="dWH3_77jSK" role="1FuEvH">
+      <ref role="1Fu4EE" to="5h96:5z9bCD$5C3x" resolve="Html.Attributes" />
+      <node concept="1Fu4CV" id="dWH3_77jST" role="1Fu4Ck" />
+    </node>
+    <node concept="1Fu4CU" id="dWH3_77jTe" role="1FuEvH">
+      <ref role="1Fu4EE" to="5h96:dWH3_77jSW" resolve="Html.Events" />
+      <node concept="1Fu4CV" id="dWH3_77jTn" role="1Fu4Ck">
+        <node concept="1Fu4Cz" id="dWH3_77jTp" role="1Fu4CC">
+          <ref role="1Fu4CG" to="5h96:dWH3_77jT3" resolve="onInput" />
+        </node>
       </node>
     </node>
-    <node concept="16YvhB" id="dWH3_75G8P" role="1FuEvC">
-      <property role="TrG5h" value="main" />
+    <node concept="1Fl4Nm" id="dWH3_79Jzn" role="1FuEvC">
+      <property role="TrG5h" value="Model" />
+      <node concept="31GzPY" id="dWH3_79JzA" role="k1U1M">
+        <node concept="k1U1L" id="dWH3_79Jzv" role="31GzP1">
+          <ref role="3Tqdzw" node="dWH3_79Jzn" resolve="Model" />
+          <node concept="28WtQ0" id="dWH3_79Jzw" role="28WtdH">
+            <property role="TrG5h" value="name" />
+            <node concept="31GzPY" id="dWH3_79JzY" role="28WtQB">
+              <node concept="3ehl7W" id="dWH3_79JzW" role="31GzP1" />
+            </node>
+          </node>
+          <node concept="28WtQ0" id="dWH3_79J$k" role="28WtdH">
+            <property role="TrG5h" value="password" />
+            <node concept="31GzPY" id="dWH3_79J_8" role="28WtQB">
+              <node concept="3ehl7W" id="dWH3_79J_6" role="31GzP1" />
+            </node>
+          </node>
+          <node concept="28WtQ0" id="dWH3_79JJz" role="28WtdH">
+            <property role="TrG5h" value="passwordAgain" />
+            <node concept="31GzPY" id="dWH3_79JJ$" role="28WtQB">
+              <node concept="3ehl7W" id="dWH3_79JJ_" role="31GzP1" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="16YvhB" id="dWH3_79JOE" role="1FuEvC">
+      <property role="TrG5h" value="init" />
+      <node concept="317tms" id="dWH3_7cDLO" role="1FHpZF">
+        <ref role="317tlx" node="dWH3_79Jzn" resolve="Model" />
+      </node>
     </node>
   </node>
   <node concept="28pqXY" id="4pvN5V0jdcI">

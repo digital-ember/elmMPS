@@ -94,6 +94,11 @@
       <property role="20kJfa" value="exposure" />
       <ref role="20lvS9" node="59OOBgT39xf" resolve="Exposure" />
     </node>
+    <node concept="1TJgyi" id="dWH3_7cYW6" role="1TKVEl">
+      <property role="IQ2nx" value="251273837326626566" />
+      <property role="TrG5h" value="isPort" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="59OOBgT39xe">
     <property role="EcuMT" value="5941605205023692878" />
@@ -197,6 +202,11 @@
     </node>
     <node concept="RPilO" id="59OOBgT39xq" role="lGtFl">
       <ref role="RPilL" node="59OOBgT39xo" resolve="exposableTarget" />
+    </node>
+    <node concept="1TJgyi" id="dWH3_7NyA$" role="1TKVEl">
+      <property role="IQ2nx" value="251273837336734116" />
+      <property role="TrG5h" value="exposesConstructors" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="PlHQZ" id="59OOBgT39x_">
@@ -778,6 +788,9 @@
     <node concept="PrWs8" id="4pvN5UYilXJ" role="PzmwI">
       <ref role="PrY4T" node="4pvN5UYilXE" resolve="ICanHaveTypeRefArgs" />
     </node>
+    <node concept="PrWs8" id="dWH3_7Fj1B" role="PzmwI">
+      <ref role="PrY4T" node="59OOBgT39xi" resolve="IExposable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5AXbu6onEan">
     <property role="EcuMT" value="6466375086921130647" />
@@ -792,7 +805,7 @@
     <property role="EcuMT" value="6466375086925478013" />
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="TypeAliasReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7wry9SjFxtR" resolve="Expression" />
     <node concept="PrWs8" id="5AXbu6oCfxY" role="PzmwI">
       <ref role="PrY4T" node="1ZDI_in66vK" resolve="ITypeReference" />
     </node>

@@ -381,6 +381,9 @@
         </node>
       </node>
     </node>
+    <node concept="EnEH3" id="dWH3_7NBet" role="1MhHOB">
+      <ref role="EomxK" to="1id:dWH3_7NyA$" resolve="exposesConstructors" />
+    </node>
   </node>
   <node concept="1M2fIO" id="59OOBgT3D3X">
     <property role="3GE5qa" value="header" />
@@ -1248,6 +1251,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="dWH3_7NAAH">
+    <property role="3GE5qa" value="header" />
+    <ref role="1M2myG" to="1id:59OOBgT39xb" resolve="ModuleDeclaration" />
   </node>
 </model>
 

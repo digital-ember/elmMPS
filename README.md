@@ -171,9 +171,19 @@ Here is another, slightly longer example of what you can do in a projecitonal ed
 
 
 # Exploring the project yourself
+Notice that this should work for both Windows and MacOS. However, people with OSX reported issues opening the project I have yet to figure out a solution for.
+
 - download MPS 2019.2.3 and install/unpack it: https://www.jetbrains.com/mps/download/
   - notice that, depending on when you read this, version 2019.2.3 mit be available for download only at this section: https://www.jetbrains.com/mps/download/previous.html 
+- download the MPS-extensions (the zip archive), a collection of useful libraries I make use of in this project: https://github.com/JetBrains/MPS-extensions/releases/tag/nightly-2019.2.1139.f3ae18e
+  - unzip the archive to a locaiton of your choice; it's recommended to put it close to your MPS installation folder, maybe next to it in the same root folder, to easier find it.
 - clone/download this repository
 - start MPS and use "Open Project" to navigate to your local copy of this project to open it
+- Once started, navigate to "File->Settings..." in MPS' main menu
+  - In the top left search bar, enter "Project libraries" to filter the settings to this entry
+  - Select this settings entry and use the little "+" Button on the top right to add a new entry called mps-extensions (first dialog)
+  - it should point to the root folder of the mps-extensions folder you unpacked in the previous step
+
+![settingsMPS](images/settingsMPS.png)
 
 _More information on the the project itself yet to come :(_

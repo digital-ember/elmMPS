@@ -17,10 +17,6 @@
       <concept id="2299573957224327124" name="elm.structure.TypeMemberDeclaration" flags="ng" index="28WtQ0">
         <child id="2299573957224327155" name="type" index="28WtQB" />
       </concept>
-      <concept id="2299573957224327130" name="elm.structure.TypeArgument" flags="ng" index="28WtQe" />
-      <concept id="2299573957224327157" name="elm.structure.UnboundTypeReference" flags="ng" index="28WtQx">
-        <reference id="2299573957224327158" name="typeArgTarget" index="28WtQy" />
-      </concept>
       <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
         <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
       </concept>
@@ -66,9 +62,6 @@
       </concept>
       <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
         <property id="5070996412737258756" name="verbose" index="3S8W_q" />
-      </concept>
-      <concept id="5070996412747702719" name="elm.structure.AbstractTypeDeclaration" flags="ng" index="3ThaRx">
-        <child id="2299573957224327127" name="typeArgs" index="28WtQ3" />
       </concept>
       <concept id="5070996412747068929" name="elm.structure.ComplexType" flags="ng" index="3TjBDv">
         <reference id="5070996412749518014" name="declarationTarget" index="3Tqdzw" />
@@ -152,26 +145,8 @@
     <property role="TrG5h" value="Demo" />
     <node concept="1Fl4Nm" id="5AXbu6oCfxk" role="1FuEvC">
       <property role="TrG5h" value="Location" />
-      <property role="3S8W_q" value="true" />
-      <node concept="31GzPY" id="4pvN5UZA_wG" role="k1U1M">
-        <node concept="k1U1L" id="dWH3_9KMq8" role="31GzP1">
-          <ref role="3Tqdzw" node="5AXbu6oCfxk" resolve="Location" />
-          <node concept="28WtQ0" id="dWH3_9KMqa" role="28WtdH">
-            <property role="TrG5h" value="data" />
-            <node concept="28WtQx" id="dWH3_9KMqu" role="28WtQB">
-              <ref role="28WtQy" node="dWH3_9KMq3" resolve="a" />
-            </node>
-          </node>
-          <node concept="28WtQ0" id="dWH3_9KMr5" role="28WtdH">
-            <property role="TrG5h" value="name" />
-            <node concept="31GzPY" id="dWH3_9KMrE" role="28WtQB">
-              <node concept="3ehl7W" id="dWH3_9KMrC" role="31GzP1" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="28WtQe" id="dWH3_9KMq3" role="28WtQ3">
-        <property role="TrG5h" value="a" />
+      <node concept="31GzPY" id="dWH3_9Lcd2" role="k1U1M">
+        <node concept="3ehl7W" id="dWH3_9Lcd0" role="31GzP1" />
       </node>
     </node>
     <node concept="1Fu4ED" id="5AXbu6oCfuD" role="1FuEvC">
@@ -186,9 +161,6 @@
         </node>
         <node concept="317tms" id="5AXbu6oJf8x" role="31_UIS">
           <ref role="317tlx" node="5AXbu6oCfxk" resolve="Location" />
-          <node concept="31GzPY" id="dWH3_9KMqN" role="31_UIS">
-            <node concept="3ehl7W" id="dWH3_9KMqL" role="31GzP1" />
-          </node>
         </node>
       </node>
       <node concept="31_POd" id="5AXbu6oVA$E" role="3ehl24">

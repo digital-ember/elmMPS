@@ -132,7 +132,7 @@
     <node concept="1Fu4ED" id="5z9bCD$5C4w" role="1FuEvC">
       <property role="TrG5h" value="Value" />
       <node concept="31_POd" id="5z9bCD$5C4x" role="3ehl24">
-        <property role="TrG5h" value="String" />
+        <property role="TrG5h" value="Value" />
       </node>
     </node>
   </node>

@@ -165,7 +165,9 @@ For example, to make it more explicit that a constructor is actually defining a 
 
 Notice the _Inspector_ window on the bottom. It's a context sensitive window where additional information can be put. It is not necessary to put the "switch" for toggling between available editors there, it's just one way of doing it.
 
-Anyway, this is just a slight change to the original editor, but I can already see how this might produce some value for Elm beginners, for example.
+Here is another, slightly longer example of what you can do in a projecitonal editor:
+
+![types2](images/types2.gif)
 
 
 # Exploring the project yourself

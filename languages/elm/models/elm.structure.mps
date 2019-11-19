@@ -20,6 +20,7 @@
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
+      <concept id="2756621024541675105" name="jetbrains.mps.lang.resources.structure.Rect" flags="ng" index="1irR9m" />
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
@@ -292,7 +293,7 @@
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="RecordType" />
     <property role="34LRSv" value="{" />
-    <ref role="1TJDcQ" node="4pvN5UZ4ro1" resolve="ComplexType" />
+    <ref role="1TJDcQ" node="5AXbu6nY7rt" resolve="Type" />
     <node concept="1TJgyj" id="1ZDI_in66$T" role="1TKVEi">
       <property role="IQ2ns" value="2299573957224327481" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -304,7 +305,6 @@
       <property role="IQ2ns" value="5070996412747632019" />
       <property role="20kJfa" value="declarationTarget" />
       <ref role="20lvS9" node="4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
-      <ref role="20ksaX" node="4pvN5UZdLiY" resolve="declarationTarget" />
     </node>
     <node concept="1irR5M" id="4pvN5UZmC90" role="rwd14">
       <property role="2$rrk2" value="3" />
@@ -794,6 +794,20 @@
     <node concept="PrWs8" id="dWH3_8mJza" role="PzmwI">
       <ref role="PrY4T" node="dWH3_5krnt" resolve="IInvocable" />
     </node>
+    <node concept="1irR5M" id="1hdhJIYwTPk" role="rwd14">
+      <property role="2$rrk2" value="9" />
+      <node concept="1irR9n" id="1hdhJIYwTPv" role="1irR9h">
+        <node concept="3PKj8D" id="1hdhJIYwTP$" role="3PKjn_">
+          <property role="3PKj8l" value="c78512" />
+        </node>
+      </node>
+      <node concept="1irPie" id="1hdhJIYwTPF" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="1hdhJIYwTPM" role="3PKjny">
+          <property role="3PKj8l" value="ffffff" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="PlHQZ" id="5AXbu6onEan">
     <property role="EcuMT" value="6466375086921130647" />
@@ -924,31 +938,6 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="5AXbu6nY7rt" resolve="Type" />
   </node>
-  <node concept="1TIwiD" id="4pvN5UZ4pH6">
-    <property role="EcuMT" value="5070996412747062086" />
-    <property role="3GE5qa" value="base.type" />
-    <property role="TrG5h" value="CustomType" />
-    <ref role="1TJDcQ" node="4pvN5UZ4ro1" resolve="ComplexType" />
-    <node concept="1TJgyj" id="4pvN5UZdMhq" role="1TKVEi">
-      <property role="IQ2ns" value="5070996412749522010" />
-      <property role="20kJfa" value="declarationTarget" />
-      <ref role="20lvS9" node="59OOBgT39zt" resolve="CustomTypeDeclaration" />
-      <ref role="20ksaX" node="4pvN5UZdLiY" resolve="declarationTarget" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4pvN5UZ4ro1">
-    <property role="EcuMT" value="5070996412747068929" />
-    <property role="3GE5qa" value="base.type" />
-    <property role="TrG5h" value="ComplexType" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="5AXbu6nY7rt" resolve="Type" />
-    <node concept="1TJgyj" id="4pvN5UZdLiY" role="1TKVEi">
-      <property role="IQ2ns" value="5070996412749518014" />
-      <property role="20kJfa" value="declarationTarget" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4pvN5UZ6Q6Z">
     <property role="EcuMT" value="5070996412747702719" />
     <property role="3GE5qa" value="type" />
@@ -979,14 +968,14 @@
   </node>
   <node concept="1TIwiD" id="4pvN5UZFbVB">
     <property role="EcuMT" value="5070996412757229287" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="Pattern" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4pvN5UZFbVC">
     <property role="EcuMT" value="5070996412757229288" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="PatternMatchPart" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4pvN5UZFbVD" role="1TKVEi">
@@ -1004,16 +993,45 @@
   </node>
   <node concept="1TIwiD" id="4pvN5UZFbVL">
     <property role="EcuMT" value="5070996412757229297" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="CustomTypePattern" />
-    <node concept="1TJgyj" id="4pvN5UZFbVT" role="1TKVEi">
-      <property role="IQ2ns" value="5070996412757229305" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="customTypeRef" />
-      <ref role="20lvS9" node="1ZDI_in66vH" resolve="CustomTypeReference" />
-    </node>
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4pvN5UZQe1D" role="PzmwI">
       <ref role="PrY4T" node="4pvN5UZQe11" resolve="IPattern" />
+    </node>
+    <node concept="1TJgyj" id="1hdhJIYkl74" role="1TKVEi">
+      <property role="IQ2ns" value="1462903501009015236" />
+      <property role="20kJfa" value="constructorTarget" />
+      <ref role="20lvS9" node="5AXbu6oaB3G" resolve="Constructor" />
+    </node>
+    <node concept="1TJgyj" id="1hdhJIYkmj9" role="1TKVEi">
+      <property role="IQ2ns" value="1462903501009020105" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="customArgPatterns" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1hdhJIYkmj5" resolve="CustomArgumentPattern" />
+    </node>
+    <node concept="RPilO" id="1hdhJIYt4TY" role="lGtFl">
+      <ref role="RPilL" node="1hdhJIYkl74" resolve="constructorTarget" />
+    </node>
+    <node concept="1irR5M" id="1hdhJIYx03o" role="rwd14">
+      <property role="2$rrk2" value="10" />
+      <node concept="1irR9m" id="1hdhJIYwXCy" role="1irR9h">
+        <node concept="3PKj8D" id="1hdhJIYwXCL" role="3PKjn_">
+          <property role="3PKj8l" value="12adc4" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="1hdhJIYwXCk" role="1irR9h">
+        <node concept="3PKj8D" id="1hdhJIYwXCl" role="3PKjn_">
+          <property role="3PKj8l" value="c78512" />
+        </node>
+      </node>
+      <node concept="1irPie" id="1hdhJIYwXCm" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="1hdhJIYwXCn" role="3PKjny">
+          <property role="3PKj8l" value="ffffff" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="4pvN5UZOxcF">
@@ -1040,7 +1058,7 @@
   </node>
   <node concept="1TIwiD" id="4pvN5UZQcXN">
     <property role="EcuMT" value="5070996412760117107" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="EmptyListPattern" />
     <property role="34LRSv" value="[]" />
     <node concept="PrWs8" id="4pvN5UZQe8x" role="PzmwI">
@@ -1049,7 +1067,7 @@
   </node>
   <node concept="1TIwiD" id="4pvN5UZQcXO">
     <property role="EcuMT" value="5070996412760117108" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="SplitListPattern" />
     <property role="34LRSv" value="::" />
     <node concept="1TJgyj" id="4pvN5UZQcXP" role="1TKVEi">
@@ -1081,7 +1099,7 @@
   </node>
   <node concept="1TIwiD" id="4pvN5UZQcZb">
     <property role="EcuMT" value="5070996412760117195" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="WildcardPattern" />
     <node concept="PrWs8" id="4pvN5UZQe1H" role="PzmwI">
       <ref role="PrY4T" node="4pvN5UZQe11" resolve="IPattern" />
@@ -1094,12 +1112,12 @@
   </node>
   <node concept="PlHQZ" id="4pvN5UZQe11">
     <property role="EcuMT" value="5070996412760121409" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="IPattern" />
   </node>
   <node concept="PlHQZ" id="4pvN5UZQe7w">
     <property role="EcuMT" value="5070996412760121824" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="IListPattern" />
     <node concept="PrWs8" id="4pvN5UZQe7x" role="PrDN$">
       <ref role="PrY4T" node="4pvN5UZQe11" resolve="IPattern" />
@@ -1107,7 +1125,7 @@
   </node>
   <node concept="1TIwiD" id="4pvN5UZQd7G">
     <property role="EcuMT" value="5070996412760117740" />
-    <property role="3GE5qa" value="expression.caseOf" />
+    <property role="3GE5qa" value="pattern" />
     <property role="TrG5h" value="ListLiteralPattern" />
     <property role="34LRSv" value="[" />
     <node concept="1TJgyj" id="4pvN5UZQd7H" role="1TKVEi">
@@ -1251,6 +1269,25 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="RecordExpression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1hdhJIYkl78">
+    <property role="EcuMT" value="1462903501009015240" />
+    <property role="3GE5qa" value="pattern" />
+    <property role="TrG5h" value="LowerNamePattern" />
+    <ref role="1TJDcQ" node="1hdhJIYkmj5" resolve="CustomArgumentPattern" />
+    <node concept="PrWs8" id="1hdhJIYkl7e" role="PzmwI">
+      <ref role="PrY4T" node="59OOBgT5I_o" resolve="IIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1hdhJIYkmj5">
+    <property role="EcuMT" value="1462903501009020101" />
+    <property role="3GE5qa" value="pattern" />
+    <property role="TrG5h" value="CustomArgumentPattern" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1hdhJIYkmj6" role="PzmwI">
+      <ref role="PrY4T" node="4pvN5UZQe11" resolve="IPattern" />
+    </node>
   </node>
 </model>
 

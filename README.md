@@ -171,19 +171,35 @@ Here is another, slightly longer example of what you can do in a projecitonal ed
 
 
 # Exploring the project yourself
-Notice that this should work for both Windows and MacOS. However, people with OSX reported issues opening the project I have yet to figure out a solution for.
+Notice that this should work for both Windows and MacOS. However, people with OSX reported issues opening the project or setting up the MPS-extensions library. I try to provide a description that works, but let me know if you still face issues getting the project up and running.
 
-- download MPS 2019.2.3 and install/unpack it: https://www.jetbrains.com/mps/download/
-  - notice that, depending on when you read this, version 2019.2.3 mit be available for download only at this section: https://www.jetbrains.com/mps/download/previous.html 
-- download the MPS-extensions (the zip archive), a collection of useful libraries I make use of in this project: https://github.com/JetBrains/MPS-extensions/releases/tag/nightly-2019.2.1139.f3ae18e
-  - unzip the archive to a locaiton of your choice; it's recommended to put it close to your MPS installation folder, maybe next to it in the same root folder, to easier find it.
-- clone/download this repository
-- start MPS and use "Open Project" to navigate to your local copy of this project to open it
-- Once started, navigate to "File->Settings..." in MPS' main menu
-  - In the top left search bar, enter "Project libraries" to filter the settings to this entry
-  - Select this settings entry and use the little "+" Button on the top right to add a new entry called mps-extensions (first dialog)
-  - it should point to the root folder of the mps-extensions folder you unpacked in the previous step
+## Required software
+- download [MPS 2019.2.3](https://www.jetbrains.com/mps/download/) and install/unpack it
+  - notice that, depending on when you read this, version 2019.2.3 might be available for download only from the [previous releases page](https://www.jetbrains.com/mps/download/previous.html) 
+- download the [MPS-extensions](https://github.com/JetBrains/MPS-extensions/releases/tag/nightly-2019.2.1139.f3ae18e) (the zip archive), a collection of useful libraries I make use of in this project
+  - unzip the archive to a locaiton of your choice; it's recommended to put it close to your MPS installation folder, maybe next to it below a common root folder, to easier find it.
 
-![settingsMPS](images/settingsMPS.png)
+## Setting up the environment / opening the project
+- clone/download [this repository](https://github.com/digital-ember/elmMPS)
+- start the MPS application (might take a few seconds)
+- once started use **Open Project...** and select the root folder of your local copy of this project
+- after loading the project for the first time, a path variable that points to the MPS-extensions library is missing, so you cannot successfully build the project yet
+  - if you get a little notification on the bottom right that looks like the one below, use the link to open the settings directly
+  
+![settingsMPS2](images/settingsMPS2.png)
 
+  - otherwise, open the settings manually:
+    - **Windows**: in the main menu, open "File->Settings..." 
+    - **MacOS**: in the main menu, open "MPS->Preferences..."
+    - in the top left search bar, enter "path" to filter the settings navigation to easier find the "Path Variables" section
+  - in this section use the little "+" Button (find it on the top right for Windows or the bottom left for MacOS) to add a new entry called "mps-extensions" and a value that points to the root directory of the MPS-extensions on your machine 
+- if you are prompted to reload the project, agree to that, otherwise you have to close the project and re-open it again manually
+
+### Check to see if MPS-extensions is loaded successfully
+- in the project navigator on the left side of MPS, go to **Module Pool** at the botton and see if there are entries under *Languages->com* and *Languages->de*
+- if yes, the MPS-extensions have been set up successfully 
+- if no, please contact me and I will try to help you get set-up
+  
+![settingsCheck](images/settingsCheck.gif)
+  
 _More information on the the project itself yet to come :(_

@@ -18,6 +18,10 @@
       1. [Reordering sequences by pressing CTRL+ALT+UP/DOWN](#reordering-sequences-by-pressing-ctrlaltupdown)
       1. [Having multiple projections](#having-multiple-projections)
 1. [Exploring the project yourself](#exploring-the-project-yourself)
+   1. [Required software](#required-software)
+   1. [Setting up the environment / opening the project](#setting-up-the-environment--opening-the-project)
+      1. [Check to see if MPS-extensions is loaded successfully](#check-to-see-if-MPS-extensions-is-loaded-successfully)
+   1. [Building project for the first time](#building-project-for-the-first-time)
 
 # elmMPS
 A prototypical implementation of the elm language (https://elm-lang.org/) in JetBrains MPS (https://www.jetbrains.com/mps/), sporting a projectional editor.
@@ -201,5 +205,15 @@ Notice that this should work for both Windows and MacOS. However, people with OS
 - if no, please contact me and I will try to help you get set-up
   
 ![settingsCheck](images/settingsCheck.gif)
+
+## Building project for the first time
+You should now be ready to build the language for the first time:
+
+![buildFirst](images/buildFirst.png)
+
+In the project pane, open the context menu for the language module "elm" (yellow icon with a 'L') and select "Rebuild Language 'elm'".
+Ignore errors the checker might have found and force MPS to build the project.
+
+
   
 _More information on the the project itself yet to come :(_

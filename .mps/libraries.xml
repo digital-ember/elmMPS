@@ -7,7 +7,7 @@
           <value>
             <Library>
               <option name="name" value="mps-extensions" />
-              <option name="path" value="D:/mps-installations/MPS-extensions" />
+              <option name="path" value="${mps-extensions}" />
             </Library>
           </value>
         </entry>

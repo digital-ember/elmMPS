@@ -20,7 +20,6 @@
         <reference id="2299573957224327158" name="typeArgTarget" index="28WtQy" />
       </concept>
       <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
-        <reference id="5070996412747632019" name="declarationTarget" index="3Tho7d" />
         <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
       </concept>
       <concept id="6466375086925478013" name="elm.structure.TypeAliasReference" flags="ng" index="317tms">
@@ -176,7 +175,6 @@
       <property role="TrG5h" value="Alias" />
       <node concept="31GzPY" id="1hdhJIYB3hs" role="k1U1M">
         <node concept="k1U1L" id="1hdhJIYB3hl" role="31GzP1">
-          <ref role="3Tho7d" node="1hdhJIYB3gY" resolve="Alias" />
           <node concept="28WtQ0" id="1hdhJIYB3hm" role="28WtdH">
             <property role="TrG5h" value="name" />
             <node concept="31GzPY" id="1hdhJIYB3hP" role="28WtQB">
@@ -202,7 +200,6 @@
         <property role="TrG5h" value="PersonRecordCtor" />
         <node concept="31GzPY" id="1hdhJIYB3kI" role="31_UIS">
           <node concept="k1U1L" id="1hdhJIYB3kB" role="31GzP1">
-            <ref role="3Tho7d" node="1hdhJIYB3k8" resolve="PersonRecord" />
             <node concept="28WtQ0" id="1hdhJIYB3kC" role="28WtdH">
               <property role="TrG5h" value="name" />
               <node concept="31GzPY" id="1hdhJIYB3l3" role="28WtQB">

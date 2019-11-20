@@ -22,7 +22,6 @@
         <reference id="2299573957224327158" name="typeArgTarget" index="28WtQy" />
       </concept>
       <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
-        <reference id="5070996412747632019" name="declarationTarget" index="3Tho7d" />
         <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
       </concept>
       <concept id="1462903501009015240" name="elm.structure.LowerNamePattern" flags="ng" index="2E71sN" />
@@ -137,7 +136,6 @@
       <property role="TrG5h" value="Model" />
       <node concept="31GzPY" id="dWH3_8pM9D" role="k1U1M">
         <node concept="k1U1L" id="dWH3_8pM9y" role="31GzP1">
-          <ref role="3Tho7d" node="dWH3_79Jzn" resolve="Model" />
           <node concept="28WtQ0" id="dWH3_8pM9z" role="28WtdH">
             <property role="TrG5h" value="name" />
             <node concept="31GzPY" id="dWH3_8I1Fh" role="28WtQB">
@@ -198,7 +196,6 @@
       <property role="TrG5h" value="Model" />
       <node concept="31GzPY" id="1hdhJIXgQX6" role="k1U1M">
         <node concept="k1U1L" id="1hdhJIXgQWZ" role="31GzP1">
-          <ref role="3Tho7d" node="1hdhJIX3M17" resolve="Model" />
           <node concept="28WtQ0" id="1hdhJIXgQX0" role="28WtdH">
             <property role="TrG5h" value="name" />
             <node concept="31GzPY" id="1hdhJIXgQXx" role="28WtQB">
@@ -297,7 +294,6 @@
       <property role="3S8W_q" value="true" />
       <node concept="31GzPY" id="dWH3_9Lcd2" role="k1U1M">
         <node concept="k1U1L" id="dWH3_9PLj2" role="31GzP1">
-          <ref role="3Tho7d" node="5AXbu6oCfxk" resolve="Location" />
           <node concept="28WtQ0" id="dWH3_9PLj4" role="28WtdH">
             <property role="TrG5h" value="data" />
             <node concept="28WtQx" id="dWH3_9PLjo" role="28WtQB">

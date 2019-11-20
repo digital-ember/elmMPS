@@ -67,6 +67,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -199,6 +200,9 @@
       </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
+      <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
+        <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
@@ -3399,6 +3403,64 @@
     <node concept="1YaCAy" id="1hdhJIYkoGF" role="1YuTPh">
       <property role="TrG5h" value="constructor" />
       <ref role="1YaFvo" to="1id:5AXbu6oaB3G" resolve="Constructor" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="1hdhJIYL$K_">
+    <property role="TrG5h" value="checkHasUpperCaseName_AbstractTypeDeclaration" />
+    <property role="3GE5qa" value="type" />
+    <node concept="3clFbS" id="1hdhJIYL$KA" role="18ibNy">
+      <node concept="3clFbJ" id="1hdhJIYL$KP" role="3cqZAp">
+        <node concept="1Wc70l" id="1hdhJIYLBxU" role="3clFbw">
+          <node concept="2OqwBi" id="1hdhJIYLAld" role="3uHU7B">
+            <node concept="2OqwBi" id="1hdhJIYL_1A" role="2Oq$k0">
+              <node concept="1YBJjd" id="1hdhJIYL$L1" role="2Oq$k0">
+                <ref role="1YBMHb" node="1hdhJIYL$KC" resolve="atd" />
+              </node>
+              <node concept="3TrcHB" id="1hdhJIYL_v5" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="1hdhJIYLAW1" role="2OqNvi" />
+          </node>
+          <node concept="2YIFZM" id="1hdhJIYLGfa" role="3uHU7w">
+            <ref role="37wK5l" to="wyt6:~Character.isLowerCase(char)" resolve="isLowerCase" />
+            <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+            <node concept="2OqwBi" id="1hdhJIYLGfb" role="37wK5m">
+              <node concept="2OqwBi" id="1hdhJIYLGfc" role="2Oq$k0">
+                <node concept="1YBJjd" id="1hdhJIYLGfd" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1hdhJIYL$KC" resolve="atd" />
+                </node>
+                <node concept="3TrcHB" id="1hdhJIYLGfe" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1hdhJIYLGff" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
+                <node concept="3cmrfG" id="1hdhJIYLGfg" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="1hdhJIYL$KR" role="3clFbx">
+          <node concept="2MkqsV" id="1hdhJIYLGgM" role="3cqZAp">
+            <node concept="Xl_RD" id="1hdhJIYLGi_" role="2MkJ7o">
+              <property role="Xl_RC" value="Identifiers for types and type aliases must start with an upper case letter!" />
+            </node>
+            <node concept="1YBJjd" id="1hdhJIYLGlK" role="2OEOjV">
+              <ref role="1YBMHb" node="1hdhJIYL$KC" resolve="atd" />
+            </node>
+            <node concept="2ODE4t" id="1hdhJIYLGmQ" role="2OEWyd">
+              <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1hdhJIYL$KC" role="1YuTPh">
+      <property role="TrG5h" value="atd" />
+      <ref role="1YaFvo" to="1id:4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
     </node>
   </node>
 </model>

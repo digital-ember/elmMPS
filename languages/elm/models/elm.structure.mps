@@ -301,10 +301,11 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1ZDI_in66vk" resolve="TypeMemberDeclaration" />
     </node>
-    <node concept="1TJgyj" id="4pvN5UZ6$Qj" role="1TKVEi">
-      <property role="IQ2ns" value="5070996412747632019" />
-      <property role="20kJfa" value="declarationTarget" />
-      <ref role="20lvS9" node="4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
+    <node concept="1TJgyj" id="1hdhJIYQNGt" role="1TKVEi">
+      <property role="IQ2ns" value="1462903501018053405" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="recordBase" />
+      <ref role="20lvS9" node="1hdhJIYQMSp" resolve="RecordBase" />
     </node>
     <node concept="1irR5M" id="4pvN5UZmC90" role="rwd14">
       <property role="2$rrk2" value="3" />
@@ -1287,6 +1288,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1hdhJIYkmj6" role="PzmwI">
       <ref role="PrY4T" node="4pvN5UZQe11" resolve="IPattern" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1hdhJIYQMSp">
+    <property role="EcuMT" value="1462903501018050073" />
+    <property role="3GE5qa" value="type" />
+    <property role="TrG5h" value="RecordBase" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1hdhJIYQMSq" role="PzmwI">
+      <ref role="PrY4T" node="59OOBgT5I_o" resolve="IIdentifier" />
     </node>
   </node>
 </model>

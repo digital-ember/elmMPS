@@ -12,6 +12,9 @@
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
         <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
+      <concept id="2299573957230900832" name="elm.structure.IMightHaveUnboundTypeArguments" flags="ng" index="28_gKO">
+        <child id="2299573957224327127" name="unboundTypeArguments" index="28WtQ3" />
+      </concept>
       <concept id="2299573957224327124" name="elm.structure.TypeMemberDeclaration" flags="ng" index="28WtQ0">
         <child id="2299573957224327155" name="type" index="28WtQB" />
       </concept>
@@ -21,7 +24,9 @@
       </concept>
       <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
         <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
+        <child id="1462903501018053405" name="recordBase" index="2E_BRA" />
       </concept>
+      <concept id="1462903501018050073" name="elm.structure.RecordBase" flags="ng" index="2E_Azy" />
       <concept id="6466375086925478013" name="elm.structure.TypeAliasReference" flags="ng" index="317tms">
         <reference id="6466375086925478016" name="typeAliasTarget" index="317tlx" />
       </concept>
@@ -64,9 +69,6 @@
       </concept>
       <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
         <property id="5070996412737258756" name="verbose" index="3S8W_q" />
-      </concept>
-      <concept id="5070996412747702719" name="elm.structure.AbstractTypeDeclaration" flags="ng" index="3ThaRx">
-        <child id="2299573957224327127" name="typeArgs" index="28WtQ3" />
       </concept>
       <concept id="5070996412759675691" name="elm.structure.Invocation" flags="ng" index="3TztXP">
         <child id="5070996412762122054" name="args" index="3TEaGo" />
@@ -158,6 +160,9 @@
     <property role="TrG5h" value="TypesDemo" />
     <node concept="1Fu4ED" id="1hdhJIYB3fM" role="1FuEvC">
       <property role="TrG5h" value="Person" />
+      <node concept="28WtQe" id="1hdhJIYB3fZ" role="28WtQ3">
+        <property role="TrG5h" value="a" />
+      </node>
       <node concept="31_POd" id="1hdhJIYB3fQ" role="3ehl24">
         <property role="TrG5h" value="PersonCtor" />
         <node concept="31GzPY" id="1hdhJIYB3g8" role="31_UIS">
@@ -167,12 +172,12 @@
           <ref role="28WtQy" node="1hdhJIYB3fZ" resolve="a" />
         </node>
       </node>
-      <node concept="28WtQe" id="1hdhJIYB3fZ" role="28WtQ3">
-        <property role="TrG5h" value="a" />
-      </node>
     </node>
     <node concept="1Fl4Nm" id="1hdhJIYB3gY" role="1FuEvC">
       <property role="TrG5h" value="Alias" />
+      <node concept="28WtQe" id="1hdhJIYB3iV" role="28WtQ3">
+        <property role="TrG5h" value="a" />
+      </node>
       <node concept="31GzPY" id="1hdhJIYB3hs" role="k1U1M">
         <node concept="k1U1L" id="1hdhJIYB3hl" role="31GzP1">
           <node concept="28WtQ0" id="1hdhJIYB3hm" role="28WtdH">
@@ -187,15 +192,18 @@
               <ref role="28WtQy" node="1hdhJIYB3iV" resolve="a" />
             </node>
           </node>
+          <node concept="2E_Azy" id="1hdhJIZb4E7" role="2E_BRA">
+            <property role="TrG5h" value="a" />
+          </node>
         </node>
-      </node>
-      <node concept="28WtQe" id="1hdhJIYB3iV" role="28WtQ3">
-        <property role="TrG5h" value="a" />
       </node>
     </node>
     <node concept="1Fu4ED" id="1hdhJIYB3k8" role="1FuEvC">
       <property role="TrG5h" value="PersonRecord" />
       <property role="3S8W_q" value="true" />
+      <node concept="28WtQe" id="1hdhJIYB3k_" role="28WtQ3">
+        <property role="TrG5h" value="a" />
+      </node>
       <node concept="31_POd" id="1hdhJIYB3kt" role="3ehl24">
         <property role="TrG5h" value="PersonRecordCtor" />
         <node concept="31GzPY" id="1hdhJIYB3kI" role="31_UIS">
@@ -214,9 +222,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="28WtQe" id="1hdhJIYB3k_" role="28WtQ3">
-        <property role="TrG5h" value="a" />
       </node>
     </node>
     <node concept="16YvhB" id="1hdhJIYK27Y" role="1FuEvC">

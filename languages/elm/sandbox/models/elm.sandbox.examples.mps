@@ -14,6 +14,9 @@
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
         <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
+      <concept id="2299573957230900832" name="elm.structure.IMightHaveUnboundTypeArguments" flags="ng" index="28_gKO">
+        <child id="2299573957224327127" name="unboundTypeArguments" index="28WtQ3" />
+      </concept>
       <concept id="2299573957224327124" name="elm.structure.TypeMemberDeclaration" flags="ng" index="28WtQ0">
         <child id="2299573957224327155" name="type" index="28WtQB" />
       </concept>
@@ -71,9 +74,6 @@
       </concept>
       <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
         <property id="5070996412737258756" name="verbose" index="3S8W_q" />
-      </concept>
-      <concept id="5070996412747702719" name="elm.structure.AbstractTypeDeclaration" flags="ng" index="3ThaRx">
-        <child id="2299573957224327127" name="typeArgs" index="28WtQ3" />
       </concept>
       <concept id="5070996412746988960" name="elm.structure.CaseOfExpression" flags="ng" index="3TjV7Y">
         <child id="5070996412746990637" name="case" index="3TjOxN" />
@@ -291,7 +291,9 @@
     <property role="TrG5h" value="Demo" />
     <node concept="1Fl4Nm" id="5AXbu6oCfxk" role="1FuEvC">
       <property role="TrG5h" value="Location" />
-      <property role="3S8W_q" value="true" />
+      <node concept="28WtQe" id="dWH3_9PLiR" role="28WtQ3">
+        <property role="TrG5h" value="a" />
+      </node>
       <node concept="31GzPY" id="dWH3_9Lcd2" role="k1U1M">
         <node concept="k1U1L" id="dWH3_9PLj2" role="31GzP1">
           <node concept="28WtQ0" id="dWH3_9PLj4" role="28WtdH">
@@ -307,9 +309,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="28WtQe" id="dWH3_9PLiR" role="28WtQ3">
-        <property role="TrG5h" value="a" />
       </node>
     </node>
     <node concept="1Fu4ED" id="5AXbu6oCfuD" role="1FuEvC">
@@ -337,9 +336,6 @@
       </node>
       <node concept="31_POd" id="5AXbu6p0V7P" role="3ehl24">
         <property role="TrG5h" value="Anonymous" />
-      </node>
-      <node concept="28WtQe" id="1hdhJIYkl5F" role="28WtQ3">
-        <property role="TrG5h" value="a" />
       </node>
     </node>
     <node concept="1Fu4CZ" id="4pvN5V0O59e" role="28pqbg">

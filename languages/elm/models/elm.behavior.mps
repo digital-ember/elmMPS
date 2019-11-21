@@ -260,6 +260,9 @@
       </concept>
       <concept id="1237470895604" name="jetbrains.mps.baseLanguage.collections.structure.HasNextOperation" flags="nn" index="v0PNk" />
       <concept id="1237471031357" name="jetbrains.mps.baseLanguage.collections.structure.GetNextOperation" flags="nn" index="v1n4t" />
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435808" name="initValue" index="HW$Y0" />
@@ -565,7 +568,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="5z9bCD_3UIs" role="2OqNvi">
-                <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="typeArgs" />
+                <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="unboundTypeArguments" />
               </node>
             </node>
             <node concept="34oBXx" id="5AXbu6oGBuR" role="2OqNvi" />
@@ -848,16 +851,24 @@
   </node>
   <node concept="13h7C7" id="1ZDI_invbpx">
     <property role="3GE5qa" value="type" />
-    <ref role="13h7C2" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
+    <ref role="13h7C2" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
     <node concept="13i0hz" id="1ZDI_invbpG" role="13h7CS">
-      <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="getAllUnboundTypeDeclarations" />
+      <property role="TrG5h" value="getUnboundTypeArguments" />
       <node concept="3Tm1VV" id="1ZDI_invbpH" role="1B3o_S" />
       <node concept="2I9FWS" id="1ZDI_invgVp" role="3clF45">
         <ref role="2I9WkF" to="1id:1ZDI_in66vq" resolve="TypeArgument" />
       </node>
-      <node concept="3clFbS" id="1ZDI_invbpJ" role="3clF47" />
+      <node concept="3clFbS" id="1ZDI_invbpJ" role="3clF47">
+        <node concept="3clFbF" id="1hdhJIZ3fuD" role="3cqZAp">
+          <node concept="2OqwBi" id="1hdhJIZ3fE5" role="3clFbG">
+            <node concept="13iPFW" id="1hdhJIZ3fuC" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="1hdhJIZ3fUP" role="2OqNvi">
+              <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="unboundTypeArguments" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="1ZDI_invbpy" role="13h7CW">
       <node concept="3clFbS" id="1ZDI_invbpz" role="2VODD2" />
@@ -2438,7 +2449,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="5AXbu6oGF5a" role="2OqNvi">
-                <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="typeArgs" />
+                <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="unboundTypeArguments" />
               </node>
             </node>
             <node concept="34oBXx" id="5AXbu6oGLMs" role="2OqNvi" />
@@ -2625,27 +2636,6 @@
   <node concept="13h7C7" id="5z9bCD_3Van">
     <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="1id:4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
-    <node concept="13i0hz" id="1ZDI_invh3t" role="13h7CS">
-      <property role="TrG5h" value="getAllUnboundTypeDeclarations" />
-      <ref role="13i0hy" node="1ZDI_invbpG" resolve="getAllUnboundTypeDeclarations" />
-      <node concept="3Tm1VV" id="1ZDI_invh3u" role="1B3o_S" />
-      <node concept="3clFbS" id="1ZDI_invh3v" role="3clF47">
-        <node concept="3cpWs6" id="1ZDI_invh3w" role="3cqZAp">
-          <node concept="2OqwBi" id="1ZDI_invh3x" role="3cqZAk">
-            <node concept="2OqwBi" id="1ZDI_invh3y" role="2Oq$k0">
-              <node concept="13iPFW" id="1ZDI_invh3z" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="5z9bCD_3Uxu" role="2OqNvi">
-                <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="typeArgs" />
-              </node>
-            </node>
-            <node concept="ANE8D" id="1ZDI_invh3_" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-      <node concept="2I9FWS" id="1ZDI_invh3A" role="3clF45">
-        <ref role="2I9WkF" to="1id:1ZDI_in66vq" resolve="TypeArgument" />
-      </node>
-    </node>
     <node concept="13i0hz" id="1hdhJIYM$1D" role="13h7CS">
       <property role="TrG5h" value="getNamePattern" />
       <ref role="13i0hy" node="1hdhJIYMysX" resolve="getNamePattern" />
@@ -2673,7 +2663,7 @@
                 <node concept="2OqwBi" id="5AXbu6o$Qk9" role="2Oq$k0">
                   <node concept="13iPFW" id="5AXbu6o$PWO" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="5AXbu6o$QJX" role="2OqNvi">
-                    <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="typeArgs" />
+                    <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="unboundTypeArguments" />
                   </node>
                 </node>
                 <node concept="3$u5V9" id="5AXbu6o$WHK" role="2OqNvi">
@@ -3514,6 +3504,57 @@
   <node concept="13h7C7" id="1hdhJIYQMSs">
     <property role="3GE5qa" value="type" />
     <ref role="13h7C2" to="1id:1hdhJIYQMSp" resolve="RecordBase" />
+    <node concept="13i0hz" id="1hdhJIZ3ecP" role="13h7CS">
+      <property role="TrG5h" value="getVisibleUnboundTypeNames" />
+      <node concept="3Tm1VV" id="1hdhJIZ3ecQ" role="1B3o_S" />
+      <node concept="_YKpA" id="1hdhJIZ3eek" role="3clF45">
+        <node concept="17QB3L" id="1hdhJIZ3eew" role="_ZDj9" />
+      </node>
+      <node concept="3clFbS" id="1hdhJIZ3ecS" role="3clF47">
+        <node concept="3clFbF" id="1hdhJIZ3ef$" role="3cqZAp">
+          <node concept="2OqwBi" id="1hdhJIZ3nVi" role="3clFbG">
+            <node concept="2OqwBi" id="1hdhJIZ3j1m" role="2Oq$k0">
+              <node concept="2OqwBi" id="1hdhJIZ3f0o" role="2Oq$k0">
+                <node concept="2OqwBi" id="1hdhJIZ3erb" role="2Oq$k0">
+                  <node concept="13iPFW" id="1hdhJIZ3efz" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="1hdhJIZ3eBz" role="2OqNvi">
+                    <node concept="1xMEDy" id="1hdhJIZ3eB_" role="1xVPHs">
+                      <node concept="chp4Y" id="1hdhJIZ3eL7" role="ri$Ld">
+                        <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1hdhJIZ3fhH" role="2OqNvi">
+                  <ref role="37wK5l" node="1ZDI_invbpG" resolve="getUnboundTypeArguments" />
+                </node>
+              </node>
+              <node concept="3$u5V9" id="1hdhJIZ3mUT" role="2OqNvi">
+                <node concept="1bVj0M" id="1hdhJIZ3mUV" role="23t8la">
+                  <node concept="3clFbS" id="1hdhJIZ3mUW" role="1bW5cS">
+                    <node concept="3clFbF" id="1hdhJIZ3n0s" role="3cqZAp">
+                      <node concept="2OqwBi" id="1hdhJIZ3nf4" role="3clFbG">
+                        <node concept="37vLTw" id="1hdhJIZ3n0r" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1hdhJIZ3mUX" resolve="it" />
+                        </node>
+                        <node concept="2qgKlT" id="1hdhJIZ3nwW" role="2OqNvi">
+                          <ref role="37wK5l" node="5AXbu6o$eFk" resolve="readable" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="1hdhJIZ3mUX" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="1hdhJIZ3mUY" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="1hdhJIZ3odl" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="1hdhJIYQMSt" role="13h7CW">
       <node concept="3clFbS" id="1hdhJIYQMSu" role="2VODD2" />
     </node>

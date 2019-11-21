@@ -428,7 +428,14 @@
   <node concept="PlHQZ" id="1ZDI_invbpw">
     <property role="EcuMT" value="2299573957230900832" />
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="IMightHaveUnboundDeclarations" />
+    <property role="TrG5h" value="IMightHaveUnboundTypeArguments" />
+    <node concept="1TJgyj" id="1ZDI_in66vn" role="1TKVEi">
+      <property role="IQ2ns" value="2299573957224327127" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="unboundTypeArguments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArgument" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1ZDI_inz1kE">
     <property role="EcuMT" value="2299573957231908138" />
@@ -945,18 +952,11 @@
     <property role="TrG5h" value="AbstractTypeDeclaration" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="59OOBgT39xg" resolve="Declaration" />
-    <node concept="1TJgyj" id="1ZDI_in66vn" role="1TKVEi">
-      <property role="IQ2ns" value="2299573957224327127" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="typeArgs" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArgument" />
-    </node>
     <node concept="PrWs8" id="59OOBgT3$kx" role="PzmwI">
       <ref role="PrY4T" node="59OOBgT39xi" resolve="IExposable" />
     </node>
     <node concept="PrWs8" id="1ZDI_invbra" role="PzmwI">
-      <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
+      <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
     </node>
     <node concept="PrWs8" id="4pvN5UYw_hJ" role="PzmwI">
       <ref role="PrY4T" node="4pvN5UYv0k3" resolve="ICanProjectVerbosely" />

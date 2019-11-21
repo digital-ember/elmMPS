@@ -3012,7 +3012,7 @@
             <ref role="1YBMHb" node="dWH3_9FBQ4" resolve="typeAliasDeclaration" />
           </node>
           <node concept="3Tsc0h" id="dWH3_9FUFT" role="2OqNvi">
-            <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="typeArgs" />
+            <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="unboundTypeArguments" />
           </node>
         </node>
         <node concept="3clFbS" id="dWH3_9FOhw" role="2LFqv$">
@@ -3201,7 +3201,7 @@
                 <ref role="QwW4h" node="dWH3_9G8wJ" resolve="tad" />
               </node>
               <node concept="3Tsc0h" id="dWH3_9H9vA" role="2OqNvi">
-                <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="typeArgs" />
+                <ref role="3TtcxE" to="1id:1ZDI_in66vn" resolve="unboundTypeArguments" />
               </node>
             </node>
             <node concept="1aUR6E" id="dWH3_9G8x3" role="2OqNvi">

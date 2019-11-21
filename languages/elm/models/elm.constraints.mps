@@ -288,6 +288,9 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -323,6 +326,7 @@
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
+      <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
   <node concept="1M2fIO" id="59OOBgT39x$">
@@ -634,7 +638,7 @@
               <node concept="2Xjw5R" id="1ZDI_invhIb" role="2OqNvi">
                 <node concept="1xMEDy" id="1ZDI_invhId" role="1xVPHs">
                   <node concept="chp4Y" id="1ZDI_invhKu" role="ri$Ld">
-                    <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
+                    <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="1ZDI_invhO6" role="1xVPHs" />
@@ -651,16 +655,16 @@
         <node concept="3clFbS" id="1ZDI_invih4" role="2VODD2">
           <node concept="3cpWs8" id="1ZDI_invivW" role="3cqZAp">
             <node concept="3cpWsn" id="1ZDI_invivX" role="3cpWs9">
-              <property role="TrG5h" value="unboundTypeProvider" />
+              <property role="TrG5h" value="unboundTypesProvider" />
               <node concept="3Tqbb2" id="1ZDI_invivE" role="1tU5fm">
-                <ref role="ehGHo" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
+                <ref role="ehGHo" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
               </node>
               <node concept="2OqwBi" id="1ZDI_invivY" role="33vP2m">
                 <node concept="2rP1CM" id="1ZDI_invivZ" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="1ZDI_inviw0" role="2OqNvi">
                   <node concept="1xMEDy" id="1ZDI_inviw1" role="1xVPHs">
                     <node concept="chp4Y" id="1ZDI_inviw2" role="ri$Ld">
-                      <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundDeclarations" />
+                      <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="1ZDI_inviw3" role="1xVPHs" />
@@ -680,7 +684,7 @@
             </node>
             <node concept="2OqwBi" id="1ZDI_inviM8" role="3clFbw">
               <node concept="37vLTw" id="1ZDI_inviw4" role="2Oq$k0">
-                <ref role="3cqZAo" node="1ZDI_invivX" resolve="unboundTypeProvider" />
+                <ref role="3cqZAo" node="1ZDI_invivX" resolve="unboundTypesProvider" />
               </node>
               <node concept="3w_OXm" id="1ZDI_inviWu" role="2OqNvi" />
             </node>
@@ -696,10 +700,10 @@
                   <node concept="3Tm1VV" id="1ZDI_invlDr" role="1B3o_S" />
                   <node concept="2OqwBi" id="1ZDI_invleP" role="37wK5m">
                     <node concept="37vLTw" id="1ZDI_invl3J" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1ZDI_invivX" resolve="unboundTypeProvider" />
+                      <ref role="3cqZAo" node="1ZDI_invivX" resolve="unboundTypesProvider" />
                     </node>
                     <node concept="2qgKlT" id="1ZDI_invlrh" role="2OqNvi">
-                      <ref role="37wK5l" to="i4ut:1ZDI_invbpG" resolve="getAllUnboundTypeDeclarations" />
+                      <ref role="37wK5l" to="i4ut:1ZDI_invbpG" resolve="getUnboundTypeArguments" />
                     </node>
                   </node>
                   <node concept="3clFb_" id="1ZDI_invlHv" role="jymVt">
@@ -1734,6 +1738,30 @@
     <ref role="1M2myG" to="1id:4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
     <node concept="EnEH3" id="1hdhJIYLG3O" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1hdhJIZb4Mg">
+    <property role="3GE5qa" value="type" />
+    <ref role="1M2myG" to="1id:1hdhJIYQMSp" resolve="RecordBase" />
+    <node concept="EnEH3" id="1hdhJIZb4NX" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="1hdhJIZb4PR" role="QCWH9">
+        <node concept="3clFbS" id="1hdhJIZb4PS" role="2VODD2">
+          <node concept="3clFbF" id="1hdhJIZb4UK" role="3cqZAp">
+            <node concept="2OqwBi" id="1hdhJIZb6rY" role="3clFbG">
+              <node concept="2OqwBi" id="1hdhJIZb5a6" role="2Oq$k0">
+                <node concept="EsrRn" id="1hdhJIZb4UJ" role="2Oq$k0" />
+                <node concept="2qgKlT" id="1hdhJIZb5$d" role="2OqNvi">
+                  <ref role="37wK5l" to="i4ut:1hdhJIZ3ecP" resolve="getVisibleUnboundTypeNames" />
+                </node>
+              </node>
+              <node concept="3JPx81" id="1hdhJIZb7Dg" role="2OqNvi">
+                <node concept="1Wqviy" id="1hdhJIZb7Ja" role="25WWJ7" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

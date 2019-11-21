@@ -638,7 +638,7 @@
               <node concept="2Xjw5R" id="1ZDI_invhIb" role="2OqNvi">
                 <node concept="1xMEDy" id="1ZDI_invhId" role="1xVPHs">
                   <node concept="chp4Y" id="1ZDI_invhKu" role="ri$Ld">
-                    <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
+                    <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArgs" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="1ZDI_invhO6" role="1xVPHs" />
@@ -657,14 +657,14 @@
             <node concept="3cpWsn" id="1ZDI_invivX" role="3cpWs9">
               <property role="TrG5h" value="unboundTypesProvider" />
               <node concept="3Tqbb2" id="1ZDI_invivE" role="1tU5fm">
-                <ref role="ehGHo" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
+                <ref role="ehGHo" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArgs" />
               </node>
               <node concept="2OqwBi" id="1ZDI_invivY" role="33vP2m">
                 <node concept="2rP1CM" id="1ZDI_invivZ" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="1ZDI_inviw0" role="2OqNvi">
                   <node concept="1xMEDy" id="1ZDI_inviw1" role="1xVPHs">
                     <node concept="chp4Y" id="1ZDI_inviw2" role="ri$Ld">
-                      <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
+                      <ref role="cht4Q" to="1id:1ZDI_invbpw" resolve="IMightHaveUnboundTypeArgs" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="1ZDI_inviw3" role="1xVPHs" />
@@ -713,7 +713,7 @@
                     <node concept="37vLTG" id="1ZDI_invlHz" role="3clF46">
                       <property role="TrG5h" value="child" />
                       <node concept="3Tqbb2" id="1ZDI_invlH$" role="1tU5fm">
-                        <ref role="ehGHo" to="1id:1ZDI_in66vq" resolve="TypeArgument" />
+                        <ref role="ehGHo" to="1id:1ZDI_in66vq" resolve="TypeArg" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="1ZDI_invlHA" role="3clF47">
@@ -1736,9 +1736,6 @@
   <node concept="1M2fIO" id="1hdhJIYLG3N">
     <property role="3GE5qa" value="type" />
     <ref role="1M2myG" to="1id:4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
-    <node concept="EnEH3" id="1hdhJIYLG3O" role="1MhHOB">
-      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-    </node>
   </node>
   <node concept="1M2fIO" id="1hdhJIZb4Mg">
     <property role="3GE5qa" value="type" />

@@ -270,7 +270,8 @@
     <node concept="1TJgyj" id="7G6nZPJ0vYf" role="1TKVEi">
       <property role="IQ2ns" value="8864878458619166607" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="typeRef" />
+      <property role="20kJfa" value="typeRefs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1ZDI_in66vK" resolve="ITypeReference" />
     </node>
     <node concept="1irR5M" id="4pvN5UZl34f" role="rwd14">
@@ -341,7 +342,7 @@
   <node concept="1TIwiD" id="1ZDI_in66vq">
     <property role="EcuMT" value="2299573957224327130" />
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="TypeArgument" />
+    <property role="TrG5h" value="TypeArg" />
     <property role="34LRSv" value="a" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1ZDI_in66vr" role="PzmwI">
@@ -401,7 +402,7 @@
     <node concept="1TJgyj" id="1ZDI_in66vQ" role="1TKVEi">
       <property role="IQ2ns" value="2299573957224327158" />
       <property role="20kJfa" value="typeArgTarget" />
-      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArgument" />
+      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArg" />
     </node>
     <node concept="RPilO" id="1ZDI_in66vS" role="lGtFl">
       <ref role="RPilL" node="1ZDI_in66vQ" resolve="typeArgTarget" />
@@ -428,13 +429,13 @@
   <node concept="PlHQZ" id="1ZDI_invbpw">
     <property role="EcuMT" value="2299573957230900832" />
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="IMightHaveUnboundTypeArguments" />
+    <property role="TrG5h" value="IMightHaveUnboundTypeArgs" />
     <node concept="1TJgyj" id="1ZDI_in66vn" role="1TKVEi">
       <property role="IQ2ns" value="2299573957224327127" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="unboundTypeArguments" />
+      <property role="20kJfa" value="unboundTypeArgs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArgument" />
+      <ref role="20lvS9" node="1ZDI_in66vq" resolve="TypeArg" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ZDI_inz1kE">
@@ -956,7 +957,7 @@
       <ref role="PrY4T" node="59OOBgT39xi" resolve="IExposable" />
     </node>
     <node concept="PrWs8" id="1ZDI_invbra" role="PzmwI">
-      <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundTypeArguments" />
+      <ref role="PrY4T" node="1ZDI_invbpw" resolve="IMightHaveUnboundTypeArgs" />
     </node>
     <node concept="PrWs8" id="4pvN5UYw_hJ" role="PzmwI">
       <ref role="PrY4T" node="4pvN5UYv0k3" resolve="ICanProjectVerbosely" />

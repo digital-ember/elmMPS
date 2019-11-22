@@ -68,7 +68,11 @@ It features three placeholders, which could also be hidden, but it is a good pra
 ## Adding a module declaration
 Though we are not using a textual editor, the concrete syntax of Elm we try to mimic is textual, so it is only natural to start out with a projectional editor that behaves similarly to a textual editor in many contexts. Declaring a module signature, for example. 
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![moduleDeclaration](images/moduleDeclaration.gif)
+</details>
 
 With the cursor at our placeholder, we can just type "module_Demo", where "\_" indicates a SPACE, to add a node of type **ModuleDeclaration** and the name property "Demo".
 
@@ -91,19 +95,31 @@ ___
 ## Adding an import declaration
 Let me use the import statement to demonstrate the fluent, text-like input capabilities once more:
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![importDeclaration](images/importDeclaration.gif)
+</details>
 
 Similarly to the **Exposure** node in the **ModuleDeclaration**, adding a **Alias** node is triggered by a side transformation when the user types "\_a" after the name of the imported module (in this case "Html").
 Notice that the "Html" module is just a stub module, another root node I declared for demoing purposes.
 
 More interesting is that "Html" is not a name property, but an actual reference to another (**Module**) node, defined in a different MPS model. Again, this one is just a stub, but it demonstrates that **scoping** is also part of the language:
 
+<details open>
+  <summary>Show/Hide example</summary>
+
 ![importScoping](images/importScoping.gif)
+</details>
 
 ## The substitution menu (aka code completion)
 One of the powerful features of MPS is the built-in and customizable sustitution menu. Within a editable cell one can invoke a context-sensitive menu by pressing CTRL+SPACE. This will present you a list of elements that are available ("in scope") in the given context. This menu can be filtered by typing:
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![subMenu1](images/subMenu1.gif)
+</details>
 
 This works for references (see import statement), properties (see import alias name), and of course for adding new children (see function declaration).
 
@@ -115,7 +131,11 @@ ___
 ## Types and Type Aliases
 While still certainly not 100% correct, one can already define basic types and type aliases.
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![types1](images/types1.gif)
+</details>
 
 One thing we see is that the formatting is "fixed". Again, this is not a text editor. Instead, the position of the cells for each editor is predetemined. Luckily, this doesn't mean there is no flexibility how cells can be layed out. Rather, the layout of each element in the editor can be defined context sensitive as well, something we will see in a later example.
 
@@ -137,11 +157,19 @@ Imagine we would like to enhance the "Regular" variant of the **User** type by a
 In our projectional editor, we cannot just type in "Location String", can we? Well, yes and no. We CANNOT make the mistake of forgetting the parentheses, since our editor knows the structure of the language. So, when we add a reference to a node with type arguments, like **Location**, the required fields are added automatically!
 The parentheses are also added automatically and just visual aid for the reader. The AST does not care about this kind punctuation, since it has structure.
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![addLocation1](images/addLocation1.gif)
+</details>
 
 Still, what if the signature of a declaration changes? Let's imagine **Location** gets a second argument called "b". Let's see what happens: 
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![changeLocation1](images/changeLocation1.gif)
+</details>
 
 We see that, as soon as the declaration of **Location** changes, the reference is marked with an error. We could just add the missing argument manually, but I want to show the intention/quickfix feature. Pressing ALT+ENTER opens another context sensitive menu that offers actions that can be arbitrarily complex. In our case, we just use it to "fix" the **Location** reference by adding a second, initially "empty" type.
 
@@ -151,13 +179,21 @@ Some other nice features that are generally baked in into MPS editors:
 
 ### Duplicating nodes by pressing CTRL+D
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![duplicate1](images/duplicate1.gif)
+</details>
 
 MPS is smart about which nodes it can duplicate, so it won't allow me to duplicate the module declaration, for example, since there can only be one.
 
 ### Reordering sequences by pressing CTRL+ALT+UP/DOWN
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![reorder1](images/reorder1.gif)
+</details>
 
 This can be very handy to reorganize your code!
 
@@ -165,14 +201,21 @@ This can be very handy to reorganize your code!
 Using the **TypeDeclaration** once more, I want to demonstrate another powerful capability of projectional editors, namely multiple projections. Nothing is stopping us to project our AST in different ways. This is particularly powerful for languages of higher levels of abstraction, but it can also be used for educational purposes, by showing or hiding certain things, or just displaying them differently.
 For example, to make it more explicit that a constructor is actually defining a function with a signature, I implemented a more "verbose" version of the type editor:
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![verbose1](images/verbose1.gif)
+</details>
 
 Notice the _Inspector_ window on the bottom. It's a context sensitive window where additional information can be put. It is not necessary to put the "switch" for toggling between available editors there, it's just one way of doing it.
 
 Here is another, slightly longer example of what you can do in a projecitonal editor:
 
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![types2](images/types2.gif)
-
+</details>
 
 # Exploring the project yourself
 Notice that this should work for both Windows and MacOS. However, people with OSX reported issues opening the project or setting up the MPS-extensions library. I try to provide a description that works, but let me know if you still face issues getting the project up and running.
@@ -204,7 +247,11 @@ Notice that this should work for both Windows and MacOS. However, people with OS
 - if yes, the MPS-extensions have been set up successfully 
 - if no, please contact me and I will try to help you get set-up
   
+<details open>
+  <summary>Show/Hide example</summary>
+   
 ![settingsCheck](images/settingsCheck.gif)
+</details>
 
 ## Building project for the first time
 You should now be ready to build the language for the first time:

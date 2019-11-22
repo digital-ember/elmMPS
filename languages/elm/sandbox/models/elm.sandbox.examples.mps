@@ -45,6 +45,12 @@
       <concept id="6466375086914436123" name="elm.structure.IntegerType" flags="ng" index="3ehl7U" />
       <concept id="6466375086914436125" name="elm.structure.StringType" flags="ng" index="3ehl7W" />
       <concept id="6466375086914434780" name="elm.structure.BooleanType" flags="ng" index="3ehlGX" />
+      <concept id="6466375086914109502" name="elm.structure.PlusExpression" flags="ng" index="3ejERv" />
+      <concept id="6466375086914110222" name="elm.structure.MultiplyExpression" flags="ng" index="3ejEVJ" />
+      <concept id="6466375086914050197" name="elm.structure.BinaryExpression" flags="ng" index="3ejVlO">
+        <child id="6466375086914050198" name="left" index="3ejVlR" />
+        <child id="6466375086914050200" name="right" index="3ejVlT" />
+      </concept>
       <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
         <child id="8864878458619166607" name="typeRefs" index="k1U1M" />
       </concept>
@@ -67,6 +73,9 @@
         <child id="6466375086914436453" name="constructors" index="3ehl24" />
       </concept>
       <concept id="5941605205023884905" name="elm.structure.AliasDeclaration" flags="ng" index="1FuPgt" />
+      <concept id="8654661321438926713" name="elm.structure.IntLiteral" flags="ng" index="1FHpZB">
+        <property id="8654661321438946584" name="value" index="1FHuQ6" />
+      </concept>
       <concept id="8654661321438947839" name="elm.structure.StringLiteral" flags="ng" index="1FHu5x" />
       <concept id="5070996412733939562" name="elm.structure.ICanHaveTypeRefArgs" flags="ng" index="3S5DcO">
         <child id="6466375086917715545" name="typeArgRefs" index="31_UIS" />
@@ -325,10 +334,20 @@
         <property role="TrG5h" value="Anonymous" />
       </node>
     </node>
-    <node concept="1Fu4C_" id="1hdhJIZOSdT" role="1FuEvC">
+    <node concept="16YvhB" id="1hdhJJ10_Xd" role="1FuEvC">
       <property role="TrG5h" value="div" />
-      <node concept="3TEaHQ" id="1hdhJIZOSdV" role="3TEaHW">
-        <property role="TrG5h" value="arg1" />
+      <node concept="3ejEVJ" id="1hdhJJ1cEXT" role="1FHpZF">
+        <node concept="1FHpZB" id="1hdhJJ10_Xf" role="3ejVlR">
+          <property role="1FHuQ6" value="4" />
+        </node>
+        <node concept="3ejERv" id="1hdhJJ1cEYo" role="3ejVlT">
+          <node concept="1FHpZB" id="1hdhJJ158zq" role="3ejVlR">
+            <property role="1FHuQ6" value="3" />
+          </node>
+          <node concept="1FHpZB" id="1hdhJJ16Z3n" role="3ejVlT">
+            <property role="1FHuQ6" value="7" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="16YvhB" id="1hdhJIZOScq" role="1FuEvC">

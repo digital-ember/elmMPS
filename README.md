@@ -24,21 +24,21 @@
    1. [Building project for the first time](#building-project-for-the-first-time)
 
 # elmMPS
-A prototypical implementation of the elm language (https://elm-lang.org/) in JetBrains MPS (https://www.jetbrains.com/mps/), sporting a projectional editor.
+A prototypical implementation of the [elm language](https://elm-lang.org/) with [JetBrains MPS](https://www.jetbrains.com/mps/), sporting a projectional editor.
 
 [tl;dr: _jump to examples_](#examples)
 
 # Disclaimer
 
 This project currently has three selfish purposes:
-1. To get more familiar with the Elm syntax
+1. To get more familiar with Elm
 2. To learn how to implement nice editor experiences in MPS
-3. To experiment with implementing typesystems in MPS
+3. To experiment with implementing a typesystem in MPS
 
-Still, if people of either community (Elm or MPS) are interested to look into this project and provide feedback or ask questions, you are more then welcome to do so.
+Still, if you are interested in looking into this project and provide feedback or ask questions, you are more then welcome to do so.
 
 ## What (not) to expect
-This project does not have the goal to become a fully fledged implementation of Elm for people to rely upon and use in production. It is really meant to explore mainly the projectional editor and, to a certain degree, the typesystem aspect of MPS. Things like code generation or the import of textual Elm source code are currently out of scope.
+This project does not have the goal to become a fully fledged implementation of Elm for folks to rely upon and use in production. It is really meant to explore the projectional editor and, to a certain degree, the typesystem aspect of MPS. Things like code generation or the import of textual Elm source code are currently out of scope.
 
 ## Please don't ...
 This is not meant to spawn a general discussion on what's better, projectional or textual editing. I don't see a point in discussing such questions without having a confined context.

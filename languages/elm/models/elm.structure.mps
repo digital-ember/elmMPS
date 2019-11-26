@@ -1323,6 +1323,13 @@
       <property role="20kJfa" value="recordExpressionBase" />
       <ref role="20lvS9" node="1hdhJJ1gAV$" resolve="RecordExpressionBase" />
     </node>
+    <node concept="1TJgyj" id="7Xj0mVmZ1nT" role="1TKVEi">
+      <property role="IQ2ns" value="9174678441448707577" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="recordFields" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7Xj0mVmZ1nW" resolve="RecordField" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1hdhJJ1gAV$">
     <property role="EcuMT" value="1462903501058371300" />
@@ -1335,6 +1342,39 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="RecordMemberExpression" />
     <ref role="1TJDcQ" node="7wry9SjFxtR" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7Xj0mVmZ1nW">
+    <property role="EcuMT" value="9174678441448707580" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="RecordField" />
+    <ref role="1TJDcQ" node="4pvN5UZXQsS" resolve="NamedReference" />
+    <node concept="1TJgyj" id="7Xj0mVmZ24Y" role="1TKVEi">
+      <property role="IQ2ns" value="9174678441448710462" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="1ZDI_in66vk" resolve="TypeMemberDeclaration" />
+      <ref role="20ksaX" node="4pvN5UZXQsT" resolve="target" />
+    </node>
+    <node concept="1TJgyj" id="7Xj0mVmZ2sl" role="1TKVEi">
+      <property role="IQ2ns" value="9174678441448711957" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <ref role="20lvS9" node="7wry9SjFxtR" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Xj0mVnimtq">
+    <property role="EcuMT" value="9174678441453774682" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="LowerNamePatternReference" />
+    <ref role="1TJDcQ" node="4pvN5UZXQsS" resolve="NamedReference" />
+    <node concept="RPilO" id="7Xj0mVnimtr" role="lGtFl">
+      <ref role="RPilL" node="7Xj0mVnimts" resolve="target" />
+    </node>
+    <node concept="1TJgyj" id="7Xj0mVnimts" role="1TKVEi">
+      <property role="IQ2ns" value="5070996412762122050" />
+      <property role="20kJfa" value="target" />
+      <ref role="20ksaX" node="4pvN5UZXQsT" resolve="target" />
+      <ref role="20lvS9" node="1hdhJIYkl78" resolve="LowerNamePattern" />
+    </node>
   </node>
 </model>
 

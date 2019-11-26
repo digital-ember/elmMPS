@@ -27,6 +27,10 @@
       <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
         <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
       </concept>
+      <concept id="9174678441453774682" name="elm.structure.LowerNamePatternReference" flags="ng" index="2C6AoO" />
+      <concept id="9174678441448707580" name="elm.structure.RecordField" flags="ng" index="2DFLii">
+        <child id="9174678441448711957" name="value" index="2DFMpV" />
+      </concept>
       <concept id="1462903501009015240" name="elm.structure.LowerNamePattern" flags="ng" index="2E71sN" />
       <concept id="6466375086925478013" name="elm.structure.TypeAliasReference" flags="ng" index="317tms">
         <reference id="6466375086925478016" name="typeAliasTarget" index="317tlx" />
@@ -47,6 +51,7 @@
       <concept id="6466375086914434780" name="elm.structure.BooleanType" flags="ng" index="3ehlGX" />
       <concept id="1462903501058371300" name="elm.structure.RecordExpressionBase" flags="ng" index="3l3Mwv" />
       <concept id="1462903501058369849" name="elm.structure.RecordExpression" flags="ng" index="3l3MZ2">
+        <child id="9174678441448707577" name="recordFields" index="2DFLin" />
         <child id="1462903501058369850" name="recordExpressionBase" index="3l3MZ1" />
       </concept>
       <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
@@ -95,6 +100,7 @@
         <child id="1462903501009020105" name="customArgPatterns" index="2E728M" />
       </concept>
       <concept id="5070996412757229288" name="elm.structure.PatternMatchPart" flags="ng" index="3TWRaQ">
+        <child id="5070996412757229291" name="expression" index="3TWRaP" />
         <child id="5070996412757229289" name="pattern" index="3TWRaR" />
       </concept>
     </language>
@@ -205,6 +211,19 @@
         </node>
       </node>
     </node>
+    <node concept="1Fl4Nm" id="7Xj0mVnb9rw" role="1FuEvC">
+      <property role="TrG5h" value="Bla" />
+      <node concept="31GzPY" id="7Xj0mVnb9so" role="k1U1M">
+        <node concept="k1U1L" id="7Xj0mVnb9sh" role="31GzP1">
+          <node concept="28WtQ0" id="7Xj0mVnb9si" role="28WtdH">
+            <property role="TrG5h" value="blubb" />
+            <node concept="31GzPY" id="7Xj0mVnb9sH" role="28WtQB">
+              <node concept="3ehl7U" id="7Xj0mVnb9sC" role="31GzP1" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="16YvhB" id="1hdhJIXh6P5" role="1FuEvC">
       <property role="TrG5h" value="init" />
       <node concept="3TztXP" id="1hdhJIXh6Pm" role="1FHpZF">
@@ -251,6 +270,17 @@
               <property role="TrG5h" value="name" />
             </node>
           </node>
+          <node concept="3l3MZ2" id="7Xj0mVmZ1mK" role="3TWRaP">
+            <node concept="2DFLii" id="7Xj0mVncXUT" role="2DFLin">
+              <ref role="3TEaHB" node="1hdhJIXgQX0" resolve="name" />
+              <node concept="2C6AoO" id="7Xj0mVnpA6z" role="2DFMpV">
+                <ref role="3TEaHB" node="1hdhJIYzKyO" resolve="name" />
+              </node>
+            </node>
+            <node concept="3l3Mwv" id="7Xj0mVmZ1mP" role="3l3MZ1">
+              <ref role="3TEaHB" node="1hdhJIYkkIv" resolve="model" />
+            </node>
+          </node>
         </node>
         <node concept="3TWRaQ" id="1hdhJIYt4L9" role="3TWRaK">
           <node concept="3TWRaJ" id="1hdhJIYzKz9" role="3TWRaR">
@@ -259,12 +289,34 @@
               <property role="TrG5h" value="password" />
             </node>
           </node>
+          <node concept="3l3MZ2" id="7Xj0mVnpAcu" role="3TWRaP">
+            <node concept="2DFLii" id="7Xj0mVnBRPF" role="2DFLin">
+              <ref role="3TEaHB" node="1hdhJIXgQXR" resolve="password" />
+              <node concept="2C6AoO" id="7Xj0mVnBRPI" role="2DFMpV">
+                <ref role="3TEaHB" node="1hdhJIYzKzw" resolve="password" />
+              </node>
+            </node>
+            <node concept="3l3Mwv" id="7Xj0mVnxBoC" role="3l3MZ1">
+              <ref role="3TEaHB" node="1hdhJIYkkIv" resolve="model" />
+            </node>
+          </node>
         </node>
         <node concept="3TWRaQ" id="1hdhJIYzK$q" role="3TWRaK">
           <node concept="3TWRaJ" id="1hdhJIYzK$r" role="3TWRaR">
             <ref role="2E71sZ" node="1hdhJIYkiik" resolve="PasswordAgain" />
             <node concept="2E71sN" id="1hdhJIYzK$s" role="2E728M">
               <property role="TrG5h" value="password" />
+            </node>
+          </node>
+          <node concept="3l3MZ2" id="7Xj0mVnBRPK" role="3TWRaP">
+            <node concept="2DFLii" id="7Xj0mVnBRPL" role="2DFLin">
+              <ref role="3TEaHB" node="1hdhJIXgQZg" resolve="passwordAgain" />
+              <node concept="2C6AoO" id="7Xj0mVnBRPM" role="2DFMpV">
+                <ref role="3TEaHB" node="1hdhJIYzK$s" resolve="password" />
+              </node>
+            </node>
+            <node concept="3l3Mwv" id="7Xj0mVnBRPN" role="3l3MZ1">
+              <ref role="3TEaHB" node="1hdhJIYkkIv" resolve="model" />
             </node>
           </node>
         </node>

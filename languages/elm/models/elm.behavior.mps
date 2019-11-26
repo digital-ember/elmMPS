@@ -3868,5 +3868,12 @@
       <node concept="17QB3L" id="1hdhJIYQMSI" role="3clF45" />
     </node>
   </node>
+  <node concept="13h7C7" id="7Xj0mVn0Fba">
+    <property role="3GE5qa" value="expression" />
+    <ref role="13h7C2" to="1id:1hdhJJ1gA$T" resolve="RecordExpression" />
+    <node concept="13hLZK" id="7Xj0mVn0Fbb" role="13h7CW">
+      <node concept="3clFbS" id="7Xj0mVn0Fbc" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

@@ -24,27 +24,27 @@
    1. [Building project for the first time](#building-project-for-the-first-time)
 
 # elmMPS
-A prototypical implementation of the elm language (https://elm-lang.org/) in JetBrains MPS (https://www.jetbrains.com/mps/), sporting a projectional editor.
+A prototypical implementation of the [elm language](https://elm-lang.org/) with [JetBrains MPS](https://www.jetbrains.com/mps/), sporting a projectional editor.
 
 [tl;dr: _jump to examples_](#examples)
 
 # Disclaimer
 
 This project currently has three selfish purposes:
-1. To get more familiar with the Elm syntax
+1. To get more familiar with Elm
 2. To learn how to implement nice editor experiences in MPS
-3. To experiment with implementing typesystems in MPS
+3. To experiment with implementing a typesystem in MPS
 
-Still, if people of either community (Elm or MPS) are interested to look into this project and provide feedback or ask questions, you are more then welcome to do so.
+Still, if you are interested in looking into this project and provide feedback or ask questions, you are more then welcome to do so.
 
 ## What (not) to expect
-This project does not have the goal to become a fully fledged implementation of Elm for people to rely upon and use in production. It is really meant to explore mainly the projectional editor and, to a certain degree, the typesystem aspect of MPS. Things like code generation or the import of textual Elm source code are currently out of scope.
+This project does not have the goal to become a fully fledged implementation of Elm for folks to rely upon and use in production. It is really meant to explore the projectional editor and, to a certain degree, the typesystem aspect of MPS. Things like code generation or the import of textual Elm source code are currently out of scope.
 
 ## Please don't ...
 This is not meant to spawn a general discussion on what's better, projectional or textual editing. I don't see a point in discussing such questions without having a confined context.
 
 # Examples
-Since most people are not familiar with JetBrains MPS and it is not so straightforward to "just get started", I decided to put some GIFs in this Readme to demonstrate some of the editor's capabilites. If you are still interested how to browse the MPS project and play with the editor yourself, refer to [this section](README.md#exploring-the-project).
+Since most people are not familiar with JetBrains MPS and it is not so straightforward to "just get started", I decided to put some GIFs in this Readme to demonstrate some of the editor's capabilites. If you are still interested how to browse the MPS project and play with the editor yourself, refer to [this section](README.md#exploring-the-project-yourself).
 
 Before I want to explore higher levels of abstraction in the language and the editor, I wanted to try and build a projection that is very close to the concrete syntax of Elm (v0.19.1).
 There will be some slight changes sprinkled in here and there, either for the purpose of teasing ideas, or because the projectional editor requires them.

@@ -14,7 +14,7 @@
       </concept>
       <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd" />
       <concept id="251273837307136627" name="elm.structure.FunctionDeclaration" flags="ng" index="15tzTa">
-        <child id="5070996412762122018" name="args" index="3TEaHW" />
+        <child id="5070996412762122018" name="parameters" index="3TEaHW" />
       </concept>
       <concept id="5941605205023692887" name="elm.structure.ExposableReference" flags="ng" index="1Fu4Cz">
         <reference id="5941605205023692888" name="exposableTarget" index="1Fu4CG" />
@@ -33,7 +33,7 @@
       <concept id="5941605205023693021" name="elm.structure.CustomTypeDeclaration" flags="ng" index="1Fu4ED">
         <child id="6466375086914436453" name="constructors" index="3ehl24" />
       </concept>
-      <concept id="5070996412762122024" name="elm.structure.SimpleArgument" flags="ng" index="3TEaHQ" />
+      <concept id="5070996412762122024" name="elm.structure.SimpleParameter" flags="ng" index="3TEaHQ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -165,7 +165,7 @@
     <node concept="1Fu4C_" id="dWH3_79_OL" role="1FuEvC">
       <property role="TrG5h" value="sandbox" />
       <node concept="3TEaHQ" id="dWH3_79_OM" role="3TEaHW">
-        <property role="TrG5h" value="arg1" />
+        <property role="TrG5h" value="impl" />
       </node>
     </node>
   </node>

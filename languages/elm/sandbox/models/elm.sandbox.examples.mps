@@ -184,6 +184,9 @@
       <property role="TrG5h" value="main" />
       <node concept="3TztXP" id="1hdhJIX3M0X" role="1FHpZF">
         <ref role="3TEaHB" to="5h96:dWH3_79_OL" resolve="sandbox" />
+        <node concept="3l3MZ2" id="7Xj0mVnDO0c" role="3TEaGo">
+          <node concept="2DFLii" id="7Xj0mVnGXG$" role="2DFLin" />
+        </node>
       </node>
     </node>
     <node concept="1Fl4Nm" id="1hdhJIX3M17" role="1FuEvC">
@@ -212,16 +215,9 @@
       </node>
     </node>
     <node concept="1Fl4Nm" id="7Xj0mVnb9rw" role="1FuEvC">
-      <property role="TrG5h" value="Bla" />
-      <node concept="31GzPY" id="7Xj0mVnb9so" role="k1U1M">
-        <node concept="k1U1L" id="7Xj0mVnb9sh" role="31GzP1">
-          <node concept="28WtQ0" id="7Xj0mVnb9si" role="28WtdH">
-            <property role="TrG5h" value="blubb" />
-            <node concept="31GzPY" id="7Xj0mVnb9sH" role="28WtQB">
-              <node concept="3ehl7U" id="7Xj0mVnb9sC" role="31GzP1" />
-            </node>
-          </node>
-        </node>
+      <property role="TrG5h" value="Model" />
+      <node concept="31GzPY" id="7Xj0mVnSt0L" role="k1U1M">
+        <node concept="3ehl7U" id="7Xj0mVnY$sY" role="31GzP1" />
       </node>
     </node>
     <node concept="16YvhB" id="1hdhJIXh6P5" role="1FuEvC">

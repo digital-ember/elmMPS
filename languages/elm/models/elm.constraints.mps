@@ -1345,7 +1345,7 @@
           <node concept="17R0WA" id="dWH3_6TbQ0" role="3clFbw">
             <node concept="359W_D" id="dWH3_6TbUa" role="3uHU7w">
               <ref role="359W_E" to="1id:5AXbu6nooZp" resolve="LetExpression" />
-              <ref role="359W_F" to="1id:5AXbu6nrNR9" resolve="invocables" />
+              <ref role="359W_F" to="1id:5AXbu6nrNR9" resolve="invocableDeclarations" />
             </node>
             <node concept="2DA6wF" id="dWH3_6Tb7Z" role="3uHU7B" />
           </node>
@@ -1873,7 +1873,7 @@
                                   <ref role="3cqZAo" node="1hdhJJ1gOUj" resolve="let" />
                                 </node>
                                 <node concept="3Tsc0h" id="1hdhJJ1gQ0z" role="2OqNvi">
-                                  <ref role="3TtcxE" to="1id:5AXbu6nrNR9" resolve="invocables" />
+                                  <ref role="3TtcxE" to="1id:5AXbu6nrNR9" resolve="invocableDeclarations" />
                                 </node>
                               </node>
                             </node>

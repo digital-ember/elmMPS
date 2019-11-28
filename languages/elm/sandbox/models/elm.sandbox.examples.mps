@@ -19,7 +19,6 @@
       </concept>
       <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
         <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
-        <child id="9174678441506307915" name="unboundType" index="2_evS_" />
       </concept>
       <concept id="9174678441485047614" name="elm.structure.UserDefinedType" flags="ng" index="2Atppg">
         <reference id="9174678441485991384" name="declarationTarget" index="2ApZMQ" />
@@ -72,9 +71,6 @@
         <child id="6466375086914436453" name="constructors" index="3ehl24" />
       </concept>
       <concept id="5941605205023884905" name="elm.structure.AliasDeclaration" flags="ng" index="1FuPgt" />
-      <concept id="8654661321438926713" name="elm.structure.IntLiteral" flags="ng" index="1FHpZB">
-        <property id="8654661321438946584" name="value" index="1FHuQ6" />
-      </concept>
       <concept id="8654661321438947839" name="elm.structure.StringLiteral" flags="ng" index="1FHu5x" />
       <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
         <property id="5070996412737258756" name="verbose" index="3S8W_q" />
@@ -198,9 +194,6 @@
           <property role="TrG5h" value="passwordAgain" />
           <node concept="3ehl7W" id="7Xj0mVoSNai" role="28WtQB" />
         </node>
-        <node concept="2B$txW" id="7Xj0mVqt$sf" role="2_evS_">
-          <ref role="2BG3zV" node="7Xj0mVqcvlO" resolve="b" />
-        </node>
       </node>
     </node>
     <node concept="16YvhB" id="1hdhJIXh6P5" role="1FuEvC">
@@ -208,10 +201,20 @@
       <node concept="3TztXP" id="7Xj0mVoSNjj" role="1FHpZF">
         <ref role="3TEaHB" node="7Xj0mVoSN6V" resolve="Model" />
         <node concept="1FHu5x" id="7Xj0mVoSNkD" role="3TEaGo" />
-        <node concept="1FHpZB" id="7Xj0mVoSNlZ" role="3TEaGo">
-          <property role="1FHuQ6" value="12" />
+        <node concept="1FHu5x" id="7Xj0mVrttkg" role="3TEaGo" />
+        <node concept="1FHu5x" id="7Xj0mVryKU2" role="3TEaGo" />
+      </node>
+    </node>
+    <node concept="1Fu4C_" id="7Xj0mVrcZCU" role="1FuEvC">
+      <property role="TrG5h" value="init2" />
+      <node concept="3TEaHQ" id="7Xj0mVrcZCZ" role="3TEaHW">
+        <property role="TrG5h" value="arg1" />
+      </node>
+      <node concept="3TztXP" id="7Xj0mVrd04f" role="1FHpZF">
+        <ref role="3TEaHB" node="7Xj0mVqiStp" resolve="Name" />
+        <node concept="3TEaHx" id="7Xj0mVrd0n6" role="3TEaGo">
+          <ref role="3TEaHB" node="7Xj0mVrcZCZ" resolve="arg1" />
         </node>
-        <node concept="1FHu5x" id="7Xj0mVoSNno" role="3TEaGo" />
       </node>
     </node>
     <node concept="1Fu4ED" id="1hdhJIXo4EC" role="1FuEvC">

@@ -16,17 +16,12 @@
       </concept>
       <concept id="8864878458619166604" name="elm.structure.RecordType" flags="ng" index="k1U1L">
         <child id="2299573957224327481" name="typeMembers" index="28WtdH" />
-        <child id="1462903501018053405" name="recordBase" index="2E_BRA" />
+        <child id="9174678441506307915" name="unboundType" index="2_evS_" />
       </concept>
-      <concept id="9174678441485047614" name="elm.structure.UserDefinedType" flags="ng" index="2Atppg">
-        <reference id="9174678441485991384" name="declarationTarget" index="2ApZMQ" />
-      </concept>
-      <concept id="9174678441467047764" name="elm.structure.CustomType" flags="ng" index="2BgeSU" />
       <concept id="9174678441478510866" name="elm.structure.UnboundType" flags="ng" index="2B$txW">
         <reference id="9174678441480632725" name="declarationTarget" index="2BG3zV" />
       </concept>
       <concept id="9174678441480632727" name="elm.structure.UnboundTypeDeclaration" flags="ng" index="2BG3zT" />
-      <concept id="1462903501018050073" name="elm.structure.RecordBase" flags="ng" index="2E_Azy" />
       <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd" />
       <concept id="251273837307136627" name="elm.structure.FunctionDeclaration" flags="ng" index="15tzTa">
         <child id="5070996412762122018" name="parameters" index="3TEaHW" />
@@ -36,9 +31,6 @@
       </concept>
       <concept id="251273837298401374" name="elm.structure.ExposableValueDeclaration" flags="ng" index="16YvhB" />
       <concept id="6466375086914436125" name="elm.structure.StringType" flags="ng" index="3ehl7W" />
-      <concept id="6466375086914434781" name="elm.structure.Type" flags="ng" index="3ehlGW">
-        <child id="9174678441478510864" name="typeArgTypes" index="2B$txY" />
-      </concept>
       <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
         <child id="8864878458619166607" name="typeToAlias" index="k1U1M" />
       </concept>
@@ -56,8 +48,8 @@
       <concept id="8654661321438947839" name="elm.structure.StringLiteral" flags="ng" index="1FHu5x">
         <property id="8654661321438946584" name="value" index="1FHuQ7" />
       </concept>
-      <concept id="5070996412733939562" name="elm.structure.ICanHaveTypeRefArgs" flags="ng" index="3S5DcO">
-        <child id="9174678441482748442" name="types" index="2Ak8dO" />
+      <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
+        <property id="5070996412737258756" name="verbose" index="3S8W_q" />
       </concept>
       <concept id="5070996412747702719" name="elm.structure.AbstractTypeDeclaration" flags="ng" index="3ThaRx">
         <child id="9174678441478529435" name="unboundTypeDeclarations" index="2B$23P" />
@@ -94,14 +86,12 @@
     <property role="TrG5h" value="TypesDemo" />
     <node concept="1Fu4ED" id="7Xj0mVp0S4h" role="1FuEvC">
       <property role="TrG5h" value="Person" />
+      <property role="3S8W_q" value="true" />
       <node concept="2BG3zT" id="7Xj0mVp0S6Q" role="2B$23P">
         <property role="TrG5h" value="a" />
       </node>
-      <node concept="31_POd" id="7Xj0mVp8_wI" role="3ehl24">
+      <node concept="31_POd" id="7Xj0mVpVj7g" role="3ehl24">
         <property role="TrG5h" value="PersonCtor" />
-        <node concept="2B$txW" id="7Xj0mVp8_y8" role="2Ak8dO">
-          <ref role="2BG3zV" node="7Xj0mVp0S6Q" resolve="a" />
-        </node>
       </node>
     </node>
     <node concept="1Fl4Nm" id="7Xj0mVp8_FM" role="1FuEvC">
@@ -120,19 +110,15 @@
             <ref role="2BG3zV" node="7Xj0mVp8_Gr" resolve="a" />
           </node>
         </node>
-        <node concept="2E_Azy" id="7Xj0mVp8_H9" role="2E_BRA">
-          <property role="TrG5h" value="a" />
+        <node concept="2B$txW" id="7Xj0mVqt$Fr" role="2_evS_">
+          <ref role="2BG3zV" node="7Xj0mVp8_Gr" resolve="a" />
         </node>
       </node>
     </node>
     <node concept="1Fu4ED" id="7Xj0mVp963i" role="1FuEvC">
       <property role="TrG5h" value="PersonRecord" />
-      <node concept="31_POd" id="7Xj0mVp963l" role="3ehl24">
+      <node concept="31_POd" id="7Xj0mVqk4pp" role="3ehl24">
         <property role="TrG5h" value="PersonRecordCtor" />
-        <node concept="2BgeSU" id="7Xj0mVp9658" role="2Ak8dO">
-          <ref role="2ApZMQ" node="7Xj0mVp0S4h" resolve="Person" />
-          <node concept="3ehl7W" id="7Xj0mVplswt" role="2B$txY" />
-        </node>
       </node>
     </node>
     <node concept="16YvhB" id="1hdhJIYK27Y" role="1FuEvC">

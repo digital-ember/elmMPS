@@ -542,7 +542,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1ZDI_injzOR">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="base.type" />
     <ref role="13h7C2" to="1id:7G6nZPJ0vYc" resolve="RecordType" />
     <node concept="13i0hz" id="7Xj0mVnNhfU" role="13h7CS">
       <property role="TrG5h" value="isComplete" />
@@ -854,7 +854,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1ZDI_invbrl">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="typeDeclaration" />
     <ref role="13h7C2" to="1id:59OOBgT89Uy" resolve="TypeAliasDeclaration" />
     <node concept="13i0hz" id="1hdhJIZi9SB" role="13h7CS">
       <property role="TrG5h" value="getTypeAnnotationString" />
@@ -1026,7 +1026,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1ZDI_invh30">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="typeDeclaration" />
     <ref role="13h7C2" to="1id:59OOBgT39zt" resolve="CustomTypeDeclaration" />
     <node concept="13hLZK" id="1ZDI_invh31" role="13h7CW">
       <node concept="3clFbS" id="1ZDI_invh32" role="2VODD2" />
@@ -2387,7 +2387,7 @@
     <node concept="3Tm1VV" id="5AXbu6o$mtX" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="5AXbu6o$BAL">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="typeDeclaration" />
     <ref role="13h7C2" to="1id:1ZDI_in66vk" resolve="TypeMemberDeclaration" />
     <node concept="13hLZK" id="5AXbu6o$BAM" role="13h7CW">
       <node concept="3clFbS" id="5AXbu6o$BAN" role="2VODD2" />
@@ -2602,7 +2602,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5z9bCD_3Van">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="typeDeclaration" />
     <ref role="13h7C2" to="1id:4pvN5UZ6Q6Z" resolve="AbstractTypeDeclaration" />
     <node concept="13i0hz" id="5AXbu6o$Ojm" role="13h7CS">
       <property role="TrG5h" value="readable" />
@@ -3176,7 +3176,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="dWH3_7Fj1G">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="typeDeclaration" />
     <ref role="13h7C2" to="1id:5AXbu6oaB3G" resolve="Constructor" />
     <node concept="13hLZK" id="dWH3_7Fj1H" role="13h7CW">
       <node concept="3clFbS" id="dWH3_7Fj1I" role="2VODD2" />
@@ -3886,7 +3886,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7Xj0mVoSP4z">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="typeDeclaration" />
     <ref role="13h7C2" to="1id:7Xj0mVoSNAn" resolve="UnboundTypeDeclaration" />
     <node concept="13i0hz" id="7Xj0mVoKHFb" role="13h7CS">
       <property role="TrG5h" value="getNamePattern" />
@@ -3906,7 +3906,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7Xj0mVp9ro$">
-    <property role="3GE5qa" value="base" />
+    <property role="3GE5qa" value="base.type" />
     <ref role="13h7C2" to="1id:7Xj0mVnIPm9" resolve="FunctionType" />
     <node concept="13i0hz" id="7Xj0mVp9roQ" role="13h7CS">
       <property role="TrG5h" value="getTargetTypeArgsSize" />
@@ -3922,19 +3922,7 @@
       <node concept="10Oyi0" id="7Xj0mVp9rp1" role="3clF45" />
     </node>
     <node concept="13hLZK" id="7Xj0mVp9ro_" role="13h7CW">
-      <node concept="3clFbS" id="7Xj0mVp9roA" role="2VODD2">
-        <node concept="3clFbF" id="7Xj0mVpFbJG" role="3cqZAp">
-          <node concept="2OqwBi" id="7Xj0mVpFew2" role="3clFbG">
-            <node concept="2OqwBi" id="7Xj0mVpFbTN" role="2Oq$k0">
-              <node concept="13iPFW" id="7Xj0mVpFbJF" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7Xj0mVpFcih" role="2OqNvi">
-                <ref role="3TtcxE" to="1id:7Xj0mVnIPma" resolve="typeParameters" />
-              </node>
-            </node>
-            <node concept="WFELt" id="7Xj0mVpFgkU" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="7Xj0mVp9roA" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="7Xj0mVp9rwa" role="13h7CS">
       <property role="TrG5h" value="readable" />

@@ -210,7 +210,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1hdhJIYQQHp">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="base.type" />
     <property role="TrG5h" value="addRecordBase_Intention" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="1id:7G6nZPJ0vYc" resolve="RecordType" />
@@ -255,7 +255,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1hdhJIYQVPS">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="base.type" />
     <property role="TrG5h" value="removeRecordBase_Intention" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="1id:7G6nZPJ0vYc" resolve="RecordType" />
@@ -318,7 +318,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="1hdhJIZJIv7">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="typeDeclaration" />
     <property role="TrG5h" value="showVerbose_Intention" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="1id:4pvN5UYv0k3" resolve="ICanProjectVerbosely" />

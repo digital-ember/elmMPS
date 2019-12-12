@@ -624,7 +624,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="59OOBgT3BmC">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="module" />
     <ref role="1XX52x" to="1id:59OOBgT39xb" resolve="ModuleDeclaration" />
     <node concept="3EZMnI" id="59OOBgT3BmE" role="2wV5jI">
       <node concept="3F0ifn" id="dWH3_7cZ2G" role="3EZMnx">
@@ -718,7 +718,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="59OOBgT3Bs8">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="base" />
     <ref role="1XX52x" to="1id:59OOBgT39xf" resolve="Exposure" />
     <node concept="3EZMnI" id="59OOBgT4rBn" role="2wV5jI">
       <node concept="3F0ifn" id="59OOBgT3BqU" role="3EZMnx">
@@ -748,7 +748,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="59OOBgT3D3o">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="import" />
     <ref role="1XX52x" to="1id:59OOBgT39xe" resolve="ImportStatement" />
     <node concept="3EZMnI" id="59OOBgT3D3t" role="2wV5jI">
       <node concept="2iRfu4" id="59OOBgT3D3u" role="2iSdaV" />
@@ -837,7 +837,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="59OOBgT3SpO">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="import" />
     <ref role="1XX52x" to="1id:59OOBgT3SpD" resolve="AliasDeclaration" />
     <node concept="3EZMnI" id="59OOBgT5Lys" role="2wV5jI">
       <node concept="3F0ifn" id="59OOBgT5Ly_" role="3EZMnx">
@@ -2202,6 +2202,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1ZDI_inz1xL">
+    <property role="3GE5qa" value="module" />
     <ref role="1XX52x" to="1id:1ZDI_inz1kE" resolve="Module" />
     <node concept="3EZMnI" id="1ZDI_inz1xN" role="2wV5jI">
       <node concept="3F1sOY" id="1ZDI_inz1yG" role="3EZMnx">
@@ -3579,7 +3580,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4pvN5UZWgyg">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="base" />
     <ref role="1XX52x" to="1id:59OOBgT39xn" resolve="ExposableReference" />
     <node concept="3EZMnI" id="dWH3_7NyAA" role="2wV5jI">
       <node concept="l2Vlx" id="dWH3_7NyAB" role="2iSdaV" />
@@ -3785,7 +3786,7 @@
     </node>
   </node>
   <node concept="3ICXOK" id="dWH3_7d0m4">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="addPortToModuleDeclaration_Transformation" />
     <ref role="aqKnT" to="1id:59OOBgT39xb" resolve="ModuleDeclaration" />
     <node concept="1Qtc8_" id="dWH3_7d0m5" role="IW6Ez">
@@ -3841,7 +3842,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="dWH3_7jyGm">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="module" />
     <property role="TrG5h" value="DeletePort_ActionMap" />
     <ref role="1h_SK9" to="1id:59OOBgT39xb" resolve="ModuleDeclaration" />
     <node concept="1hA7zw" id="dWH3_7jyGn" role="1h_SK8">
@@ -3973,7 +3974,7 @@
     </node>
   </node>
   <node concept="3ICXOK" id="dWH3_7NzJk">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="addExposableConstructors_Transformation" />
     <ref role="aqKnT" to="1id:59OOBgT39xn" resolve="ExposableReference" />
     <node concept="1Qtc8_" id="dWH3_7NzJl" role="IW6Ez">
@@ -4058,7 +4059,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="dWH3_7QkYT">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="DeleteExposedConstructors_ActionMap" />
     <ref role="1h_SK9" to="1id:59OOBgT39xn" resolve="ExposableReference" />
     <node concept="1hA7zw" id="dWH3_7QkYU" role="1h_SK8">

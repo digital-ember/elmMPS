@@ -348,7 +348,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="59OOBgT39x$">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="base" />
     <ref role="1M2myG" to="1id:59OOBgT39xf" resolve="Exposure" />
     <node concept="9S07l" id="59OOBgT3cPH" role="9Vyp8">
       <node concept="3clFbS" id="59OOBgT3cPI" role="2VODD2">
@@ -372,7 +372,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="59OOBgT3dzP">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="base" />
     <ref role="1M2myG" to="1id:59OOBgT39xn" resolve="ExposableReference" />
     <node concept="1N5Pfh" id="59OOBgT3gdb" role="1Mr941">
       <ref role="1N5Vy1" to="1id:59OOBgT39xo" resolve="exposableTarget" />
@@ -498,7 +498,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="59OOBgT3D3X">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="import" />
     <ref role="1M2myG" to="1id:59OOBgT39xe" resolve="ImportStatement" />
     <node concept="1N5Pfh" id="59OOBgT3D3Y" role="1Mr941">
       <ref role="1N5Vy1" to="1id:59OOBgT39zu" resolve="moduleDeclarationTarget" />
@@ -645,6 +645,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1ZDI_inz4lP">
+    <property role="3GE5qa" value="module" />
     <ref role="1M2myG" to="1id:1ZDI_inz1kE" resolve="Module" />
     <node concept="EnEH3" id="1ZDI_inz4lQ" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -733,7 +734,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7wry9SjEbs6">
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="module" />
     <ref role="1M2myG" to="1id:59OOBgT39xb" resolve="ModuleDeclaration" />
   </node>
   <node concept="1M2fIO" id="5AXbu6nowSe">

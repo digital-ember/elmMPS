@@ -196,6 +196,7 @@
   <node concept="2S6QgY" id="dWH3_75GHB">
     <property role="TrG5h" value="fixMissingExposure_Intention" />
     <property role="2ZfUl3" value="true" />
+    <property role="3GE5qa" value="module" />
     <ref role="2ZfgGC" to="1id:59OOBgT39xb" resolve="ModuleDeclaration" />
     <node concept="2S6ZIM" id="dWH3_75GHC" role="2ZfVej">
       <node concept="3clFbS" id="dWH3_75GHD" role="2VODD2">

@@ -3507,7 +3507,7 @@
   </node>
   <node concept="18kY7G" id="dWH3_71g13">
     <property role="TrG5h" value="checkExposureIsNotNull_ModuleDeclaration" />
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="module" />
     <node concept="3clFbS" id="dWH3_71g14" role="18ibNy">
       <node concept="3clFbJ" id="dWH3_71g1a" role="3cqZAp">
         <node concept="2OqwBi" id="dWH3_71gSJ" role="3clFbw">
@@ -3561,7 +3561,7 @@
   </node>
   <node concept="18kY7G" id="dWH3_7NCBc">
     <property role="TrG5h" value="checkExposesConstructorsOnlyForCustomTypes_ExposableReference" />
-    <property role="3GE5qa" value="header" />
+    <property role="3GE5qa" value="base" />
     <node concept="3clFbS" id="dWH3_7NCBd" role="18ibNy">
       <node concept="3cpWs8" id="dWH3_7NGNP" role="3cqZAp">
         <node concept="3cpWsn" id="dWH3_7NGNQ" role="3cpWs9">

@@ -189,6 +189,7 @@
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807532712" name="canBeParent" index="9SGkU" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
@@ -2358,6 +2359,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1M2fIO" id="1_RMY$Wg_f0">
+    <property role="3GE5qa" value="function.parameter" />
+    <ref role="1M2myG" to="1id:4pvN5UZXQs_" resolve="Parameter" />
+    <ref role="1MND4H" to="1id:4pvN5UZXQsC" resolve="SimpleParameter" />
   </node>
 </model>
 

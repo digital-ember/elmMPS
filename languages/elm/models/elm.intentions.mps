@@ -617,7 +617,7 @@
       <node concept="3clFbS" id="6WiVtwekjs5" role="2VODD2">
         <node concept="3cpWs6" id="6WiVtwekjs6" role="3cqZAp">
           <node concept="Xl_RD" id="6WiVtwekjs7" role="3cqZAk">
-            <property role="Xl_RC" value="Remove a Type Annotation" />
+            <property role="Xl_RC" value="Remove Type Annotation" />
           </node>
         </node>
       </node>

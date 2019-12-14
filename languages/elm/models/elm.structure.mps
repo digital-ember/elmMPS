@@ -1016,24 +1016,24 @@
   </node>
   <node concept="1TIwiD" id="4pvN5UZXQs_">
     <property role="EcuMT" value="5070996412762122021" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="function.parameter" />
     <property role="TrG5h" value="Parameter" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="59OOBgT39xg" resolve="Declaration" />
+    <node concept="PrWs8" id="1_RMY$VQalC" role="PzmwI">
+      <ref role="PrY4T" node="5AXbu6o$eF8" resolve="IRenderReadable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4pvN5UZXQsC">
     <property role="EcuMT" value="5070996412762122024" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="function.parameter" />
     <property role="TrG5h" value="SimpleParameter" />
     <property role="34LRSv" value="simpleParameter" />
     <ref role="1TJDcQ" node="4pvN5UZXQs_" resolve="Parameter" />
-    <node concept="1TJgyi" id="7Xj0mVmIYJ1" role="1TKVEl">
-      <property role="IQ2nx" value="9174678441444502465" />
-      <property role="TrG5h" value="text" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="6WiVtweamkQ" role="PzmwI">
       <ref role="PrY4T" node="dWH3_5krnt" resolve="IInvocable" />
+    </node>
+    <node concept="PrWs8" id="1_RMY$VQaDC" role="PzmwI">
+      <ref role="PrY4T" node="59OOBgT5I_o" resolve="IIdentifier" />
     </node>
   </node>
   <node concept="1TIwiD" id="4pvN5UZXQsS">
@@ -1350,6 +1350,38 @@
     <ref role="1TJDcQ" node="5AXbu6nY7rt" resolve="Type" />
     <node concept="PrWs8" id="22dovMIjI6X" role="PzmwI">
       <ref role="PrY4T" node="59OOBgT5I_o" resolve="IIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_RMY$VPbdY">
+    <property role="EcuMT" value="1835159575768380286" />
+    <property role="3GE5qa" value="function.parameter" />
+    <property role="TrG5h" value="AnythingParameter" />
+    <property role="34LRSv" value="_" />
+    <ref role="1TJDcQ" node="4pvN5UZXQs_" resolve="Parameter" />
+  </node>
+  <node concept="1TIwiD" id="1_RMY$VXteP">
+    <property role="EcuMT" value="1835159575770551221" />
+    <property role="3GE5qa" value="function.parameter" />
+    <property role="TrG5h" value="TupleParameter" />
+    <property role="34LRSv" value="(?, ?[, ?])" />
+    <ref role="1TJDcQ" node="4pvN5UZXQs_" resolve="Parameter" />
+    <node concept="1TJgyj" id="1_RMY$VXteQ" role="1TKVEi">
+      <property role="IQ2ns" value="1835159575770551222" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="first" />
+      <ref role="20lvS9" node="4pvN5UZXQs_" resolve="Parameter" />
+    </node>
+    <node concept="1TJgyj" id="1_RMY$VXteS" role="1TKVEi">
+      <property role="IQ2ns" value="1835159575770551224" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="second" />
+      <ref role="20lvS9" node="4pvN5UZXQs_" resolve="Parameter" />
+    </node>
+    <node concept="1TJgyj" id="1_RMY$VXteV" role="1TKVEi">
+      <property role="IQ2ns" value="1835159575770551227" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="third" />
+      <ref role="20lvS9" node="4pvN5UZXQs_" resolve="Parameter" />
     </node>
   </node>
 </model>

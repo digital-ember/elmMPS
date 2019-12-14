@@ -12,7 +12,15 @@
         <child id="5941605205023815068" name="exposables" index="1FuEvC" />
         <child id="5941605205023815065" name="importStatements" index="1FuEvH" />
       </concept>
-      <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd" />
+      <concept id="9174678441478510866" name="elm.structure.UnboundType" flags="ng" index="2B$txW">
+        <reference id="9174678441480632725" name="declarationTarget" index="2BG3zV" />
+      </concept>
+      <concept id="9174678441480632727" name="elm.structure.UnboundTypeDeclaration" flags="ng" index="2BG3zT" />
+      <concept id="9174678441453774682" name="elm.structure.LowerNamePatternReference" flags="ng" index="2C6AoO" />
+      <concept id="1462903501009015240" name="elm.structure.LowerNamePattern" flags="ng" index="2E71sN" />
+      <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd">
+        <child id="9174678441495985819" name="type" index="2ABBZP" />
+      </concept>
       <concept id="251273837307136627" name="elm.structure.FunctionDeclaration" flags="ng" index="15tzTa">
         <child id="5070996412762122018" name="parameters" index="3TEaHW" />
       </concept>
@@ -45,11 +53,25 @@
         <child id="6466375086914436453" name="constructors" index="3ehl24" />
       </concept>
       <concept id="8654661321438947839" name="elm.structure.StringLiteral" flags="ng" index="1FHu5x" />
-      <concept id="5070996412759675691" name="elm.structure.Invocation" flags="ng" index="3TztXP" />
+      <concept id="5070996412747702719" name="elm.structure.AbstractTypeDeclaration" flags="ng" index="3ThaRx">
+        <child id="9174678441478529435" name="unboundTypeDeclarations" index="2B$23P" />
+      </concept>
+      <concept id="5070996412746988960" name="elm.structure.CaseOfExpression" flags="ng" index="3TjV7Y">
+        <child id="5070996412746990637" name="case" index="3TjOxN" />
+        <child id="5070996412757229294" name="patternMatchParts" index="3TWRaK" />
+      </concept>
+      <concept id="5070996412759675691" name="elm.structure.Invocation" flags="ng" index="3TztXP">
+        <child id="5070996412762122054" name="args" index="3TEaGo" />
+      </concept>
       <concept id="5070996412762122040" name="elm.structure.NamedReference" flags="ng" index="3TEaHA">
         <reference id="5070996412762122041" name="target" index="3TEaHB" />
       </concept>
       <concept id="5070996412762122024" name="elm.structure.SimpleParameter" flags="ng" index="3TEaHQ" />
+      <concept id="5070996412757229297" name="elm.structure.CustomTypePattern" flags="ng" index="3TWRaJ" />
+      <concept id="5070996412757229288" name="elm.structure.PatternMatchPart" flags="ng" index="3TWRaQ">
+        <child id="5070996412757229291" name="expression" index="3TWRaP" />
+        <child id="5070996412757229289" name="pattern" index="3TWRaR" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -198,6 +220,60 @@
         </node>
         <node concept="3eaiDw" id="7Xj0mVooHjl" role="3ejVlR">
           <property role="$nhwW" value="3.3" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="28pqXY" id="22dovMIhmH8">
+    <node concept="1Fu4CZ" id="22dovMIhmH9" role="28pqbg">
+      <property role="TrG5h" value="Maybe" />
+      <node concept="1Fu4CV" id="22dovMIj_UN" role="1Fu4CE" />
+    </node>
+    <node concept="1Fu4ED" id="22dovMIhmHb" role="1FuEvC">
+      <property role="TrG5h" value="Maybe" />
+      <node concept="2BG3zT" id="22dovMIhmH_" role="2B$23P">
+        <property role="TrG5h" value="a" />
+      </node>
+      <node concept="31_POd" id="22dovMIhmHc" role="3ehl24">
+        <property role="TrG5h" value="Just" />
+        <node concept="2B$txW" id="22dovMIhmIc" role="2ABBZP">
+          <ref role="2BG3zV" node="22dovMIhmH_" resolve="a" />
+        </node>
+      </node>
+      <node concept="31_POd" id="22dovMIhmIA" role="3ehl24">
+        <property role="TrG5h" value="Nothing" />
+      </node>
+    </node>
+    <node concept="1Fu4C_" id="22dovMIhmJd" role="1FuEvC">
+      <property role="TrG5h" value="withDefault" />
+      <node concept="3TEaHQ" id="22dovMIhmJf" role="3TEaHW">
+        <property role="TrG5h" value="default" />
+      </node>
+      <node concept="3TEaHQ" id="22dovMIAIbw" role="3TEaHW">
+        <property role="TrG5h" value="maybe" />
+      </node>
+      <node concept="3TjV7Y" id="22dovMIAIcm" role="1FHpZF">
+        <node concept="3TztXP" id="22dovMIBMyR" role="3TjOxN">
+          <ref role="3TEaHB" node="22dovMIAIbw" resolve="maybe" />
+        </node>
+        <node concept="3TWRaQ" id="22dovMII2H7" role="3TWRaK">
+          <node concept="3TWRaJ" id="22dovMII2H6" role="3TWRaR">
+            <ref role="3TEaHB" node="22dovMIhmHc" resolve="Just" />
+            <node concept="2E71sN" id="22dovMII2H9" role="3TEaGo">
+              <property role="TrG5h" value="value" />
+            </node>
+          </node>
+          <node concept="2C6AoO" id="22dovMII2Lm" role="3TWRaP">
+            <ref role="3TEaHB" node="22dovMII2H9" resolve="value" />
+          </node>
+        </node>
+        <node concept="3TWRaQ" id="1_RMY$Vp8Gm" role="3TWRaK">
+          <node concept="3TWRaJ" id="1_RMY$Vp8Gl" role="3TWRaR">
+            <ref role="3TEaHB" node="22dovMIhmIA" resolve="Nothing" />
+          </node>
+          <node concept="3TztXP" id="1_RMY$VqCkC" role="3TWRaP">
+            <ref role="3TEaHB" node="22dovMIhmJf" resolve="default" />
+          </node>
         </node>
       </node>
     </node>

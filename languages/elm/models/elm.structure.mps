@@ -25,6 +25,9 @@
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
@@ -92,6 +95,7 @@
       <property role="IQ2ns" value="5941605205023692894" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="exposure" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="59OOBgT39xf" resolve="Exposure" />
     </node>
     <node concept="1TJgyi" id="dWH3_7cYW6" role="1TKVEl">
@@ -370,6 +374,9 @@
     </node>
     <node concept="PrWs8" id="5AXbu6nTdxN" role="PzmwI">
       <ref role="PrY4T" node="59OOBgT39x_" resolve="IExpose" />
+    </node>
+    <node concept="1QGGSu" id="1_RMY$V$Ajs" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/elm16x16.ico" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wry9SjFxtR">
@@ -1334,6 +1341,16 @@
     <property role="EcuMT" value="9174678441493665731" />
     <property role="3GE5qa" value="base.type" />
     <property role="TrG5h" value="IInternalOnly" />
+  </node>
+  <node concept="1TIwiD" id="22dovMIjI6W">
+    <property role="EcuMT" value="2345638718813954492" />
+    <property role="3GE5qa" value="base.type" />
+    <property role="TrG5h" value="TypeVariable" />
+    <property role="34LRSv" value="a" />
+    <ref role="1TJDcQ" node="5AXbu6nY7rt" resolve="Type" />
+    <node concept="PrWs8" id="22dovMIjI6X" role="PzmwI">
+      <ref role="PrY4T" node="59OOBgT5I_o" resolve="IIdentifier" />
+    </node>
   </node>
 </model>
 

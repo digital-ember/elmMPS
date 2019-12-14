@@ -3,6 +3,22 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="iets3">
+          <value>
+            <Library>
+              <option name="name" value="iets3" />
+              <option name="path" value="D:/mps-installations/org.iets3.opensource" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mbeddr">
+          <value>
+            <Library>
+              <option name="name" value="mbeddr" />
+              <option name="path" value="D:/mps-installations/com.mbeddr.platform" />
+            </Library>
+          </value>
+        </entry>
         <entry key="mps-extensions">
           <value>
             <Library>

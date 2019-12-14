@@ -41,6 +41,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -1027,7 +1028,8 @@
     <property role="EcuMT" value="5070996412762122024" />
     <property role="3GE5qa" value="function.parameter" />
     <property role="TrG5h" value="SimpleParameter" />
-    <property role="34LRSv" value="simpleParameter" />
+    <property role="R4oN_" value="Simple Parameter" />
+    <property role="34LRSv" value="name" />
     <ref role="1TJDcQ" node="4pvN5UZXQs_" resolve="Parameter" />
     <node concept="PrWs8" id="6WiVtweamkQ" role="PzmwI">
       <ref role="PrY4T" node="dWH3_5krnt" resolve="IInvocable" />
@@ -1357,13 +1359,15 @@
     <property role="3GE5qa" value="function.parameter" />
     <property role="TrG5h" value="AnythingParameter" />
     <property role="34LRSv" value="_" />
+    <property role="R4oN_" value="Anything" />
     <ref role="1TJDcQ" node="4pvN5UZXQs_" resolve="Parameter" />
   </node>
   <node concept="1TIwiD" id="1_RMY$VXteP">
     <property role="EcuMT" value="1835159575770551221" />
     <property role="3GE5qa" value="function.parameter" />
     <property role="TrG5h" value="TupleParameter" />
-    <property role="34LRSv" value="(?, ?[, ?])" />
+    <property role="34LRSv" value="(first, second[, third])" />
+    <property role="R4oN_" value="Tuple" />
     <ref role="1TJDcQ" node="4pvN5UZXQs_" resolve="Parameter" />
     <node concept="1TJgyj" id="1_RMY$VXteQ" role="1TKVEi">
       <property role="IQ2ns" value="1835159575770551222" />
@@ -1382,6 +1386,21 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="third" />
       <ref role="20lvS9" node="4pvN5UZXQs_" resolve="Parameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5OtdhaOHwj$">
+    <property role="EcuMT" value="6709577374309418212" />
+    <property role="3GE5qa" value="function.parameter" />
+    <property role="TrG5h" value="RecordParameter" />
+    <property role="34LRSv" value="{a, b, ...}" />
+    <property role="R4oN_" value="Record" />
+    <ref role="1TJDcQ" node="4pvN5UZXQs_" resolve="Parameter" />
+    <node concept="1TJgyj" id="5OtdhaOHwj_" role="1TKVEi">
+      <property role="IQ2ns" value="6709577374309418213" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="recordParameterMembers" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="4pvN5UZXQsC" resolve="SimpleParameter" />
     </node>
   </node>
 </model>

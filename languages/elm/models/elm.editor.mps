@@ -5859,7 +5859,7 @@
     <node concept="3EZMnI" id="1_RMY$VZYUq" role="2wV5jI">
       <node concept="3F0ifn" id="1_RMY$VZYUx" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" node="4pvN5V0hnqa" resolve="stylePunctuationRight" />
+        <ref role="1k5W1q" node="5AXbu6nB4Fx" resolve="stylePunctuation" />
       </node>
       <node concept="3F1sOY" id="1_RMY$VZYUO" role="3EZMnx">
         <property role="2ru_X1" value="true" />
@@ -5999,7 +5999,7 @@
       </node>
       <node concept="3F0ifn" id="1_RMY$VZYUB" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" node="4pvN5V0hnqe" resolve="stylePunctuationLeft" />
+        <ref role="1k5W1q" node="5AXbu6nB4Fx" resolve="stylePunctuation" />
       </node>
       <node concept="l2Vlx" id="1_RMY$VZYUt" role="2iSdaV" />
     </node>
@@ -6472,6 +6472,29 @@
           <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5OtdhaOHwll">
+    <property role="3GE5qa" value="function.parameter" />
+    <ref role="1XX52x" to="1id:5OtdhaOHwj$" resolve="RecordParameter" />
+    <node concept="3EZMnI" id="5OtdhaOHwln" role="2wV5jI">
+      <node concept="3F0ifn" id="5OtdhaOHwlu" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" node="5AXbu6nB4Fx" resolve="stylePunctuation" />
+      </node>
+      <node concept="3F2HdR" id="5OtdhaOHwES" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="1id:5OtdhaOHwj_" resolve="recordParameterMembers" />
+        <node concept="l2Vlx" id="5OtdhaOHwEU" role="2czzBx" />
+        <node concept="3F0ifn" id="5OtdhaOHwEZ" role="2czzBI">
+          <property role="ilYzB" value="&lt;missing record elements&gt;" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5OtdhaOHwl_" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" node="5AXbu6nB4Fx" resolve="stylePunctuation" />
+      </node>
+      <node concept="l2Vlx" id="5OtdhaOHwlq" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -23,18 +23,10 @@
       </concept>
       <concept id="9174678441480632727" name="elm.structure.UnboundTypeDeclaration" flags="ng" index="2BG3zT" />
       <concept id="6466375086917710060" name="elm.structure.Constructor" flags="ng" index="31_POd" />
-      <concept id="251273837307136627" name="elm.structure.FunctionDeclaration" flags="ng" index="15tzTa">
-        <child id="5070996412762122018" name="parameters" index="3TEaHW" />
-      </concept>
-      <concept id="251273837295109393" name="elm.structure.InvocableDeclaration" flags="ng" index="16bV4C">
-        <child id="8654661321438926709" name="body" index="1FHpZF" />
-      </concept>
-      <concept id="251273837298401374" name="elm.structure.ExposableValueDeclaration" flags="ng" index="16YvhB" />
       <concept id="6466375086914436125" name="elm.structure.StringType" flags="ng" index="3ehl7W" />
       <concept id="5941605205025005218" name="elm.structure.TypeAliasDeclaration" flags="ng" index="1Fl4Nm">
         <child id="8864878458619166607" name="typeToAlias" index="k1U1M" />
       </concept>
-      <concept id="5941605205023692881" name="elm.structure.ExposableFunctionDeclaration" flags="ng" index="1Fu4C_" />
       <concept id="5941605205023692879" name="elm.structure.Exposure" flags="ng" index="1Fu4CV" />
       <concept id="5941605205023692875" name="elm.structure.ModuleDeclaration" flags="ng" index="1Fu4CZ">
         <child id="5941605205023692894" name="exposure" index="1Fu4CE" />
@@ -42,25 +34,12 @@
       <concept id="5941605205023693021" name="elm.structure.CustomTypeDeclaration" flags="ng" index="1Fu4ED">
         <child id="6466375086914436453" name="constructors" index="3ehl24" />
       </concept>
-      <concept id="8654661321438926713" name="elm.structure.IntLiteral" flags="ng" index="1FHpZB">
-        <property id="8654661321438946584" name="value" index="1FHuQ6" />
-      </concept>
-      <concept id="8654661321438947839" name="elm.structure.StringLiteral" flags="ng" index="1FHu5x">
-        <property id="8654661321438946584" name="value" index="1FHuQ7" />
-      </concept>
       <concept id="5070996412737258755" name="elm.structure.ICanProjectVerbosely" flags="ng" index="3S8W_t">
         <property id="5070996412737258756" name="verbose" index="3S8W_q" />
       </concept>
       <concept id="5070996412747702719" name="elm.structure.AbstractTypeDeclaration" flags="ng" index="3ThaRx">
         <child id="9174678441478529435" name="unboundTypeDeclarations" index="2B$23P" />
       </concept>
-      <concept id="5070996412759675691" name="elm.structure.Invocation" flags="ng" index="3TztXP">
-        <child id="5070996412762122054" name="args" index="3TEaGo" />
-      </concept>
-      <concept id="5070996412762122040" name="elm.structure.NamedReference" flags="ng" index="3TEaHA">
-        <reference id="5070996412762122041" name="target" index="3TEaHB" />
-      </concept>
-      <concept id="5070996412762122024" name="elm.structure.SimpleParameter" flags="ng" index="3TEaHQ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -70,14 +49,6 @@
   </registry>
   <node concept="28pqXY" id="1ZDI_inB4Eg">
     <property role="TrG5h" value="Abc" />
-    <node concept="16YvhB" id="dWH3_6CmS2" role="1FuEvC">
-      <property role="TrG5h" value="abc" />
-      <node concept="1FHu5x" id="7Xj0mVr8mUF" role="1FHpZF" />
-    </node>
-    <node concept="16YvhB" id="dWH3_6CmS5" role="1FuEvC">
-      <property role="TrG5h" value="def" />
-      <node concept="1FHu5x" id="7Xj0mVr8mUM" role="1FHpZF" />
-    </node>
     <node concept="1Fu4CZ" id="1ZDI_inB51Y" role="28pqbg">
       <property role="TrG5h" value="Util.Sub" />
       <node concept="1Fu4CV" id="dWH3_78W$P" role="1Fu4CE" />
@@ -120,27 +91,6 @@
       <property role="TrG5h" value="PersonRecord" />
       <node concept="31_POd" id="7Xj0mVqk4pp" role="3ehl24">
         <property role="TrG5h" value="PersonRecordCtor" />
-      </node>
-    </node>
-    <node concept="16YvhB" id="1hdhJIYK27Y" role="1FuEvC">
-      <property role="TrG5h" value="alias" />
-      <node concept="3TztXP" id="1hdhJIYK28q" role="1FHpZF">
-        <ref role="3TEaHB" node="7Xj0mVp8_Gt" resolve="Alias" />
-        <node concept="1FHu5x" id="7Xj0mVp95QE" role="3TEaGo">
-          <property role="1FHuQ7" value="Clark Kent" />
-        </node>
-        <node concept="1FHpZB" id="7Xj0mVp95RT" role="3TEaGo">
-          <property role="1FHuQ6" value="36" />
-        </node>
-      </node>
-    </node>
-    <node concept="1Fu4C_" id="1hdhJIYK2a2" role="1FuEvC">
-      <property role="TrG5h" value="getAgeOfAlias" />
-      <node concept="3TEaHQ" id="1hdhJIYK2a3" role="3TEaHW">
-        <property role="TrG5h" value="alias" />
-      </node>
-      <node concept="3TztXP" id="6WiVtwefhAy" role="1FHpZF">
-        <ref role="3TEaHB" node="1hdhJIYK2a3" resolve="alias" />
       </node>
     </node>
   </node>

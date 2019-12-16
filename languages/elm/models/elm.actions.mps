@@ -69,7 +69,7 @@
     </language>
   </registry>
   <node concept="37WguZ" id="dWH3_6eKSp">
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="values" />
     <property role="TrG5h" value="factory_FunctionDeclaration" />
     <node concept="37WvkG" id="dWH3_6eKSq" role="37WGs$">
       <ref role="37XkoT" to="1id:dWH3_62CDN" resolve="FunctionDeclaration" />
@@ -80,7 +80,7 @@
               <node concept="2OqwBi" id="dWH3_6eL8r" role="2Oq$k0">
                 <node concept="1r4Lsj" id="dWH3_6eKSB" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="dWH3_6eLsQ" role="2OqNvi">
-                  <ref role="3TtcxE" to="1id:4pvN5UZXQsy" resolve="patterns" />
+                  <ref role="3TtcxE" to="1id:4pvN5UZXQsy" resolve="parameterPatterns" />
                 </node>
               </node>
               <node concept="2DeJg1" id="dWH3_6eQ3j" role="2OqNvi">

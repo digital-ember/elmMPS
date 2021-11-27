@@ -86,7 +86,7 @@ Let's look at MPS' _Node Explorer_ for this simple example to verify that we are
 
 ![moduleDeclarationExplorer](images/moduleDeclarationExplorer.png)
 
-The root node **Module** with the name "Demo" has one child. It's a **ModuleDeclaration** node, also with the a name property of value "Demo". The **Exposue** node is a child of the **ModuleDeclaration** and contains no properties, references, or children.
+The root node **Module** with the name "Demo" has one child. It's a **ModuleDeclaration** node, also with the a name property of value "Demo". The **Exposure** node is a child of the **ModuleDeclaration** and contains no properties, references, or children.
 ___
 ### _Aside:_ about the two name properties
 The two name properties are not really redundant. Since a **Module** in Elm does not necessarily have a **ModuleDeclaraion**, the user can still provide a name to the **Module** if required, providing a 'filename' so to speak. However, if there does exist a **ModuleDeclaration**, its name overrides a potential **Module** name, so that the name of the **ModuleDeclaration**, if existent, also automatically determines the "file name".

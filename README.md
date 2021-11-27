@@ -113,7 +113,7 @@ More interesting is that "Html" is not a name property, but an actual reference 
 </details>
 
 ## The substitution menu (aka code completion)
-One of the powerful features of MPS is the built-in and customizable sustitution menu. Within a editable cell one can invoke a context-sensitive menu by pressing CTRL+SPACE. This will present you a list of elements that are available ("in scope") in the given context. This menu can be filtered by typing:
+One of the powerful features of MPS is the built-in and customizable substitution menu. Within a editable cell one can invoke a context-sensitive menu by pressing CTRL+SPACE. This will present you a list of elements that are available ("in scope") in the given context. This menu can be filtered by typing:
 
 <details open>
   <summary>Show/Hide example</summary>

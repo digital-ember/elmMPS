@@ -39,6 +39,8 @@ Still, if you are interested in looking into this project and provide feedback o
 
 ## What (not) to expect
 This project does not have the goal to become a fully fledged implementation of Elm for folks to rely upon and use in production. It is really meant to explore the projectional editor and, to a certain degree, the typesystem aspect of MPS. Things like code generation or the import of textual Elm source code are currently out of scope.
+** Update Novemebr 2022 ** 
+While above was true for the original prototype, I decided to revive the project with some more ambitious goals, which I will share shortly. 
 
 ## Please don't ...
 This is not meant to spawn a general discussion on what's better, projectional or textual editing. I don't see a point in discussing such questions without having a confined context.

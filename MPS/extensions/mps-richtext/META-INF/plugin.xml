@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>de.slisson.mps.richtext</id>
+  <name>MPS Richtext Editor Component</name>
+  <description>An editor component for mixing plain text and MPS nodes</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="https://github.com/slisson/mps-richtext">Sascha Lisson</vendor>
+  <depends>jetbrains.mps.build</depends>
+  <depends>jetbrains.mps.core</depends>
+  <depends>de.slisson.mps.editor.multiline</depends>
+  <depends>de.itemis.mps.selection</depends>
+  <depends>de.itemis.mps.celllayout</depends>
+  <depends>jetbrains.mps.vcs</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

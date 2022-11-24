@@ -3,11 +3,11 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mps-extensions">
+        <entry key="iets3">
           <value>
             <Library>
-              <option name="name" value="mps-extensions" />
-              <option name="path" value="${mps-extensions}" />
+              <option name="name" value="iets3" />
+              <option name="path" value="$PROJECT_DIR$/../../mps-installations/Iets3 2021.2.5/org.iets3.opensource" />
             </Library>
           </value>
         </entry>

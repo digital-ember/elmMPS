@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>de.itemis.mps.utils</id>
+  <name>de.itemis.mps.utils</name>
+  <description>Various MPS utilities, such as nodeversioning, serializer, and modelmerger</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="https://www.itemis.com/">Itemis</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>org.apache.commons</depends>
+  <depends>de.q60.mps.collections.libs</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>de.q60.shadowmodels</id>
+  <name>Shadow Models</name>
+  <description>A shadow model is a non-editable model derived from existing models by model-to-model transformations. It is incrementally maintained while editing the input model. Transformations are described in a special language designed to support incremental updates of the output model. Dynamic dependency tracking is used during the executing of the transformations which removes the need for a declarative language. BaseLanguage expressions with all its extensions are supported inside the transformation rules. The transformation language is similar to the MPS generator language. It has transformation rules with a left side that describes the input it applies to and a right side that creates the output. The right side is similar to light quotations instead of using the concrete syntax of the target language.</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="http://q60.de/">Sascha Lisson</vendor>
+  <depends>jetbrains.mps.kotlin</depends>
+  <depends>jetbrains.mps.trove</depends>
+  <depends>jetbrains.mps.core</depends>
+  <depends>com.intellij.modules.mps</depends>
+  <depends>de.q60.mps.collections.libs</depends>
+  <depends>org.modelix.model.api</depends>
+  <description>A shadow model is a non-editable model derived from existing models by model-to-model transformations. It is incrementally maintained while editing the input model. Transformations are described in a special language designed to support incremental updates of the output model. Dynamic dependency tracking is used during the executing of the transformations which removes the need for a declarative language. BaseLanguage expressions with all its extensions are supported inside the transformation rules. The transformation language is similar to the MPS generator language. It has transformation rules with a left side that describes the input it applies to and a right side that creates the output. The right side is similar to light quotations instead of using the concrete syntax of the target language.</description>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

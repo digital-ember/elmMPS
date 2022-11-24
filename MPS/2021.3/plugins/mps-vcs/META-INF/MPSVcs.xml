@@ -1,0 +1,58 @@
+<idea-plugin>
+  <actions>
+    <action id="jetbrains.mps.vcs.platform.actions.AnnotatePreviousRevision_Action" class="jetbrains.mps.vcs.platform.actions.AnnotatePreviousRevision_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.AnnotateRevision_Action" class="jetbrains.mps.vcs.platform.actions.AnnotateRevision_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.Annotate_Action" class="jetbrains.mps.vcs.platform.actions.Annotate_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.CopyOldNodes_Action" class="jetbrains.mps.vcs.platform.actions.CopyOldNodes_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.CopyRevisionNumber_Action" class="jetbrains.mps.vcs.platform.actions.CopyRevisionNumber_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.HideRevision_Action" class="jetbrains.mps.vcs.platform.actions.HideRevision_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.GitShowCommitInLog_Action" class="jetbrains.mps.vcs.platform.actions.GitShowCommitInLog_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.GoToNextChange_Action" class="jetbrains.mps.vcs.platform.actions.GoToNextChange_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.GoToPreviousChange_Action" class="jetbrains.mps.vcs.platform.actions.GoToPreviousChange_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.InstalVcsAddons_Action" class="jetbrains.mps.vcs.platform.actions.InstalVcsAddons_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.ReportModelMergeProblem_Action" class="jetbrains.mps.vcs.platform.actions.ReportModelMergeProblem_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.RollbackChanges_Action" class="jetbrains.mps.vcs.platform.actions.RollbackChanges_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.ShowAffectedFiles_Action" class="jetbrains.mps.vcs.platform.actions.ShowAffectedFiles_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.ShowDiffFromAnnotation_Action" class="jetbrains.mps.vcs.platform.actions.ShowDiffFromAnnotation_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.ShowDiffFromChanges_Action" class="jetbrains.mps.vcs.platform.actions.ShowDiffFromChanges_Action"></action>
+    <group id="jetbrains.mps.vcs.platform.actions.ChangesStrip_ActionGroup">
+      <reference ref="jetbrains.mps.vcs.platform.actions.GoToNextChange_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.GoToPreviousChange_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.RollbackChanges_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.ShowDiffFromChanges_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.CopyOldNodes_Action" />
+    </group>
+    <group id="jetbrains.mps.vcs.platform.actions.GoToVCS_ActionGroup">
+      <reference ref="jetbrains.mps.vcs.platform.actions.GoToNextChange_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.GoToPreviousChange_Action" />
+      <add-to-group group-id="GoToMenu" anchor="last" />
+    </group>
+    <group id="jetbrains.mps.vcs.platform.actions.MPSGlobalVcsGroup_ActionGroup">
+      <separator />
+      <reference ref="jetbrains.mps.vcs.platform.actions.InstalVcsAddons_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.ReportModelMergeProblem_Action" />
+      <add-to-group group-id="VcsGroups" anchor="last" />
+    </group>
+    <group id="jetbrains.mps.vcs.platform.actions.AnnotateGroup_ActionGroup">
+      <reference ref="jetbrains.mps.vcs.platform.actions.Annotate_Action" />
+      <add-to-group group-id="jetbrains.mps.ide.editor.actions.EditorLeftPanelMenu_ActionGroup" anchor="last" />
+    </group>
+    <group id="jetbrains.mps.vcs.platform.actions.AnnotatedCellGroup_ActionGroup">
+      <reference ref="jetbrains.mps.vcs.platform.actions.ShowDiffFromAnnotation_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.ShowAffectedFiles_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.CopyRevisionNumber_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.GitShowCommitInLog_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.AnnotateRevision_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.AnnotatePreviousRevision_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.HideRevision_Action" />
+      <add-to-group group-id="EditorPopup_ActionGroupannotatedCell" anchor="last" />
+    </group>
+    <group id="jetbrains.mps.vcs.platform.actions.DiffEditorPopupGroup_ActionGroup">
+      <reference ref="jetbrains.mps.ide.editor.actions.PushEditorHints_Action" />
+      <reference ref="jetbrains.mps.ide.editor.actions.ShowRegularEditor_Action" />
+      <reference ref="jetbrains.mps.ide.editor.actions.ShowReflectiveEditor_Action" />
+      <reference ref="jetbrains.mps.ide.editor.actions.ShowReflectiveEditorsForSubtree_Action" />
+      <add-to-group group-id="jetbrains.mps.vcs.platform.actions.AnnotateGroup_ActionGroup" anchor="last" />
+    </group>
+  </actions>
+</idea-plugin>

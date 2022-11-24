@@ -1,0 +1,15 @@
+metamodel-generator-1.3.2.jar
+metamodel-runtime-jvm-1.3.2.jar
+model-api-jvm-1.3.2.jar
+kotlinpoet-1.12.0.jar
+kotlin-logging-jvm-2.1.21.jar
+kaml-jvm-0.48.0.jar
+kotlinx-serialization-json-jvm-1.3.2.jar
+kotlinx-serialization-core-jvm-1.4.0.jar
+kotlin-stdlib-jdk8-1.7.10.jar
+kotlin-reflect-1.7.10.jar
+kotlinx-collections-immutable-jvm-0.3.5.jar
+kotlin-stdlib-jdk7-1.7.10.jar
+kotlin-stdlib-1.7.10.jar
+kotlin-stdlib-common-1.7.10.jar
+snakeyaml-engine-2.4.jar

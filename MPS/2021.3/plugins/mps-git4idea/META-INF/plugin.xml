@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>jetbrains.mps.git4idea.stubs</id>
+  <name>MPS Git integration - stubs</name>
+  <version>2021.3</version>
+  <depends>Git4Idea</depends>
+  <depends>jetbrains.mps.core</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

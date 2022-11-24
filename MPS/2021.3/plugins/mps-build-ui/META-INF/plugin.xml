@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>jetbrains.mps.build.ui</id>
+  <name>MPS Build Wizard</name>
+  <version>2021.3</version>
+  <depends>jetbrains.mps.core</depends>
+  <depends>jetbrains.mps.execution.configurations</depends>
+  <depends>jetbrains.mps.build</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

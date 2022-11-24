@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright 2003-2011 JetBrains s.r.o.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>jetbrains.mps.core</id>
+  <name>MPS Core</name>
+  <category>Custom Languages</category>
+  <description>MPS Core</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" hide="true"/>
+    <!--since we are having core.properties here already-->
+    <mps.VisibleModuleMask mask="jetbrains\.mps\.core\.xml.*"/>
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+  </extensions>
+</idea-plugin>

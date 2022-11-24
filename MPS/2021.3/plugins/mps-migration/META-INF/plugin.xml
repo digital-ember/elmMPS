@@ -1,0 +1,18 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>jetbrains.mps.ide.migration.workbench</id>
+  <name>Migration Support</name>
+  <description>Provides assistance migrating projects developed with earlier versions of MPS</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.ide.modelchecker</depends>
+
+  <xi:include href="pluginBase.xml"/>
+
+  <actions>
+    <group id="Migration" text="_Migration" configurable="true" popup="true" compact="true">
+      <add-to-group group-id="MainMenu" relative-to-action="ToolsMenu" anchor="after" />
+    </group>
+  </actions>
+
+</idea-plugin>

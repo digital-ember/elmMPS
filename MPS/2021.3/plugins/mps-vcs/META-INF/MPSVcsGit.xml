@@ -1,0 +1,13 @@
+<components>
+  <actions>
+    <action id="jetbrains.mps.vcs.platform.actions.ResolveNonconflictingChanges_Action" class="jetbrains.mps.vcs.platform.actions.ResolveNonconflictingChanges_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.ShowNodeHistory_Action" class="jetbrains.mps.vcs.platform.actions.ShowNodeHistory_Action"></action>
+    <action id="jetbrains.mps.vcs.platform.actions.ShowRootHistory_Action" class="jetbrains.mps.vcs.platform.actions.ShowRootHistory_Action"></action>
+    <group id="jetbrains.mps.vcs.platform.actions.MPSGitFileActions_ActionGroup">
+      <reference ref="jetbrains.mps.vcs.platform.actions.ResolveNonconflictingChanges_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.ShowRootHistory_Action" />
+      <reference ref="jetbrains.mps.vcs.platform.actions.ShowNodeHistory_Action" />
+      <add-to-group group-id="Git.FileActions" anchor="last" />
+    </group>
+  </actions>
+</components>

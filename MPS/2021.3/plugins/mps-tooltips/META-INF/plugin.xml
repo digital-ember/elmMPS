@@ -1,0 +1,15 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <id>jetbrains.mps.editor.tooltips</id>
+  <name>MPS Tooltips</name>
+  <description>Provides MPS with tooltips</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.core</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+    <mps.LanguageLibrary dir=""/>
+  </extensions>
+
+</idea-plugin>

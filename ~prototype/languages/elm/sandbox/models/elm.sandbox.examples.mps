@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="5h96" ref="r:f0fb9c00-ce5b-4a67-8bd5-d4a816f7c855(elm.stubs.stubs)" />
+    <import index="eydf" ref="r:ce35bcf7-74b0-4a75-a6ad-8a934c899692(elm.core)" />
   </imports>
   <registry>
     <language id="c1f84ca7-1d95-4edc-a710-47d158ac5985" name="elm">
@@ -110,18 +111,6 @@
   </registry>
   <node concept="28pqXY" id="4pvN5UZWgxR">
     <property role="TrG5h" value="Counter" />
-    <node concept="1Fu4CZ" id="22dovMIhmGX" role="28pqbg">
-      <property role="TrG5h" value="Day01" />
-      <node concept="1Fu4CV" id="22dovMIhmH4" role="1Fu4CE" />
-    </node>
-    <node concept="1Fu4CU" id="22dovMIhmH6" role="1FuEvH">
-      <ref role="1Fu4EE" to="5h96:22dovMIhmH9" resolve="Maybe" />
-      <node concept="1Fu4CV" id="1_RMY$Vu5gm" role="1Fu4Ck">
-        <node concept="1Fu4Cz" id="1_RMY$Vu5go" role="1Fu4CC">
-          <ref role="1Fu4CG" to="5h96:22dovMIhmHb" resolve="Maybe" />
-        </node>
-      </node>
-    </node>
     <node concept="1Fl4Nm" id="1_RMY$Vu5gq" role="1FuEvC">
       <property role="TrG5h" value="Mass" />
       <node concept="3ehl7U" id="1_RMY$Vu5gA" role="k1U1M" />
@@ -129,6 +118,16 @@
     <node concept="1Fl4Nm" id="1_RMY$Vu5gM" role="1FuEvC">
       <property role="TrG5h" value="Fuel" />
       <node concept="3ehl7U" id="1_RMY$Vu5h2" role="k1U1M" />
+    </node>
+    <node concept="1Fu4CZ" id="48saBcmSJH5" role="28pqbg">
+      <property role="TrG5h" value="Module" />
+      <node concept="1Fu4CV" id="48saBcmSJHc" role="1Fu4CE" />
+    </node>
+    <node concept="1Fu4CU" id="48saBcmSJHe" role="1FuEvH">
+      <ref role="1Fu4EE" node="7Xj0mVpq54z" resolve="Demo" />
+      <node concept="1FuPgt" id="48saBcmSJHk" role="1FuPjR">
+        <property role="TrG5h" value="D" />
+      </node>
     </node>
   </node>
   <node concept="28pqXY" id="4pvN5V0O58M">

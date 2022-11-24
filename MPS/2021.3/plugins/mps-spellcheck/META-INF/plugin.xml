@@ -1,0 +1,15 @@
+<!-- Copyright 2000-2021 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin >
+  <id>jetbrains.mps.editor.spellcheck</id>
+  <name>Spell Check in MPS Editors</name>
+  <description>Integrate IDEA spell-checking mechanism with MPS Editors</description>
+  <version>2021.3.1</version>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+  <idea-version since-build="213.1" until-build="221.1"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/" hide="true"/>
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+  </extensions>
+</idea-plugin>

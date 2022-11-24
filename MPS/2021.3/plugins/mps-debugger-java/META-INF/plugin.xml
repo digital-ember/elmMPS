@@ -1,0 +1,43 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <id>jetbrains.mps.debugger.java</id>
+  <name>Java Debugger for MPS</name>
+  <description>Provides java debugger implementation for MPS</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.debugger.api</depends>
+  <depends>jetbrains.mps.core</depends>
+  <depends>com.intellij.modules.mps</depends>
+
+  <application-components>
+    <!--api-->
+    <component>
+      <interface-class>jetbrains.mps.debugger.java.api.state.customViewers.CustomViewersManager</interface-class>
+      <implementation-class>jetbrains.mps.debugger.java.runtime.state.customViewers.CustomViewersManagerImpl</implementation-class>
+    </component>
+    <!--runtime-->
+    <component>
+      <implementation-class>jetbrains.mps.debugger.java.runtime.state.customViewers.BaseLanguageCustomViewers</implementation-class>
+    </component>
+    <component>
+      <implementation-class>jetbrains.mps.debugger.java.runtime.JavaDebugger</implementation-class>
+    </component>
+  </application-components>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!--runtime-->
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+    <mps.LanguageLibrary dir="/" hide="true"/>
+    <mps.PluginComponentContributor application="jetbrains.mps.debugger.java.customViewers.plugin.plugin.Plugin_ApplicationPlugin" />
+    <mps.PluginComponentContributor application="jetbrains.mps.debugger.java.runtime.ui.actions.Runtime_ApplicationPlugin" />
+    <projectService serviceImplementation="jetbrains.mps.debugger.java.runtime.engine.VMEventsProcessorManagerComponent"/>
+    <projectService serviceImplementation="jetbrains.mps.debugger.java.runtime.breakpoints.BreakpointsIconCache" />
+  </extensions>
+
+  <extensions defaultExtensionNs="jetbrains.mps">
+    <!-- JavaNodePositionProvider comes with higher priority for NodePositionProvider key -->
+    <debugger.PositionProvider key="jetbrains.mps.debug.api.source.NodePositionProvider"
+                               weight="200"
+                               class="jetbrains.mps.debugger.java.runtime.JavaNodePositionProvider"/>
+  </extensions>
+</idea-plugin>

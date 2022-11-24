@@ -1,0 +1,24 @@
+<!DOCTYPE idea-plugin PUBLIC 'Plugin/DTD' 'http://plugins.intellij.net/plugin.dtd'>
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>jetbrains.mps.console</id>
+  <name>MPS Console</name>
+  <description>Console in IDE to write and immediately execute DSL queries in IDE context</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <xi:include href="ConsoleActions.xml"/>
+
+  <depends>jetbrains.mps.core</depends>
+  <depends>com.intellij.modules.mps</depends>
+  <depends>jetbrains.mps.ide.make</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="" hide="true"/>
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+  </extensions>
+
+  <project-components>
+    <component>
+      <implementation-class>jetbrains.mps.console.tool.ConsoleTool</implementation-class>
+    </component>
+  </project-components>
+</idea-plugin>

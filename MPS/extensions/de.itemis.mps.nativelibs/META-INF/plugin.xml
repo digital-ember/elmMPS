@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>de.itemis.mps.nativelibs</id>
+  <name>de.itemis.mps.nativelibs</name>
+  <description>Language to use native libraries in MPS</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="https://www.itemis.com/">Itemis</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>jetbrains.mps.build</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

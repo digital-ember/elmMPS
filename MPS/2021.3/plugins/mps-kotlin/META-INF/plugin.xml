@@ -1,0 +1,25 @@
+<!DOCTYPE idea-plugin PUBLIC 'Plugin/DTD' 'http://plugins.intellij.net/plugin.dtd'>
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>jetbrains.mps.kotlin</id>
+  <name>Kotlin MPS</name>
+  <description>Kotlin languages for MPS and interoperability with baseLanguage</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.core</depends>
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Integrated in mps-core for now (see MPSPersistence) -->
+    <!--<mps.modelRootFactory rootType="kotlin_common" className="jetbrains.mps.kotlin.ide.commonStubs.KotlinCommonStubModelRootFactory"/>-->
+    <!--<mps.modelIdFactory type="kotlin" className="jetbrains.mps.kotlin.ide.common.KotlinPackageModelId$Factory"/>-->
+
+    <!-- UI entry for kotlin roots -->
+    <mps.modelRootEntry rootType="kotlin_common" title="Kotlin Common"
+                        className="jetbrains.mps.kotlin.idePlugin.rootEntry.KotlinCommonStubModelRootEntryFactory"/>
+  </extensions>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" hide="true"/>
+    <mps.LanguageLibrary dir="/solutions" hide="true"/>
+    <mps.LanguageLibrary dir="/devkits" hide="true"/>
+  </extensions>
+</idea-plugin>

@@ -1,0 +1,48 @@
+<!--
+  ~ Copyright 2003-2020 JetBrains s.r.o.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <id>jetbrains.mps.ide.modelchecker</id>
+  <name>Model Checker</name>
+  <description>Settings and tooling to audit MPS models</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+  <depends>jetbrains.mps.testing</depends>
+
+  <application-components>
+    <component>
+      <implementation-class>jetbrains.mps.ide.modelchecker.platform.actions.SpecificCheckersComponent</implementation-class>
+    </component>
+  </application-components>
+
+  <project-components>
+    <component>
+      <implementation-class>jetbrains.mps.ide.modelchecker.platform.actions.ModelCheckerTool</implementation-class>
+    </component>
+
+  </project-components>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <checkinHandlerFactory
+            implementation="jetbrains.mps.ide.modelchecker.platform.actions.ModelCheckerCheckinHandler$ModelCheckerCheckinHandlerFactory"/>
+    <mps.ModelValidator implementation="jetbrains.mps.ide.modelchecker.ModelValidatorAdapter"/>
+    <applicationService serviceImplementation="jetbrains.mps.ide.modelchecker.platform.actions.ModelCheckerSettings" />
+    <applicationConfigurable groupId="tools" groupWeight="160" instance="jetbrains.mps.ide.modelchecker.platform.actions.ModelCheckerPreferencesPage" id="preferences.modelCheckerSettings"/>
+    <mps.LanguageLibrary dir="" hide="true"/>
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+    <mps.PluginComponentContributor application="jetbrains.mps.ide.modelchecker.actions.Modelchecker_ApplicationPlugin" />
+    <registryKey key="mps.check.model.genplan" defaultValue="true" description="Check languages used in a model against associated generation plan, if any" restartRequired="false"/>
+  </extensions>
+</idea-plugin>

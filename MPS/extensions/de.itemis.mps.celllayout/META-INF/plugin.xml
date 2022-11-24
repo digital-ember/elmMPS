@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>de.itemis.mps.celllayout</id>
+  <name>de.itemis.mps.celllayout</name>
+  <description>Various additional styling functionality (push, overflow, etc.) in addition to the existing MPS styling</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="https://www.itemis.com/">Itemis</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>de.slisson.mps.hacks</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

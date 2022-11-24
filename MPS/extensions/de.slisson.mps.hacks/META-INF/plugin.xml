@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>de.slisson.mps.hacks</id>
+  <name>de.slisson.mps.hacks</name>
+  <description>Various small extensions: editor utilities, generation plan extensions for better cross-model generation, reflection language (deprecated)</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="https://www.itemis.com/">Itemis</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

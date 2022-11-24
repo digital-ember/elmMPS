@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <name>de.itemis.mps.nativelibs.loader</name>
+  <id>de.itemis.mps.nativelibs.loader</id>
+  <version>1.0</version>
+  <application-components>
+    <component>
+      <implementation-class>de.itemis.mps.nativelibs.plugin.NativeLibraryLoader</implementation-class>
+    </component>
+  </application-components>
+</idea-plugin>

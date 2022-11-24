@@ -1,0 +1,15 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <id>jetbrains.mps.editor.contextActions</id>
+  <name>MPS Context Actions Tool</name>
+  <description>The Context Actions sidebar shows context-dependent actions when editing MPS models</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.core</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+    <mps.LanguageLibrary dir="" hide="true"/>
+  </extensions>
+
+</idea-plugin>

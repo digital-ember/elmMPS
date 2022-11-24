@@ -1,0 +1,84 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <id>jetbrains.mps.debugger.api</id>
+  <name>Debugger API for MPS</name>
+  <description>Provides generic debugger support for MPS</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.execution.api</depends>
+  <depends>jetbrains.mps.core</depends>
+  <depends>com.intellij.modules.mps</depends>
+
+  <application-components>
+    <!--api-->
+    <component>
+      <implementation-class>jetbrains.mps.debug.api.breakpoints.BreakpointProvidersManager</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>jetbrains.mps.debug.api.Debuggers</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>jetbrains.mps.debug.api.BreakpointCreatorsManager</implementation-class>
+    </component>
+  </application-components>
+
+  <project-components>
+    <!--api-->
+    <component>
+      <implementation-class>jetbrains.mps.debug.api.BreakpointManagerComponent</implementation-class>
+    </component>
+
+    <component>
+      <implementation-class>jetbrains.mps.debug.api.DebugSessionManagerComponent</implementation-class>
+    </component>
+
+    <!--runtime-->
+    <component>
+      <implementation-class>jetbrains.mps.debugger.api.ui.breakpoints.BreakpointsUiComponent</implementation-class>
+    </component>
+    <component>
+      <implementation-class>jetbrains.mps.debugger.api.ui.breakpoints.BreakpointViewSettingsComponent</implementation-class>
+    </component>
+    <component>
+      <implementation-class>jetbrains.mps.debugger.api.ui.executionPoint.CurrentLinePositionComponent</implementation-class>
+    </component>
+    <component>
+      <implementation-class>jetbrains.mps.debugger.api.ui.executionPoint.InTextPositionComponent</implementation-class>
+    </component>
+  </project-components>
+
+  <actions>
+    <!--for being able to use StopAction in j.m.debug.api-->
+    <group id="DebugStopAction" popup="false">
+      <reference ref="Stop"/>
+    </group>
+
+    <!--for being able to use MuteAction in j.m.ide.actions-->
+    <group id="DebugMuteAction" popup="false">
+      <action id="Mute" text="Mute" class="jetbrains.mps.debugger.api.ui.actions.MuteBreakpoints"/>
+    </group>
+  </actions>
+
+  <extensionPoints>
+    <extensionPoint qualifiedName="jetbrains.mps.debugger.PositionProvider" beanClass="jetbrains.mps.debug.api.source.PositionProviderBean" dynamic="true">
+      <with attribute="class" implements="jetbrains.mps.debug.api.source.IPositionProvider"/>
+    </extensionPoint>
+  </extensionPoints>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <projectService serviceImplementation="jetbrains.mps.debug.api.source.PositionProvider" />
+    <programRunner id="defaultDebugRunner" implementation="jetbrains.mps.debugger.api.runner.MPSDebugRunner"
+                   order="last"/>
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+    <mps.LanguageLibrary dir="" hide="true"/>
+    <mps.PluginComponentContributor application="jetbrains.mps.debugger.api.ui.actions.Runtime_ApplicationPlugin" />
+  </extensions>
+
+  <extensions defaultExtensionNs="jetbrains.mps">
+    <debugger.PositionProvider key="jetbrains.mps.debug.api.source.NodePositionProvider" class="jetbrains.mps.debug.api.source.NodePositionProvider"/>
+    <debugger.PositionProvider key="jetbrains.mps.debug.api.source.TextPositionProvider" class="jetbrains.mps.debug.api.source.TextPositionProvider"/>
+  </extensions>
+
+</idea-plugin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>com.mbeddr.mpsutil.editor.querylist</id>
+  <name>com.mbeddr.mpsutil.editor.querylist</name>
+  <description>Enables the definition of editors over smodel queries as opposed to only a fixed concept structure</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="http://mbeddr.com/">mbeddr</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>de.slisson.mps.hacks</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

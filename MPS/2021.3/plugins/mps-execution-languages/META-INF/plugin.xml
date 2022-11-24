@@ -1,0 +1,27 @@
+<!DOCTYPE idea-plugin PUBLIC 'Plugin/DTD' 'http://plugins.intellij.net/plugin.dtd'>
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>jetbrains.mps.execution.languages</id>
+  <name>Execution Languages</name>
+  <description>Languages and libraries for implementing execution configurations for MPS</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.debugger.java</depends>
+  <depends>jetbrains.mps.debugger.api</depends>
+  <depends>jetbrains.mps.execution.api</depends>
+  <depends>jetbrains.mps.testing</depends>
+
+  <project-components>
+    <component>
+      <implementation-class>jetbrains.mps.execution.impl.configurations.RunConfigurationsStateManager</implementation-class>
+      <headless-implementation-class>jetbrains.mps.execution.impl.configurations.DummyRunConfigurationsStateManager</headless-implementation-class>
+      <skipForDefaultProject/>
+    </component>
+  </project-components>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="languages/" hide="true"/>
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+    <programRunner id="defaultRunRunner"
+                   implementation="jetbrains.mps.execution.impl.configurations.runners.MPSProgramRunner"/>
+  </extensions>
+</idea-plugin>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ce35bcf7-74b0-4a75-a6ad-8a934c899692(elm.core)" doNotGenerate="true">
+<model ref="r:ce35bcf7-74b0-4a75-a6ad-8a934c899692(elm.core)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="c1f84ca7-1d95-4edc-a710-47d158ac5985" name="elm" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />

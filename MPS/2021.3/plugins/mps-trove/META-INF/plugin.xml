@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>jetbrains.mps.trove</id>
+  <name>Trove Collections language for MPS</name>
+  <version>2021.3</version>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

@@ -1,0 +1,17 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>jetbrains.mps.ide.httpsupport</id>
+  <name>HTTP Support Plugin</name>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="" hide="true"/>
+    <httpRequestHandler implementation="jetbrains.mps.ide.httpsupport.manager.plugin.MPSRequestManager"/>
+    <registryKey key="ide.httpsupport.internalPort" defaultValue="63320" description="Port for MPS internal requests (i.e. opening node)"/>
+    <registryKey key="ide.httpsupport.specifyProjectInNodeURL" defaultValue="false" description="Specify project name in node URL"/>
+  </extensions>
+  <extensions defaultExtensionNs="org.jetbrains">
+    <customPortServerManager implementation="jetbrains.mps.ide.httpsupport.manager.plugin.MPSInternalPortManager"/>
+    <customPortServerManager implementation="jetbrains.mps.ide.httpsupport.manager.plugin.MPSIntegrationPortManager"/>
+  </extensions>
+</idea-plugin>

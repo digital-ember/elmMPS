@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>com.mbeddr.mpsutil.projectview</id>
+  <name>com.mbeddr.mpsutil.projectview</name>
+  <description>Abstraction on top of MPS lower-level API to create custom views in the view tool window (like logical view, file view, etc.)</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="http://mbeddr.com">mbeddr</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>de.slisson.mps.hacks</depends>
+  <depends>com.intellij.modules.mps</depends>
+  <depends>org.apache.commons</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

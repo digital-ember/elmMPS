@@ -61,7 +61,7 @@ For those not familiar with projectional editors, here is a nice illustration by
 When you write code as text, a parser is involved to translate your text into a data structure, usually called an Abstract Syntax Tree (AST). Broadly speaking, this data structure is fed into other parts of a compiler to perform certain tasks like semantic analysis, code optimization, translation, and the like. In a projectional world, there is no parser! You create programs by directly manipulating the AST of your program. The "projection" is what exposes the AST to you in one way or the other on a screen. We'll see how this can look like for Elm next, so let's move on and look at specific examples.
 
 ## Empty Elm-Module
-Since MPS allows you to create and manipulate the AST (tree!) directly, the first class citizen a user is interacting with in every language are **Nodes**. Nodes live under a (MPS-)model, and each root node can be opened in a separate editor. So I decided to make a _Elm-Module_ a root node. When we create a new Elm-Module, an empty editor looks like this:
+Since MPS allows you to create an manipulate the AST (tree!) directly, the first class citizen a use ris interacting with in every language are **Nodes**. Nodes live under a (MPS-)model, and each root node can be opened in a separate editor. So I decided to make a _Elm-Module_ a root node. When we create a new Elm-Module, an empty editor looks like this:
 
 ![emptyEditor](images/emptyEditor.png)
 
@@ -88,7 +88,7 @@ Let's look at MPS' _Node Explorer_ for this simple example to verify that we are
 
 ![moduleDeclarationExplorer](images/moduleDeclarationExplorer.png)
 
-The root node **Module** with the name "Demo" has one child. It's a **ModuleDeclaration** node, also with the a name property of value "Demo". The **Exposure** node is a child of the **ModuleDeclaration** and contains no properties, references, or children.
+The root node **Module** with the name "Demo" has one child. It's a **ModuleDeclaration** node, also with the a name property of value "Demo". The **Exposue** node is a child of the **ModuleDeclaration** and contains no properties, references, or children.
 ___
 ### _Aside:_ about the two name properties
 The two name properties are not really redundant. Since a **Module** in Elm does not necessarily have a **ModuleDeclaraion**, the user can still provide a name to the **Module** if required, providing a 'filename' so to speak. However, if there does exist a **ModuleDeclaration**, its name overrides a potential **Module** name, so that the name of the **ModuleDeclaration**, if existent, also automatically determines the "file name".
@@ -115,7 +115,7 @@ More interesting is that "Html" is not a name property, but an actual reference 
 </details>
 
 ## The substitution menu (aka code completion)
-One of the powerful features of MPS is the built-in and customizable substitution menu. Within a editable cell one can invoke a context-sensitive menu by pressing CTRL+SPACE. This will present you a list of elements that are available ("in scope") in the given context. This menu can be filtered by typing:
+One of the powerful features of MPS is the built-in and customizable sustitution menu. Within a editable cell one can invoke a context-sensitive menu by pressing CTRL+SPACE. This will present you a list of elements that are available ("in scope") in the given context. This menu can be filtered by typing:
 
 <details open>
   <summary>Show/Hide example</summary>

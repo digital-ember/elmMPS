@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>org.modelix.model.api</id>
+  <name>org.modelix.model.api</name>
+  <description>Alternative model API with better support for persistent data structures</description>
+  <version>2021.3.2478.32dbb86</version>
+  <vendor url="http://modelix.org/">Modelix</vendor>
+  <depends>jetbrains.mps.core</depends>
+  <depends>de.q60.mps.collections.libs</depends>
+  <depends>org.apache.commons</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

@@ -1,0 +1,16 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+  <id>jetbrains.mps.editor.diagram</id>
+  <name>MPS Diagram Editor</name>
+  <description>Provides diagram editor to MPS</description>
+  <vendor url="http://www.jetbrains.com/mps/">JetBrains</vendor>
+
+  <depends>jetbrains.mps.core</depends>
+  <depends>jetbrains.jetpad</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+    <mps.LanguageLibrary dir="" hide="true"/>
+  </extensions>
+
+</idea-plugin>

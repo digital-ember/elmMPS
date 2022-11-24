@@ -223,14 +223,17 @@ Here is another, slightly longer example of what you can do in a projecitonal ed
 Notice that this should work for both Windows and MacOS. However, people with OSX reported issues opening the project or setting up the MPS-extensions library. I try to provide a description that works, but let me know if you still face issues getting the project up and running.
 
 ## Required software
-- download [MPS 2019.2.3](https://www.jetbrains.com/mps/download/) and install/unpack it
-  - notice that, depending on when you read this, version 2019.2.3 might be available for download only from the [previous releases page](https://www.jetbrains.com/mps/download/previous.html) 
-- download the [MPS-extensions](https://github.com/JetBrains/MPS-extensions/releases/tag/nightly-2019.2.1139.f3ae18e) (the zip archive), a collection of useful libraries I make use of in this project
+_Windows users don't have to manually install MPS or the extensions, it is packaged into this repository_
+- [MPS 2021.3.1](https://www.jetbrains.com/mps/download/)
+  - notice that, depending on when you read this, version 2021.3.1 might be available for download only from the [previous releases page](https://www.jetbrains.com/mps/download/previous.html) 
+- download the [MPS-extensions](https://artifacts.itemis.cloud/repository/maven-mps/de/itemis/mps/extensions/2021.3.2478.32dbb86/extensions-2021.3.2478.32dbb86.zip), a collection of useful libraries I make use of in this project
   - unzip the archive to a locaiton of your choice; it's recommended to put it close to your MPS installation folder, maybe next to it below a common root folder, to easier find it.
+- [Git LFS](https://git-lfs.github.com/) to handle larger files
 
 ## Setting up the environment / opening the project
 - clone/download [this repository](https://github.com/digital-ember/elmMPS)
 - start the MPS application (might take a few seconds)
+  - If on Windows, run the command file `.\MPS\devshell.cmd`. In the shell that is opened, type in `mps` and MPS should start and open the right project
 - once started use **Open Project...** and select the root folder of your local copy of this project
 - after loading the project for the first time, a path variable that points to the MPS-extensions library is missing, so you cannot successfully build the project yet
   - if you get a little notification on the bottom right that looks like the one below, use the link to open the settings directly

@@ -5,3 +5,11 @@ Please refer to the [prototype's readme](https://github.com/digital-ember/elmMPS
 
 (TBD)
  
+# Missing language concepts
+
+- `effect` ModuleDeclaration
+- Top Level
+  - TypeAnnotation
+  - PortAnnotation
+  - InfixDeclaration
+
